@@ -21,7 +21,7 @@ const translations = {
     // Breadcrumbs
 
     // Hero Section
-    'hero-welcome': 'Welcome to BetterBayawan.org',
+    'hero-welcome': 'Welcome to BetterBayawan',
     'hero-subtitle':
       'Access government services, information, and resources for the people of Bayawan City, Negros Oriental.',
 
