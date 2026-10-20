@@ -41,7 +41,7 @@ export default function PWAManager() {
     window.addEventListener('beforeinstallprompt', onBeforeInstall);
 
     // Service worker registration + update detection
-    if ('serviceWorker' in navigator) {
+    if (process.env.NODE_ENV === 'production' && typeof navigator.serviceWorker !== 'undefined') {
       navigator.serviceWorker.register('/sw.js').then((reg) => {
         setInterval(() => reg.update(), 30 * 60 * 1000);
 

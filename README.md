@@ -13,14 +13,21 @@ A civic-tech initiative providing transparent access to municipal services, prog
 
 ## Version Notice
 
-A **React + TypeScript** version of BetterBayawan.org is now available for contributors who prefer modern tooling and component-based architecture.
+The React app in `react-app/` is now the primary application. Run `npm ci` and
+`npm ci --prefix react-app`, then `npm run dev` from the repository root
+(`http://localhost:3000`). This starts React with compatibility routing for portal
+pages that have not been migrated yet. The static pages remain required; do not
+delete them until their React replacements are complete.
 
-| Version            | Branch             | Status             | Documentation                |
-| ------------------ | ------------------ | ------------------ | ---------------------------- |
-| Static HTML        | `main`             | Stable             | This README                  |
-| React + TypeScript | `react-typescript` | Active Development | [MIGRATION.md](MIGRATION.md) |
+`npm run build -- --no-bump` produces `dist/` with the React homepage, service
+directory, and health page, plus the remaining existing portal routes.
+`npm run preview` serves that build at `http://localhost:8080` with clean URLs.
+All new page work should target React. Root `assets/` and `data/` are shared sources;
+the React preparation script synchronizes these before development and builds.
 
-Both versions are actively maintained. New contributors may choose either version based on their preference. For migration guidance, see [MIGRATION.md](MIGRATION.md).
+React + TypeScript is the default for development. Existing HTML pages provide
+compatibility for routes still awaiting migration; they are not a second app to
+maintain for new features. See [MIGRATION.md](MIGRATION.md) for the current route ownership.
 
 ## Open Source for LGUs
 

@@ -34,4 +34,12 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+module.exports = (phase) => ({
+  ...nextConfig,
+  distDir: phase === 'phase-development-server' ? '.next-dev' : '.next',
+  ...(phase === 'phase-development-server' && process.env.LEGACY_ORIGIN ? {
+    async rewrites() {
+      return { fallback: [{ source: '/:path*', destination: `${process.env.LEGACY_ORIGIN}/:path*` }] };
+    },
+  } : {}),
+});

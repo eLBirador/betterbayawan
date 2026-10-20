@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/:section(government|budget|contact|statistics|news|legislative|faq|sitemap|privacy|terms|accessibility)",
+      "destination": "/:section/",
+      "permanent": true
+    }
+  ]
+}

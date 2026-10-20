@@ -1,10 +1,23 @@
 'use client';
 
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import sharedTranslations from '@/data/translations.json';
 
 // Translation data
 const translations: Record<string, Record<string, string>> = {
   en: {
+    'hero-greeting': 'Welcome to',
+    'directory-no-results': 'No services found. Try another search or browse the categories below.',
+    'directory-results': 'Search results',
+    'hero-government-title': 'Government Services',
+    'hero-government-description': 'Explore available services',
+    'hero-city-title': 'City Information',
+    'hero-city-description': 'News and updates',
+    'hero-citizen-title': 'Citizen Resources',
+    'hero-citizen-description': 'Information for everyone',
+    'hero-search-example': 'e.g. birth certificate, business permit, real property tax',
+    'hero-search-label': 'Search services',
+    'hero-popular-services': 'Popular Services:',
     // Navigation
     'nav-home': 'Home',
     'nav-services': 'Services',
@@ -250,6 +263,18 @@ const translations: Record<string, Record<string, string>> = {
       'An independent, open-source community project. Not affiliated with or endorsed by the Bayawan City government. All content is based on publicly available information, sourced from official government portals.',
   },
   fil: {
+    'hero-greeting': 'Maligayang pagdating sa',
+    'directory-no-results': 'Walang nahanap na serbisyo. Subukan ang ibang salita o tingnan ang mga kategorya sa ibaba.',
+    'directory-results': 'Mga resulta ng paghahanap',
+    'hero-government-title': 'Serbisyo ng Pamahalaan',
+    'hero-government-description': 'Tuklasin ang mga serbisyo',
+    'hero-city-title': 'Impormasyon ng Lungsod',
+    'hero-city-description': 'Balita at mga update',
+    'hero-citizen-title': 'Para sa Mamamayan',
+    'hero-citizen-description': 'Impormasyon para sa lahat',
+    'hero-search-example': 'hal. birth certificate, permit sa negosyo, buwis sa ari-arian',
+    'hero-search-label': 'Maghanap ng serbisyo',
+    'hero-popular-services': 'Mga Patok na Serbisyo:',
     // Navigation - Filipino
     'nav-home': 'Tahanan',
     'nav-services': 'Mga Serbisyo',
@@ -498,6 +523,18 @@ const translations: Record<string, Record<string, string>> = {
       'Isang independiyenteng, open-source na proyekto ng komunidad. Hindi kaakibat o ineendorso ng pamahalaan ng Bayawan City. Ang lahat ng nilalaman ay batay sa mga pampublikong impormasyon mula sa mga opisyal na portal ng pamahalaan.',
   },
   bis: {
+    'hero-greeting': 'Welcome sa',
+    'directory-no-results': 'Walay nakit-ang serbisyo. Sulayi ang laing pulong o tan-awa ang mga kategoriya sa ubos.',
+    'directory-results': 'Mga resulta sa pagpangita',
+    'hero-government-title': 'Serbisyo sa Gobyerno',
+    'hero-government-description': 'Tan-awa ang mga serbisyo',
+    'hero-city-title': 'Impormasyon sa Siyudad',
+    'hero-city-description': 'Balita ug mga update',
+    'hero-citizen-title': 'Alang sa Katawhan',
+    'hero-citizen-description': 'Impormasyon para sa tanan',
+    'hero-search-example': 'pananglitan, birth certificate, business permit, buhis sa yuta',
+    'hero-search-label': 'Pangita ug serbisyo',
+    'hero-popular-services': 'Mga Popular nga Serbisyo:',
     // Navigation - Bisaya
     'nav-home': 'Home',
     'nav-services': 'Mga Serbisyo',
@@ -682,7 +719,8 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   };
 
   const t = (key: string): string => {
-    return translations[language]?.[key] || translations['en']?.[key] || key;
+    const shared: Record<string, Record<string, string>> = sharedTranslations;
+    return translations[language]?.[key] || shared[language]?.[key] || translations.en?.[key] || shared.en?.[key] || key;
   };
 
   return (

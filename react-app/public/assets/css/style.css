@@ -7508,6 +7508,7 @@ cklist with Icons - Proper Indentation */
 }
 
 .home-contact-v2-card {
+  min-width: 0;
   display: flex;
   align-items: flex-start;
   gap: var(--spacing-sm);
@@ -7554,6 +7555,7 @@ cklist with Icons - Proper Indentation */
 }
 
 .home-contact-v2-value {
+  overflow-wrap: anywhere;
   font-size: 1rem;
   font-weight: 600;
   color: var(--color-text);
@@ -8663,7 +8665,8 @@ a.a11y-contact-item:hover i {
 
 @media (max-width: 575px) {
   .info-bar-inner {
-    gap: 0;
+    gap: 6px 0;
+    flex-wrap: wrap;
   }
 
   .info-bar-item {
@@ -8695,6 +8698,11 @@ a.a11y-contact-item:hover i {
 
   .info-bar-datetime {
     flex-wrap: nowrap;
+    flex-basis: 100%;
+    justify-content: center;
+    padding-left: 0;
+    margin-left: 0;
+    border-left: 0;
   }
 
   .time-label {
@@ -8724,6 +8732,7 @@ a.a11y-contact-item:hover i {
 
 /* Weather Widget - Clean Minimal Design */
 .weather-column {
+  min-width: 0;
   display: flex;
   flex-direction: column;
 }
@@ -9019,6 +9028,7 @@ a.a11y-contact-item:hover i {
 
 /* Location Card - Clean Design */
 .map-column {
+  min-width: 0;
   display: flex;
   flex-direction: column;
 }

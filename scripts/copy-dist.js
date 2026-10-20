@@ -10,6 +10,10 @@ const path = require('path');
 const EXCLUDED = new Set([
   'node_modules',
   'dist',
+  '.build-stage',
+  '.wrangler',
+  '.commandcode',
+  '.artifacts',
   '.git',
   '.vscode',
   '.DS_Store',
