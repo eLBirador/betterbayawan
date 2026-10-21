@@ -261,6 +261,9 @@
   .civic-hero .home-hero-v2-search {
     transform: none;
   }
+  .hero-highlights {
+    display: none;
+  }
   .hero-highlights strong {
     font-size: 17px;
   }
@@ -347,9 +350,15 @@
     min-width: 0;
     font-size: 16px;
   }
+  .civic-hero .home-search-tags {
+    gap: 6px;
+    font-size: 0.75rem;
+  }
   .civic-hero .home-search-tags a {
-    min-height: 44px;
-    padding: 8px 12px;
+    min-height: 34px;
+    padding: 5px 11px;
+    font-size: 0.75rem;
+    white-space: nowrap;
   }
   .civic-hero-waves {
     height: 65px;
