@@ -1,10 +1,9 @@
 {
   "_schema_version": "1.0",
-  "_status": "verified",
-  "_source": "Philippine Statistics Authority (PSA) 2020 & 2024 Census of Population; Philippine Standard Geographic Code (PSGC); Official Website of the City of Bayawan (city profile)",
-  "_updated": "2026-08-29",
-  "_note": "Region: Negros Island Region (NIR), formerly Region VII - Central Visayas (executive order integrating Negros Island into one region). Verify current income classification with the City Budget Office / DILG.",
-  "municipality": "Bayawan City",
+  "_status": "source-linked",
+  "_source": "https://psa.gov.ph/classification/psgc/barangays/1804606000",
+  "_updated": "2026-10-21",
+  "_note": "Negros Island Region established under Republic Act No. 12000 (2024). Land area follows the city charter; population counts follow PSA 2024 POPCEN.",
   "province": "Negros Oriental",
   "region": "Negros Island Region (NIR)",
   "population": {
@@ -19,7 +18,7 @@
   "land_area_has": 69908,
   "barangay_count": 28,
   "postal_code": "6221",
-  "income_class": "2nd (per DILG/BLGF classification - confirm with LGU)",
+  "income_class": "1st",
   "cityhood": "Component city since 23 December 2000 (approved via plebiscite)",
   "barangays": [
     "Ali-is",
@@ -50,5 +49,37 @@
     "Ubos",
     "Villareal",
     "Villasol"
-  ]
+  ],
+  "city": "Bayawan City",
+  "barangay_populations": {
+    "Ali-is": 3285,
+    "Banaybanay": 4825,
+    "Banga": 7822,
+    "Villasol": 4988,
+    "Boyco": 1465,
+    "Bugay": 5625,
+    "Cansumalig": 1539,
+    "Dawis": 4553,
+    "Kalamtukan": 3584,
+    "Kalumboyan": 7035,
+    "Malabugas": 6136,
+    "Mandu-ao": 4785,
+    "Maninihon": 7551,
+    "Minaba": 3095,
+    "Nangka": 10749,
+    "Narra": 6968,
+    "Pagatban": 2433,
+    "Poblacion": 2932,
+    "San Jose": 2807,
+    "San Miguel": 2090,
+    "San Roque": 1750,
+    "Suba": 2398,
+    "Tabuan": 4563,
+    "Tayawan": 6515,
+    "Tinago": 3171,
+    "Ubos": 1468,
+    "Villareal": 11359,
+    "San Isidro": 1253
+  },
+  "barangay_population_year": 2024
 }

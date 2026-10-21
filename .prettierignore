@@ -1,7 +1,5 @@
 node_modules
 dist
+.artifacts
 package-lock.json
-*.min.js
-*.min.css
-react-app/.next
-react-app/node_modules
+assets/animation

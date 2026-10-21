@@ -3,9 +3,92 @@
   "cleanUrls": true,
   "redirects": [
     {
-      "source": "/:section(government|budget|contact|statistics|news|legislative|faq|sitemap|privacy|terms|accessibility)",
+      "source": "/service-details/mswdo-services",
+      "destination": "/service-details/cswdo-services",
+      "permanent": true
+    },
+    {
+      "source": "/service-details/mswdo",
+      "destination": "/service-details/cswdo-services",
+      "permanent": true
+    },
+    {
+      "source": "/service-details/municipal-accounting",
+      "destination": "/service-details/city-accounting",
+      "permanent": true
+    },
+    {
+      "source": "/service-details/municipal-agriculture",
+      "destination": "/service-details/city-agriculture",
+      "permanent": true
+    },
+    {
+      "source": "/service-details/municipal-assessor",
+      "destination": "/service-details/city-assessor",
+      "permanent": true
+    },
+    {
+      "source": "/service-details/municipal-budget",
+      "destination": "/service-details/city-budget",
+      "permanent": true
+    },
+    {
+      "source": "/service-details/municipal-civil-registrar",
+      "destination": "/service-details/civil-registrar",
+      "permanent": true
+    },
+    {
+      "source": "/service-details/municipal-engineering",
+      "destination": "/service-details/city-engineering",
+      "permanent": true
+    },
+    {
+      "source": "/service-details/municipal-general-services",
+      "destination": "/service-details/general-services",
+      "permanent": true
+    },
+    {
+      "source": "/service-details/municipal-planning",
+      "destination": "/service-details/city-planning",
+      "permanent": true
+    },
+    {
+      "source": "/service-details/municipal-treasurer",
+      "destination": "/service-details/city-treasurer",
+      "permanent": true
+    },
+    {
+      "source": "/:section(government|budget|contact|statistics|news|legislative|faq|sitemap|privacy|terms|accessibility|services)",
       "destination": "/:section/",
       "permanent": true
+    }
+  ],
+  "framework": null,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "installCommand": "npm ci",
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    },
+    {
+      "source": "/sw.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
+      ]
     }
   ]
 }

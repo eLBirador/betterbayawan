@@ -1,19 +1,17 @@
 {
-  "name": "bs-web",
+  "name": "betterbayawan",
   "version": "1.1.19",
-  "description": "BetterBayawan.org - Civic Portal for Bayawan City",
+  "description": "Independent, source-linked civic information for Bayawan City, Negros Oriental",
   "scripts": {
     "dev": "node scripts/dev.mjs",
     "build": "node scripts/build.mjs",
-    "build:major": "node scripts/build.mjs major",
-    "build:minor": "node scripts/build.mjs minor",
     "preview": "node scripts/static-server.mjs dist",
-    "serve:dist": "cd dist && python3 -m http.server 8080",
-    "version:major": "node scripts/bump-version.js major",
-    "version:minor": "node scripts/bump-version.js minor",
+    "check": "node scripts/check.mjs",
+    "test": "node scripts/test-browser.mjs",
+    "i18n:extract": "node scripts/extract-translations.mjs",
     "version:patch": "node scripts/bump-version.js patch",
-    "version:check": "node scripts/bump-version.js",
-    "lighthouse": "lhci autorun",
+    "version:minor": "node scripts/bump-version.js minor",
+    "version:major": "node scripts/bump-version.js major",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
@@ -26,22 +24,11 @@
   "author": "Rodney Dela Cruz",
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.23.9",
-    "@babel/core": "^7.29.6",
-    "@babel/preset-env": "^7.23.9",
-    "@lhci/cli": "^0.15.1",
-    "@playwright/test": "^1.61.0",
-    "clean-css-cli": "^5.6.3",
-    "core-js": "^3.40.0",
-    "html-minifier-terser": "^7.2.0",
-    "http-server": "^14.1.1",
+    "cheerio": "^1.1.2",
     "playwright": "^1.61.0",
-    "prettier": "^3.8.1",
-    "terser": "^5.44.1"
+    "prettier": "^3.8.1"
   },
-  "overrides": {
-    "tmp": "0.2.7",
-    "js-yaml": "^4.2.0",
-    "uuid": "^11.1.1"
+  "engines": {
+    "node": ">=22"
   }
 }

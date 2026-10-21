@@ -1,0 +1,771 @@
+<!-- Breadcrumbs -->
+<div class="container">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span>/</span>
+    <span aria-current="page">Government</span>
+  </nav>
+</div>
+
+<!-- Page Header -->
+<section class="page-header">
+  <div class="container">
+    <div class="page-header-content">
+      <span class="page-header-badge"
+        ><i class="bi bi-building-fill"></i> <span>Government</span></span
+      >
+      <h1>Government Structure &amp; Officials</h1>
+      <p class="page-header-desc">Meet the leadership and offices serving Bayawan City</p>
+    </div>
+  </div>
+</section>
+
+<!-- Executive Branch -->
+<section class="section" style="background: var(--color-bg-alt)">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="text-center" style="margin-bottom: var(--spacing-xl)">
+      <span
+        style="
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+          color: white;
+          padding: 8px 20px;
+          border-radius: 50px;
+          font-size: 0.875rem;
+          margin-bottom: var(--spacing-sm);
+        "
+        ><i class="bi bi-star-fill"></i> <span>Executive Branch</span></span
+      >
+      <h3 style="font-size: 1.75rem; margin-bottom: var(--spacing-xs)">City Leadership</h3>
+      <p style="color: var(--color-text-light)">
+        The executive officials leading Bayawan City's governance
+      </p>
+    </div>
+
+    <!-- Executive Cards -->
+    <div class="grid grid-2" style="gap: var(--spacing-lg)">
+      <!-- Mayor Card -->
+      <div class="executive-card">
+        <div class="executive-card-header">
+          <span class="executive-badge">City Mayor</span>
+          <h4 class="executive-name">{{official:mayor.name}}</h4>
+        </div>
+        <div class="executive-card-body">
+          <div class="executive-contacts">
+            <a href="mailto:{{contact:mayor.email}}"
+              ><i class="bi bi-envelope"></i>{{contact:mayor.email}}</a
+            >
+            <a href="tel:0355310020"><i class="bi bi-telephone"></i>{{contact:mayor.phone}}</a>
+            <span><i class="bi bi-clock"></i> Mon-Fri: 8:00 AM - 5:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vice Mayor Card -->
+      <div class="executive-card">
+        <div class="executive-card-header">
+          <span class="executive-badge">City Vice Mayor</span>
+          <h4 class="executive-name">{{official:vice_mayor.name}}</h4>
+        </div>
+        <div class="executive-card-body">
+          <div class="executive-contacts">
+            <a href="mailto:{{contact:viceMayor.email}}"
+              ><i class="bi bi-envelope"></i>{{contact:viceMayor.email}}</a
+            >
+            <a href="tel:0355310020"><i class="bi bi-telephone"></i>{{contact:mayor.phone}}</a>
+            <span><i class="bi bi-clock"></i> Mon-Fri: 8:00 AM - 5:00 PM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- City Council -->
+<section class="section">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="text-center" style="margin-bottom: var(--spacing-xl)">
+      <span
+        style="
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          background: linear-gradient(135deg, var(--color-success) 0%, #05c793 100%);
+          color: white;
+          padding: 8px 20px;
+          border-radius: 50px;
+          font-size: 0.875rem;
+          margin-bottom: var(--spacing-sm);
+        "
+        ><i class="bi bi-people-fill"></i> <span>Legislative Branch</span></span
+      >
+      <h3 style="font-size: 1.75rem; margin-bottom: var(--spacing-xs)">
+        Sangguniang Panlungsod Members
+      </h3>
+      <p style="color: var(--color-text-light)">
+        City Councilors serving the people of Bayawan City
+      </p>
+    </div>
+
+    <!-- Councilors Grid -->
+    <div class="grid grid-3" style="gap: var(--spacing-md)">
+      <div class="councilor-card">
+        <h4 class="councilor-name">{{official:councilors.0.name}}</h4>
+        <span class="councilor-badge">City Councilor</span>
+        <p class="councilor-committees">Member, 10th City Council</p>
+      </div>
+      <div class="councilor-card">
+        <h4 class="councilor-name">{{official:councilors.1.name}}</h4>
+        <span class="councilor-badge">City Councilor</span>
+        <p class="councilor-committees">Member, 10th City Council</p>
+      </div>
+      <div class="councilor-card">
+        <h4 class="councilor-name">{{official:councilors.2.name}}</h4>
+        <span class="councilor-badge">City Councilor</span>
+        <p class="councilor-committees">Member, 10th City Council</p>
+      </div>
+      <div class="councilor-card">
+        <h4 class="councilor-name">{{official:councilors.3.name}}</h4>
+        <span class="councilor-badge">City Councilor</span>
+        <p class="councilor-committees">Member, 10th City Council</p>
+      </div>
+      <div class="councilor-card">
+        <h4 class="councilor-name">{{official:councilors.4.name}}</h4>
+        <span class="councilor-badge">City Councilor</span>
+        <p class="councilor-committees">Member, 10th City Council</p>
+      </div>
+      <div class="councilor-card">
+        <h4 class="councilor-name">{{official:councilors.5.name}}</h4>
+        <span class="councilor-badge">City Councilor</span>
+        <p class="councilor-committees">Member, 10th City Council</p>
+      </div>
+      <div class="councilor-card">
+        <h4 class="councilor-name">{{official:councilors.6.name}}</h4>
+        <span class="councilor-badge">City Councilor</span>
+        <p class="councilor-committees">Member, 10th City Council</p>
+      </div>
+      <div class="councilor-card">
+        <h4 class="councilor-name">{{official:councilors.7.name}}</h4>
+        <span class="councilor-badge">City Councilor</span>
+        <p class="councilor-committees">Member, 10th City Council</p>
+      </div>
+      <div class="councilor-card">
+        <h4 class="councilor-name">{{official:councilors.8.name}}</h4>
+        <span class="councilor-badge">City Councilor</span>
+        <p class="councilor-committees">Member, 10th City Council</p>
+      </div>
+      <div class="councilor-card">
+        <h4 class="councilor-name">{{official:councilors.9.name}}</h4>
+        <span class="councilor-badge">City Councilor</span>
+        <p class="councilor-committees">Member, 10th City Council</p>
+      </div>
+      <div class="councilor-card councilor-card--liga">
+        <h4 class="councilor-name">{{official:councilors.10.name}}</h4>
+        <span class="councilor-badge councilor-badge--liga">Liga ng mga Barangay President</span>
+        <p class="councilor-committees">Ex-Officio Member, 10th City Council</p>
+      </div>
+      <div class="councilor-card councilor-card--sk">
+        <h4 class="councilor-name">{{official:councilors.11.name}}</h4>
+        <span class="councilor-badge councilor-badge--sk">SK Federation President</span>
+        <p class="councilor-committees">Ex-Officio Member, 10th City Council</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Department Heads -->
+<section class="section" style="background: var(--color-bg-alt)">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="text-center" style="margin-bottom: var(--spacing-xl)">
+      <span
+        style="
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          background: linear-gradient(135deg, var(--color-info) 0%, #0099cc 100%);
+          color: white;
+          padding: 8px 20px;
+          border-radius: 50px;
+          font-size: 0.875rem;
+          margin-bottom: var(--spacing-sm);
+        "
+        ><i class="bi bi-building-fill"></i> <span>City Offices</span></span
+      >
+      <h3 style="font-size: 1.75rem; margin-bottom: var(--spacing-xs)">
+        Department Heads &amp; Key Offices
+      </h3>
+      <p style="color: var(--color-text-light)">City offices providing services to citizens</p>
+    </div>
+
+    <!-- Departments Grid -->
+    <div class="grid grid-3" style="gap: var(--spacing-md)">
+      <a href="/service-details/municipal-civil-registrar" class="dept-card dept-card-link-wrap">
+        <div class="dept-card-icon"><i class="bi bi-file-earmark-text-fill"></i></div>
+        <div class="dept-card-content">
+          <h4 class="dept-card-title">City Civil Registrar</h4>
+          <p class="dept-card-desc">Birth, death, marriage certificates, CENOMAR</p>
+          <div class="dept-card-contacts">
+            <span><i class="bi bi-telephone"></i>{{contact:mayor.phone}}</span>
+            <span><i class="bi bi-envelope"></i> <span>{{contact:mayor.email}}</span></span>
+            <small>General city contact; request the responsible office.</small>
+          </div>
+          <span class="dept-card-link"
+            ><i class="bi bi-arrow-right"></i> <span>View Services</span></span
+          >
+        </div>
+      </a>
+      <a href="/service-details/municipal-treasurer" class="dept-card dept-card-link-wrap">
+        <div class="dept-card-icon"><i class="bi bi-cash-coin"></i></div>
+        <div class="dept-card-content">
+          <h4 class="dept-card-title">City Treasurer's Office</h4>
+          <p class="dept-card-desc">Tax payments, real property tax, revenue collection</p>
+          <div class="dept-card-contacts">
+            <span><i class="bi bi-telephone"></i>{{contact:mayor.phone}}</span>
+            <span><i class="bi bi-envelope"></i> <span>{{contact:mayor.email}}</span></span>
+            <small>General city contact; request the responsible office.</small>
+          </div>
+          <span class="dept-card-link"
+            ><i class="bi bi-arrow-right"></i> <span>View Services</span></span
+          >
+        </div>
+      </a>
+      <a href="/service-details/municipal-engineering" class="dept-card dept-card-link-wrap">
+        <div class="dept-card-icon"><i class="bi bi-building-fill-gear"></i></div>
+        <div class="dept-card-content">
+          <h4 class="dept-card-title">City Engineering Office</h4>
+          <p class="dept-card-desc">Building permits, construction permits, infrastructure</p>
+          <div class="dept-card-contacts">
+            <span><i class="bi bi-telephone"></i>{{contact:mayor.phone}}</span>
+            <span><i class="bi bi-envelope"></i> <span>{{contact:mayor.email}}</span></span>
+            <small>General city contact; request the responsible office.</small>
+          </div>
+          <span class="dept-card-link"
+            ><i class="bi bi-arrow-right"></i> <span>View Services</span></span
+          >
+        </div>
+      </a>
+      <a href="/service-details/mswdo-services" class="dept-card dept-card-link-wrap">
+        <div class="dept-card-icon"><i class="bi bi-people-fill"></i></div>
+        <div class="dept-card-content">
+          <h4 class="dept-card-title">CSWDO</h4>
+          <p class="dept-card-desc">
+            Social services, PWD &amp; senior citizen IDs, financial assistance
+          </p>
+          <div class="dept-card-contacts">
+            <span><i class="bi bi-telephone"></i>{{contact:mayor.phone}}</span>
+            <span><i class="bi bi-envelope"></i> <span>{{contact:mayor.email}}</span></span>
+            <small>General city contact; request the responsible office.</small>
+          </div>
+          <span class="dept-card-link"
+            ><i class="bi bi-arrow-right"></i> <span>View Services</span></span
+          >
+        </div>
+      </a>
+      <a href="/service-details/municipal-agriculture" class="dept-card dept-card-link-wrap">
+        <div class="dept-card-icon"><i class="bi bi-tree-fill"></i></div>
+        <div class="dept-card-content">
+          <h4 class="dept-card-title">City Agriculture Office</h4>
+          <p class="dept-card-desc">Agricultural loans, crop insurance, fertilizer assistance</p>
+          <div class="dept-card-contacts">
+            <span><i class="bi bi-telephone"></i>{{contact:mayor.phone}}</span>
+            <span><i class="bi bi-envelope"></i> <span>{{contact:mayor.email}}</span></span>
+            <small>General city contact; request the responsible office.</small>
+          </div>
+          <span class="dept-card-link"
+            ><i class="bi bi-arrow-right"></i> <span>View Services</span></span
+          >
+        </div>
+      </a>
+      <a href="/service-details/municipal-planning" class="dept-card dept-card-link-wrap">
+        <div class="dept-card-icon"><i class="bi bi-clipboard-data-fill"></i></div>
+        <div class="dept-card-content">
+          <h4 class="dept-card-title">City Planning &amp; Development</h4>
+          <p class="dept-card-desc">Development planning, project monitoring, zoning</p>
+          <div class="dept-card-contacts">
+            <span><i class="bi bi-telephone"></i>{{contact:mayor.phone}}</span>
+            <span><i class="bi bi-envelope"></i> <span>{{contact:mayor.email}}</span></span>
+            <small>General city contact; request the responsible office.</small>
+          </div>
+          <span class="dept-card-link"
+            ><i class="bi bi-arrow-right"></i> <span>View Services</span></span
+          >
+        </div>
+      </a>
+      <a href="/service-details/municipal-assessor" class="dept-card dept-card-link-wrap">
+        <div class="dept-card-icon"><i class="bi bi-house-door-fill"></i></div>
+        <div class="dept-card-content">
+          <h4 class="dept-card-title">City Assessor's Office</h4>
+          <p class="dept-card-desc">Property assessment, tax declarations, land records</p>
+          <div class="dept-card-contacts">
+            <span><i class="bi bi-telephone"></i>{{contact:mayor.phone}}</span>
+            <span><i class="bi bi-envelope"></i> <span>{{contact:mayor.email}}</span></span>
+            <small>General city contact; request the responsible office.</small>
+          </div>
+          <span class="dept-card-link"
+            ><i class="bi bi-arrow-right"></i> <span>View Services</span></span
+          >
+        </div>
+      </a>
+      <a href="/service-details/municipal-accounting" class="dept-card dept-card-link-wrap">
+        <div class="dept-card-icon"><i class="bi bi-calculator-fill"></i></div>
+        <div class="dept-card-content">
+          <h4 class="dept-card-title">City Accounting Office</h4>
+          <p class="dept-card-desc">Financial records, disbursements, accounting services</p>
+          <div class="dept-card-contacts">
+            <span><i class="bi bi-telephone"></i>{{contact:mayor.phone}}</span>
+            <span><i class="bi bi-envelope"></i> <span>{{contact:mayor.email}}</span></span>
+            <small>General city contact; request the responsible office.</small>
+          </div>
+          <span class="dept-card-link"
+            ><i class="bi bi-arrow-right"></i> <span>View Services</span></span
+          >
+        </div>
+      </a>
+      <a href="/service-details/municipal-budget" class="dept-card dept-card-link-wrap">
+        <div class="dept-card-icon"><i class="bi bi-piggy-bank-fill"></i></div>
+        <div class="dept-card-content">
+          <h4 class="dept-card-title">City Budget Office</h4>
+          <p class="dept-card-desc">Budget preparation, appropriations, fiscal management</p>
+          <div class="dept-card-contacts">
+            <span><i class="bi bi-telephone"></i>{{contact:mayor.phone}}</span>
+            <span><i class="bi bi-envelope"></i> <span>{{contact:mayor.email}}</span></span>
+            <small>General city contact; request the responsible office.</small>
+          </div>
+          <span class="dept-card-link"
+            ><i class="bi bi-arrow-right"></i> <span>View Services</span></span
+          >
+        </div>
+      </a>
+      <a href="/service-details/municipal-general-services" class="dept-card dept-card-link-wrap">
+        <div class="dept-card-icon"><i class="bi bi-gear-fill"></i></div>
+        <div class="dept-card-content">
+          <h4 class="dept-card-title">City General Services Office</h4>
+          <p class="dept-card-desc">Property management, procurement, administration</p>
+          <div class="dept-card-contacts">
+            <span><i class="bi bi-telephone"></i>{{contact:mayor.phone}}</span>
+            <span><i class="bi bi-envelope"></i> <span>{{contact:mayor.email}}</span></span>
+            <small>General city contact; request the responsible office.</small>
+          </div>
+          <span class="dept-card-link"
+            ><i class="bi bi-arrow-right"></i> <span>View Services</span></span
+          >
+        </div>
+      </a>
+      <a href="/services/health" class="dept-card dept-card-link-wrap">
+        <div class="dept-card-icon"><i class="bi bi-heart-pulse-fill"></i></div>
+        <div class="dept-card-content">
+          <h4 class="dept-card-title">City Health Office</h4>
+          <p class="dept-card-desc">Vaccination, health certificates, medical assistance</p>
+          <div class="dept-card-contacts">
+            <span><i class="bi bi-telephone"></i>{{contact:mayor.phone}}</span>
+            <span><i class="bi bi-envelope"></i> <span>{{contact:mayor.email}}</span></span>
+            <small>General city contact; request the responsible office.</small>
+          </div>
+          <span class="dept-card-link"
+            ><i class="bi bi-arrow-right"></i> <span>View Services</span></span
+          >
+        </div>
+      </a>
+      <a href="/service-details/business-permits-licensing" class="dept-card dept-card-link-wrap">
+        <div class="dept-card-icon"><i class="bi bi-shop"></i></div>
+        <div class="dept-card-content">
+          <h4 class="dept-card-title">Business Permits &amp; Licensing</h4>
+          <p class="dept-card-desc">Business permits, Mayor's clearance, licensing</p>
+          <div class="dept-card-contacts">
+            <span><i class="bi bi-telephone"></i>{{contact:mayor.phone}}</span>
+            <span><i class="bi bi-envelope"></i> <span>{{contact:mayor.email}}</span></span>
+            <small>General city contact; request the responsible office.</small>
+          </div>
+          <span class="dept-card-link"
+            ><i class="bi bi-arrow-right"></i> <span>View Services</span></span
+          >
+        </div>
+      </a>
+      <a href="/service-details/human-resource-management" class="dept-card dept-card-link-wrap">
+        <div class="dept-card-icon"><i class="bi bi-person-badge-fill"></i></div>
+        <div class="dept-card-content">
+          <h4 class="dept-card-title">Human Resource Management</h4>
+          <p class="dept-card-desc">Personnel services, recruitment, employee records</p>
+          <div class="dept-card-contacts">
+            <span><i class="bi bi-telephone"></i>{{contact:mayor.phone}}</span>
+            <span><i class="bi bi-envelope"></i> <span>{{contact:mayor.email}}</span></span>
+            <small>General city contact; request the responsible office.</small>
+          </div>
+          <span class="dept-card-link"
+            ><i class="bi bi-arrow-right"></i> <span>View Services</span></span
+          >
+        </div>
+      </a>
+      <a href="/services/public-safety" class="dept-card dept-card-link-wrap">
+        <div class="dept-card-icon"><i class="bi bi-exclamation-triangle-fill"></i></div>
+        <div class="dept-card-content">
+          <h4 class="dept-card-title">CDRRMO</h4>
+          <p class="dept-card-desc">Disaster preparedness, emergency response, risk reduction</p>
+          <div class="dept-card-contacts">
+            <span><i class="bi bi-telephone"></i>{{contact:hotlines.1.phone}}</span>
+            <span><i class="bi bi-envelope"></i> <span>{{contact:mayor.email}}</span></span>
+            <small>General city contact; request the responsible office.</small>
+          </div>
+          <span class="dept-card-link"
+            ><i class="bi bi-arrow-right"></i> <span>View Services</span></span
+          >
+        </div>
+      </a>
+      <a href="/service-details/seedo-public-market" class="dept-card dept-card-link-wrap">
+        <div class="dept-card-icon"><i class="bi bi-shop-window"></i></div>
+        <div class="dept-card-content">
+          <h4 class="dept-card-title">SEEDO – Public Market</h4>
+          <p class="dept-card-desc">Market clearance, entrance fees, vendor services, CTC</p>
+          <div class="dept-card-contacts">
+            <span><i class="bi bi-telephone"></i>{{contact:mayor.phone}}</span>
+            <small>General city contact; request the responsible office.</small>
+          </div>
+          <span class="dept-card-link"
+            ><i class="bi bi-arrow-right"></i> <span>View Services</span></span
+          >
+        </div>
+      </a>
+      <a href="/service-details/seedo-slaughterhouse" class="dept-card dept-card-link-wrap">
+        <div class="dept-card-icon"><i class="bi bi-box-seam"></i></div>
+        <div class="dept-card-content">
+          <h4 class="dept-card-title">SEEDO – Slaughterhouse</h4>
+          <p class="dept-card-desc">Hog, cattle, goat, carabao slaughter with meat inspection</p>
+          <div class="dept-card-contacts">
+            <span><i class="bi bi-telephone"></i>{{contact:mayor.phone}}</span>
+            <small>General city contact; request the responsible office.</small>
+          </div>
+          <span class="dept-card-link"
+            ><i class="bi bi-arrow-right"></i> <span>View Services</span></span
+          >
+        </div>
+      </a>
+      <div class="dept-card">
+        <div class="dept-card-icon"><i class="bi bi-briefcase-fill"></i></div>
+        <div class="dept-card-content">
+          <h4 class="dept-card-title">PESO</h4>
+          <p class="dept-card-desc">Job placement, employment assistance, career guidance</p>
+          <div class="dept-card-contacts">
+            <a href="tel:09171551043"><i class="bi bi-telephone"></i> 0917-155-1043</a>
+
+            <small>General city contact; request the responsible office.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Barangays -->
+<section class="section">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="text-center" style="margin-bottom: var(--spacing-xl)">
+      <span
+        style="
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+          color: white;
+          padding: 8px 20px;
+          border-radius: 50px;
+          font-size: 0.875rem;
+          margin-bottom: var(--spacing-sm);
+        "
+        ><i class="bi bi-geo-alt-fill"></i> <span>Barangay Units</span></span
+      >
+      <h3 style="font-size: 1.75rem; margin-bottom: var(--spacing-xs)">
+        Barangays of Bayawan City
+      </h3>
+      <p style="color: var(--color-text-light)">28 Barangays serving our community</p>
+    </div>
+
+    <!-- Barangays Grid -->
+    <div class="grid grid-4" style="gap: var(--spacing-sm)">
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">Ali-is</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">Banaybanay</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">Banga</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">Boyco</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">Bugay</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">Cansumalig</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">Dawis</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">Kalamtukan</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">Kalumboyan</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">Malabugas</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">Mandu-ao</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">Maninihon</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">Minaba</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">Nangka</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">Narra</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">Pagatban</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">Poblacion</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">San Isidro</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">San Jose</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">San Miguel</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">San Roque</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">Suba</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">Tabuan</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">Tayawan</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">Tinago</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">Ubos</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">Villareal</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+
+      <div class="barangay-card">
+        <div class="barangay-card-header">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span class="barangay-name">Villasol</span>
+        </div>
+        <div class="barangay-card-body">
+          <span class="barangay-captain">Component Barangay</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

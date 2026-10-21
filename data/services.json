@@ -13,12 +13,18 @@
         "baby",
         "civil registry",
         "lcr",
-        "vital records"
+        "vital records",
+        "Birth Certificate",
+        "sertipiko ng kapanganakan",
+        "sertipiko sa pagkatawo"
       ],
-      "fee": "₱150",
-      "processingTime": "15-30 minutes",
+      "fee": "₱75 for the first two copies; ₱25 per succeeding copy (2025 Charter)",
+      "processingTime": "4 hours (2025 Charter)",
       "office": "Local Civil Registrar",
-      "url": "../service-details/birth-certificate.html"
+      "url": "../service-details/birth-certificate.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "marriage-certificate",
@@ -34,12 +40,17 @@
         "civil registry",
         "kasal",
         "COM",
-        "certificate of marriage"
+        "certificate of marriage",
+        "Marriage Certificate",
+        "kaminyoon"
       ],
-      "fee": "Free (Registration)",
-      "processingTime": "5 minutes",
+      "fee": "No registration fee (2025 Charter)",
+      "processingTime": "2 hours (2025 Charter)",
       "office": "Local Civil Registrar",
-      "url": "../service-details/marriage-certificate.html"
+      "url": "../service-details/marriage-certificate.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "death-certificate",
@@ -54,12 +65,16 @@
         "obituary",
         "civil registry",
         "burial permit",
-        "transfer permit"
+        "transfer permit",
+        "Death Certificate"
       ],
-      "fee": "₱50-150",
-      "processingTime": "1 hour 35 minutes",
+      "fee": "₱50 (2025 Charter)",
+      "processingTime": "4 hours (2025 Charter)",
       "office": "Local Civil Registrar",
-      "url": "../service-details/death-certificate.html"
+      "url": "../service-details/death-certificate.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "barangay-clearance",
@@ -67,11 +82,14 @@
       "category": "Certificates & Vital Records",
       "categoryId": "certificates",
       "description": "Certificate of residence from your barangay",
-      "keywords": ["barangay", "clearance", "residence", "residency", "brgy"],
-      "fee": "₱50-100",
-      "processingTime": "Same day",
+      "keywords": ["barangay", "clearance", "residence", "residency", "brgy", "Barangay Clearance"],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
       "office": "Barangay Hall",
-      "url": "certificates.html"
+      "url": "certificates.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "barangay-id",
@@ -79,23 +97,29 @@
       "category": "Certificates & Vital Records",
       "categoryId": "certificates",
       "description": "Official barangay identification card",
-      "keywords": ["barangay", "id", "identification", "brgy"],
-      "fee": "Free",
-      "processingTime": "1-2 days",
+      "keywords": ["barangay", "id", "identification", "brgy", "Barangay ID"],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
       "office": "Barangay Hall",
-      "url": "certificates.html"
+      "url": "certificates.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "police-clearance",
       "title": "Police Clearance",
       "category": "Certificates & Vital Records",
       "categoryId": "certificates",
-      "description": "Police clearance coordination through municipal office",
-      "keywords": ["police", "clearance", "nbi", "criminal", "record"],
-      "fee": "Varies",
-      "processingTime": "3-5 days",
+      "description": "Police clearance coordination through city office",
+      "keywords": ["police", "clearance", "nbi", "criminal", "record", "Police Clearance"],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
       "office": "PNP Bayawan City",
-      "url": "certificates.html"
+      "url": "certificates.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "business-permit-new",
@@ -103,11 +127,24 @@
       "category": "Business, Trade & Investment",
       "categoryId": "business",
       "description": "Apply for a new mayor's permit to operate a business",
-      "keywords": ["business", "permit", "new", "mayor", "license", "negosyo", "store", "shop"],
-      "fee": "Varies",
-      "processingTime": "3-5 days",
+      "keywords": [
+        "business",
+        "permit",
+        "new",
+        "mayor",
+        "license",
+        "negosyo",
+        "store",
+        "shop",
+        "Business Permit (New)"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
       "office": "Business Permits & Licensing Office",
-      "url": "business.html"
+      "url": "business.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "business-permit-renewal",
@@ -115,11 +152,22 @@
       "category": "Business, Trade & Investment",
       "categoryId": "business",
       "description": "Renew your annual business permit",
-      "keywords": ["business", "permit", "renewal", "renew", "annual", "negosyo"],
-      "fee": "Varies",
-      "processingTime": "Same day",
+      "keywords": [
+        "business",
+        "permit",
+        "renewal",
+        "renew",
+        "annual",
+        "negosyo",
+        "Business Permit Renewal"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
       "office": "Business Permits & Licensing Office",
-      "url": "business.html"
+      "url": "business.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "business-closure",
@@ -127,11 +175,14 @@
       "category": "Business, Trade & Investment",
       "categoryId": "business",
       "description": "File for business closure/termination",
-      "keywords": ["business", "closure", "close", "terminate", "end"],
-      "fee": "Free",
-      "processingTime": "1-2 days",
+      "keywords": ["business", "closure", "close", "terminate", "end", "Business Closure"],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
       "office": "Business Permits & Licensing Office",
-      "url": "business.html"
+      "url": "business.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "sanitary-permit",
@@ -139,11 +190,22 @@
       "category": "Business, Trade & Investment",
       "categoryId": "business",
       "description": "Health and sanitation permit for businesses",
-      "keywords": ["sanitary", "permit", "health", "sanitation", "food", "restaurant"],
-      "fee": "Varies",
-      "processingTime": "1-3 days",
+      "keywords": [
+        "sanitary",
+        "permit",
+        "health",
+        "sanitation",
+        "food",
+        "restaurant",
+        "Sanitary Permit"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
       "office": "City Health Office",
-      "url": "business.html"
+      "url": "business.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "cedula",
@@ -151,11 +213,24 @@
       "category": "Business, Trade & Investment",
       "categoryId": "business",
       "description": "Obtain cedula for individuals and businesses",
-      "keywords": ["cedula", "community", "tax", "certificate", "ctc"],
-      "fee": "₱5+",
-      "processingTime": "Same day",
-      "office": "Municipal Treasurer's Office",
-      "url": "business.html"
+      "keywords": [
+        "cedula",
+        "community",
+        "tax",
+        "certificate",
+        "ctc",
+        "Community Tax Certificate (Cedula)",
+        "buwis",
+        "buhis",
+        "amilyar"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "City Treasurer's Office",
+      "url": "business.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "senior-citizen-id",
@@ -163,11 +238,23 @@
       "category": "Social Services & Assistance",
       "categoryId": "social-services",
       "description": "ID card and benefits for citizens 60 years and above",
-      "keywords": ["senior", "citizen", "elderly", "old", "60", "osca", "discount"],
-      "fee": "Free",
-      "processingTime": "1-2 weeks",
-      "office": "MSWDO / OSCA",
-      "url": "social-services.html"
+      "keywords": [
+        "senior",
+        "citizen",
+        "elderly",
+        "old",
+        "60",
+        "osca",
+        "discount",
+        "Senior Citizen ID"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "CSWDO / OSCA",
+      "url": "social-services.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "pwd-id",
@@ -175,11 +262,22 @@
       "category": "Social Services & Assistance",
       "categoryId": "social-services",
       "description": "ID and benefits for persons with disabilities",
-      "keywords": ["pwd", "disability", "disabled", "handicap", "special", "discount"],
-      "fee": "Free",
-      "processingTime": "1-2 weeks",
-      "office": "MSWDO",
-      "url": "social-services.html"
+      "keywords": [
+        "pwd",
+        "disability",
+        "disabled",
+        "handicap",
+        "special",
+        "discount",
+        "PWD ID & Services"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "CSWDO",
+      "url": "social-services.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "financial-assistance",
@@ -187,11 +285,23 @@
       "category": "Social Services & Assistance",
       "categoryId": "social-services",
       "description": "Emergency financial aid for qualified residents",
-      "keywords": ["financial", "assistance", "aid", "help", "money", "emergency", "aics"],
-      "fee": "Free",
-      "processingTime": "Varies",
-      "office": "MSWDO",
-      "url": "social-services.html"
+      "keywords": [
+        "financial",
+        "assistance",
+        "aid",
+        "help",
+        "money",
+        "emergency",
+        "aics",
+        "Financial Assistance"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "CSWDO",
+      "url": "social-services.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "burial-assistance",
@@ -199,11 +309,14 @@
       "category": "Social Services & Assistance",
       "categoryId": "social-services",
       "description": "Financial assistance for burial expenses",
-      "keywords": ["burial", "funeral", "death", "assistance", "aid"],
-      "fee": "Free",
-      "processingTime": "1-3 days",
-      "office": "MSWDO",
-      "url": "social-services.html"
+      "keywords": ["burial", "funeral", "death", "assistance", "aid", "Burial Assistance"],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "CSWDO",
+      "url": "social-services.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "solo-parent-id",
@@ -211,11 +324,14 @@
       "category": "Social Services & Assistance",
       "categoryId": "social-services",
       "description": "ID and benefits for solo parents",
-      "keywords": ["solo", "parent", "single", "mother", "father"],
-      "fee": "Free",
-      "processingTime": "1-2 weeks",
-      "office": "MSWDO",
-      "url": "social-services.html"
+      "keywords": ["solo", "parent", "single", "mother", "father", "Solo Parent ID"],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "CSWDO",
+      "url": "social-services.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "vaccination",
@@ -223,11 +339,22 @@
       "category": "Health & Wellness",
       "categoryId": "health",
       "description": "Free immunization for children and adults",
-      "keywords": ["vaccine", "vaccination", "immunization", "shot", "covid", "flu"],
-      "fee": "Free",
-      "processingTime": "Same day",
+      "keywords": [
+        "vaccine",
+        "vaccination",
+        "immunization",
+        "shot",
+        "covid",
+        "flu",
+        "Vaccination Programs"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
       "office": "City Health Office",
-      "url": "health.html"
+      "url": "health.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "health-certificate",
@@ -235,11 +362,14 @@
       "category": "Health & Wellness",
       "categoryId": "health",
       "description": "Medical certificate for employment or business",
-      "keywords": ["health", "certificate", "medical", "employment", "work"],
-      "fee": "₱100-200",
-      "processingTime": "Same day",
+      "keywords": ["health", "certificate", "medical", "employment", "work", "Health Certificate"],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
       "office": "City Health Office",
-      "url": "health.html"
+      "url": "health.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "medical-assistance",
@@ -247,11 +377,22 @@
       "category": "Health & Wellness",
       "categoryId": "health",
       "description": "Financial aid for medical expenses and hospitalization",
-      "keywords": ["medical", "assistance", "hospital", "medicine", "health", "sick"],
-      "fee": "Free",
-      "processingTime": "1-3 days",
-      "office": "City Health Office / MSWDO",
-      "url": "health.html"
+      "keywords": [
+        "medical",
+        "assistance",
+        "hospital",
+        "medicine",
+        "health",
+        "sick",
+        "Medical Assistance"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "City Health Office / CSWDO",
+      "url": "health.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "prenatal-checkup",
@@ -259,11 +400,22 @@
       "category": "Health & Wellness",
       "categoryId": "health",
       "description": "Free prenatal care for pregnant women",
-      "keywords": ["prenatal", "pregnant", "pregnancy", "baby", "maternal", "checkup"],
-      "fee": "Free",
-      "processingTime": "Same day",
+      "keywords": [
+        "prenatal",
+        "pregnant",
+        "pregnancy",
+        "baby",
+        "maternal",
+        "checkup",
+        "Prenatal Checkup"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
       "office": "City Health Office",
-      "url": "health.html"
+      "url": "health.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "real-property-tax",
@@ -271,11 +423,25 @@
       "category": "Taxation & Payments",
       "categoryId": "tax-payments",
       "description": "Pay annual real property tax (amilyar)",
-      "keywords": ["property", "tax", "real", "amilyar", "land", "house", "lot"],
-      "fee": "Varies",
-      "processingTime": "Same day",
-      "office": "Municipal Treasurer's Office",
-      "url": "tax-payments.html"
+      "keywords": [
+        "property",
+        "tax",
+        "real",
+        "amilyar",
+        "land",
+        "house",
+        "lot",
+        "Real Property Tax Payment",
+        "buwis",
+        "buhis"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "City Treasurer's Office",
+      "url": "tax-payments.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "business-tax",
@@ -283,11 +449,24 @@
       "category": "Taxation & Payments",
       "categoryId": "tax-payments",
       "description": "Pay quarterly or annual business taxes",
-      "keywords": ["business", "tax", "payment", "quarterly", "annual"],
-      "fee": "Varies",
-      "processingTime": "Same day",
-      "office": "Municipal Treasurer's Office",
-      "url": "tax-payments.html"
+      "keywords": [
+        "business",
+        "tax",
+        "payment",
+        "quarterly",
+        "annual",
+        "Business Tax Payment",
+        "buwis",
+        "buhis",
+        "amilyar"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "City Treasurer's Office",
+      "url": "tax-payments.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "tax-clearance",
@@ -295,11 +474,23 @@
       "category": "Taxation & Payments",
       "categoryId": "tax-payments",
       "description": "Certificate of no tax liability",
-      "keywords": ["tax", "clearance", "certificate", "liability"],
-      "fee": "₱50-100",
-      "processingTime": "Same day",
-      "office": "Municipal Treasurer's Office",
-      "url": "tax-payments.html"
+      "keywords": [
+        "tax",
+        "clearance",
+        "certificate",
+        "liability",
+        "Tax Clearance",
+        "buwis",
+        "buhis",
+        "amilyar"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "City Treasurer's Office",
+      "url": "tax-payments.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "agricultural-loan",
@@ -307,11 +498,22 @@
       "category": "Agriculture & Economic Development",
       "categoryId": "agriculture",
       "description": "Low-interest loans for farmers",
-      "keywords": ["agricultural", "loan", "farmer", "farming", "credit", "pautang"],
-      "fee": "Varies",
-      "processingTime": "1-2 weeks",
-      "office": "Municipal Agriculture Office",
-      "url": "agriculture.html"
+      "keywords": [
+        "agricultural",
+        "loan",
+        "farmer",
+        "farming",
+        "credit",
+        "pautang",
+        "Agricultural Loans"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "City Agriculture Office",
+      "url": "agriculture.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "crop-insurance",
@@ -319,11 +521,14 @@
       "category": "Agriculture & Economic Development",
       "categoryId": "agriculture",
       "description": "Insurance coverage for crop damage",
-      "keywords": ["crop", "insurance", "damage", "calamity", "pcic"],
-      "fee": "Subsidized",
-      "processingTime": "Varies",
-      "office": "Municipal Agriculture Office",
-      "url": "agriculture.html"
+      "keywords": ["crop", "insurance", "damage", "calamity", "pcic", "Crop Insurance"],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "City Agriculture Office",
+      "url": "agriculture.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "fertilizer-assistance",
@@ -331,11 +536,21 @@
       "category": "Agriculture & Economic Development",
       "categoryId": "agriculture",
       "description": "Free or subsidized fertilizer for registered farmers",
-      "keywords": ["fertilizer", "assistance", "farmer", "farming", "abono"],
-      "fee": "Free/Subsidized",
-      "processingTime": "Varies",
-      "office": "Municipal Agriculture Office",
-      "url": "agriculture.html"
+      "keywords": [
+        "fertilizer",
+        "assistance",
+        "farmer",
+        "farming",
+        "abono",
+        "Fertilizer Assistance"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "City Agriculture Office",
+      "url": "agriculture.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "building-permit",
@@ -343,11 +558,22 @@
       "category": "Infrastructure & Public Works",
       "categoryId": "infrastructure",
       "description": "Permit for new construction or renovation",
-      "keywords": ["building", "permit", "construction", "house", "renovation", "build"],
-      "fee": "Varies",
-      "processingTime": "5-10 days",
-      "office": "Municipal Engineering Office",
-      "url": "infrastructure.html"
+      "keywords": [
+        "building",
+        "permit",
+        "construction",
+        "house",
+        "renovation",
+        "build",
+        "Building Permit"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "City Engineering Office",
+      "url": "infrastructure.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "occupancy-permit",
@@ -355,11 +581,21 @@
       "category": "Infrastructure & Public Works",
       "categoryId": "infrastructure",
       "description": "Certificate of completion for new buildings",
-      "keywords": ["occupancy", "permit", "completion", "building", "certificate"],
-      "fee": "Varies",
-      "processingTime": "3-5 days",
-      "office": "Municipal Engineering Office",
-      "url": "infrastructure.html"
+      "keywords": [
+        "occupancy",
+        "permit",
+        "completion",
+        "building",
+        "certificate",
+        "Occupancy Permit"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "City Engineering Office",
+      "url": "infrastructure.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "road-maintenance",
@@ -367,11 +603,22 @@
       "category": "Infrastructure & Public Works",
       "categoryId": "infrastructure",
       "description": "Report road damage or request repairs",
-      "keywords": ["road", "maintenance", "repair", "pothole", "damage", "street"],
-      "fee": "Free",
-      "processingTime": "Varies",
-      "office": "Municipal Engineering Office",
-      "url": "infrastructure.html"
+      "keywords": [
+        "road",
+        "maintenance",
+        "repair",
+        "pothole",
+        "damage",
+        "street",
+        "Road Maintenance Request"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "City Engineering Office",
+      "url": "infrastructure.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "scholarship",
@@ -379,11 +626,22 @@
       "category": "Education & Scholarship",
       "categoryId": "education",
       "description": "Financial assistance for students",
-      "keywords": ["scholarship", "student", "education", "school", "college", "tuition"],
-      "fee": "Free",
-      "processingTime": "Varies",
+      "keywords": [
+        "scholarship",
+        "student",
+        "education",
+        "school",
+        "college",
+        "tuition",
+        "Scholarship Programs"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
       "office": "City Mayor's Office",
-      "url": "education.html"
+      "url": "education.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "student-assistance",
@@ -391,11 +649,21 @@
       "category": "Education & Scholarship",
       "categoryId": "education",
       "description": "Educational grants and allowances",
-      "keywords": ["student", "assistance", "education", "allowance", "grant"],
-      "fee": "Free",
-      "processingTime": "Varies",
-      "office": "MSWDO",
-      "url": "education.html"
+      "keywords": [
+        "student",
+        "assistance",
+        "education",
+        "allowance",
+        "grant",
+        "Student Assistance"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "CSWDO",
+      "url": "education.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "emergency-response",
@@ -403,11 +671,22 @@
       "category": "Public Safety & Security",
       "categoryId": "public-safety",
       "description": "24/7 emergency assistance and rescue",
-      "keywords": ["emergency", "response", "rescue", "911", "help", "disaster"],
-      "fee": "Free",
-      "processingTime": "Immediate",
-      "office": "MDRRMO",
-      "url": "public-safety.html"
+      "keywords": [
+        "emergency",
+        "response",
+        "rescue",
+        "911",
+        "help",
+        "disaster",
+        "Emergency Response"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "CDRRMO",
+      "url": "public-safety.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "disaster-preparedness",
@@ -415,23 +694,43 @@
       "category": "Public Safety & Security",
       "categoryId": "public-safety",
       "description": "Training and resources for disaster readiness",
-      "keywords": ["disaster", "preparedness", "training", "evacuation", "calamity"],
-      "fee": "Free",
-      "processingTime": "Varies",
-      "office": "MDRRMO",
-      "url": "public-safety.html"
+      "keywords": [
+        "disaster",
+        "preparedness",
+        "training",
+        "evacuation",
+        "calamity",
+        "Disaster Preparedness"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "CDRRMO",
+      "url": "public-safety.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "environmental-clearance",
-      "title": "Environmental Clearance",
+      "title": "Environmental Clearance and ECC Guidance",
       "category": "Environment & Natural Resources",
       "categoryId": "environment",
-      "description": "Environmental compliance certificate for projects",
-      "keywords": ["environmental", "clearance", "ecc", "compliance", "permit"],
-      "fee": "Varies",
-      "processingTime": "5-10 days",
-      "office": "Municipal Environment Office",
-      "url": "environment.html"
+      "description": "Ask City ENRO about local clearances. Environmental Compliance Certificates are processed by DENR–EMB.",
+      "keywords": [
+        "environmental",
+        "clearance",
+        "ecc",
+        "compliance",
+        "permit",
+        "Environmental Clearance"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "City Environment and Natural Resources Office",
+      "url": "environment.html",
+      "source": "https://emb.gov.ph/ecc-online-application-ecc-issued/",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "tree-cutting-permit",
@@ -439,11 +738,14 @@
       "category": "Environment & Natural Resources",
       "categoryId": "environment",
       "description": "Permit to cut or trim trees",
-      "keywords": ["tree", "cutting", "permit", "trim", "remove"],
-      "fee": "Varies",
-      "processingTime": "3-5 days",
-      "office": "Municipal Environment Office",
-      "url": "environment.html"
+      "keywords": ["tree", "cutting", "permit", "trim", "remove", "Tree Cutting Permit"],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "City Environment and Natural Resources Office",
+      "url": "environment.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "seedo-slaughterhouse",
@@ -461,21 +763,25 @@
         "meat",
         "inspection",
         "butcher",
-        "SEEDO"
+        "SEEDO",
+        "SEEDO Slaughterhouse"
       ],
-      "fee": "₱40-350",
-      "processingTime": "37 min - 1.5 hrs",
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
       "office": "SEEDO Slaughterhouse",
-      "url": "../service-details/seedo-slaughterhouse.html"
+      "url": "../service-details/seedo-slaughterhouse.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "mswdo-services",
-      "title": "MSWDO Services",
+      "title": "CSWDO Services",
       "category": "Social Services & Assistance",
       "categoryId": "social-services",
       "description": "Social case studies, indigency certificates, AICS, PWD and senior citizen assistance",
       "keywords": [
-        "MSWDO",
+        "CSWDO",
         "social welfare",
         "indigency",
         "certificate",
@@ -484,12 +790,16 @@
         "senior citizen",
         "assistance",
         "social worker",
-        "welfare"
+        "welfare",
+        "CSWDO Services"
       ],
-      "fee": "Free",
-      "processingTime": "28 min - 1.5 hrs",
-      "office": "MSWDO",
-      "url": "../service-details/mswdo-services.html"
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "CSWDO",
+      "url": "../service-details/mswdo-services.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "waste-management",
@@ -497,11 +807,22 @@
       "category": "Environment & Natural Resources",
       "categoryId": "environment",
       "description": "Garbage collection and disposal services",
-      "keywords": ["waste", "garbage", "trash", "collection", "disposal", "basura"],
-      "fee": "Included in tax",
-      "processingTime": "Scheduled",
-      "office": "Municipal Environment Office",
-      "url": "environment.html"
+      "keywords": [
+        "waste",
+        "garbage",
+        "trash",
+        "collection",
+        "disposal",
+        "basura",
+        "Waste Management Services"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "City Environment and Natural Resources Office",
+      "url": "environment.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "seedo-public-market",
@@ -517,12 +838,16 @@
         "clearance",
         "entrance",
         "SEEDO",
-        "palengke"
+        "palengke",
+        "SEEDO Public Market"
       ],
-      "fee": "₱5-50",
-      "processingTime": "Same day",
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
       "office": "SEEDO Public Market",
-      "url": "../service-details/seedo-public-market.html"
+      "url": "../service-details/seedo-public-market.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "business-permits-licensing",
@@ -536,60 +861,111 @@
         "license",
         "mayor clearance",
         "renewal",
-        "new business"
+        "new business",
+        "Business Permits & Licensing Office"
       ],
-      "fee": "Varies",
-      "processingTime": "1-5 days",
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
       "office": "Mayor's Office - BPLS",
-      "url": "../service-details/business-permits-licensing.html"
+      "url": "../service-details/business-permits-licensing.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "tricycle-franchising",
       "title": "Tricycle Franchising & Records",
       "category": "Business, Trade & Investment",
       "categoryId": "business",
-      "description": "Apply for tricycle franchise (MTOF) and request records",
-      "keywords": ["tricycle", "franchise", "MTOF", "pedicab", "toda", "driver", "operator"],
-      "fee": "Varies",
-      "processingTime": "3-5 days",
-      "office": "BPLS / SBO",
-      "url": "../service-details/tricycle-franchising.html"
+      "description": "Apply for tricycle franchise (MTOP) and request records",
+      "keywords": [
+        "tricycle",
+        "franchise",
+        "MTOP",
+        "pedicab",
+        "toda",
+        "driver",
+        "operator",
+        "Tricycle Franchising & Records"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "BPLS / Office of the SP Secretary",
+      "url": "../service-details/tricycle-franchising.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "municipal-treasurer",
-      "title": "Municipal Treasurer's Office",
+      "title": "City Treasurer's Office",
       "category": "Taxation & Payments",
       "categoryId": "tax-payments",
       "description": "Tax collection, cedula, clearances, and payment services",
-      "keywords": ["treasurer", "MTO", "tax", "payment", "cedula", "clearance", "collection"],
-      "fee": "Varies",
-      "processingTime": "Same day",
-      "office": "Municipal Treasurer's Office",
-      "url": "../service-details/municipal-treasurer.html"
+      "keywords": [
+        "treasurer",
+        "MTO",
+        "tax",
+        "payment",
+        "cedula",
+        "clearance",
+        "collection",
+        "City Treasurer's Office"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "City Treasurer's Office",
+      "url": "../service-details/municipal-treasurer.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "municipal-budget",
-      "title": "Municipal Budget Office",
+      "title": "City Budget Office",
       "category": "Taxation & Payments",
       "categoryId": "tax-payments",
       "description": "Obligation requests, barangay budget review, and SEF budget preparation",
-      "keywords": ["budget", "MBO", "obligation", "appropriation", "SEF", "barangay budget"],
-      "fee": "Free",
-      "processingTime": "15 min - 1 day",
-      "office": "Municipal Budget Office",
-      "url": "../service-details/municipal-budget.html"
+      "keywords": [
+        "budget",
+        "MBO",
+        "obligation",
+        "appropriation",
+        "SEF",
+        "barangay budget",
+        "City Budget Office"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "City Budget Office",
+      "url": "../service-details/municipal-budget.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "municipal-accounting",
-      "title": "Municipal Accounting Office",
+      "title": "City Accounting Office",
       "category": "Taxation & Payments",
       "categoryId": "tax-payments",
       "description": "Pre-audit of disbursements, payroll, check issuance, and financial reporting",
-      "keywords": ["accounting", "MACCO", "audit", "payroll", "check", "disbursement", "voucher"],
-      "fee": "Free",
-      "processingTime": "Varies",
-      "office": "Municipal Accounting Office",
-      "url": "../service-details/municipal-accounting.html"
+      "keywords": [
+        "accounting",
+        "MACCO",
+        "audit",
+        "payroll",
+        "check",
+        "disbursement",
+        "voucher",
+        "City Accounting Office"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "City Accounting Office",
+      "url": "../service-details/municipal-accounting.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "property-declaration",
@@ -604,12 +980,16 @@
         "land",
         "building",
         "tax assessment",
-        "real property"
+        "real property",
+        "Property Declaration"
       ],
-      "fee": "Varies",
-      "processingTime": "3-5 days",
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
       "office": "City Assessor's Office",
-      "url": "../service-details/property-declaration.html"
+      "url": "../service-details/property-declaration.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "municipal-assessor",
@@ -617,11 +997,22 @@
       "category": "Taxation & Payments",
       "categoryId": "tax-payments",
       "description": "Property assessment, tax declaration, and land records",
-      "keywords": ["assessor", "property", "assessment", "tax declaration", "land", "appraisal"],
-      "fee": "Varies",
-      "processingTime": "3-5 days",
+      "keywords": [
+        "assessor",
+        "property",
+        "assessment",
+        "tax declaration",
+        "land",
+        "appraisal",
+        "City Assessor's Office"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
       "office": "City Assessor's Office",
-      "url": "../service-details/municipal-assessor.html"
+      "url": "../service-details/municipal-assessor.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "civil-registrar",
@@ -637,16 +1028,20 @@
         "death",
         "certificate",
         "vital records",
-        "CENOMAR"
+        "CENOMAR",
+        "Local Civil Registrar"
       ],
-      "fee": "₱150+",
-      "processingTime": "15-30 minutes",
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
       "office": "Local Civil Registrar",
-      "url": "../service-details/civil-registrar.html"
+      "url": "../service-details/civil-registrar.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "municipal-engineering",
-      "title": "Municipal Engineering Office",
+      "title": "City Engineering Office",
       "category": "Infrastructure & Public Works",
       "categoryId": "infrastructure",
       "description": "Building permits, infrastructure projects, and engineering services",
@@ -656,28 +1051,43 @@
         "building permit",
         "construction",
         "infrastructure",
-        "road"
+        "road",
+        "City Engineering Office"
       ],
-      "fee": "Varies",
-      "processingTime": "5-10 days",
-      "office": "Municipal Engineering Office",
-      "url": "../service-details/municipal-engineering.html"
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "City Engineering Office",
+      "url": "../service-details/municipal-engineering.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "municipal-planning",
-      "title": "Municipal Planning & Development Office",
+      "title": "City Planning and Development Office",
       "category": "Infrastructure & Public Works",
       "categoryId": "infrastructure",
       "description": "Zoning, land use, development permits, and planning services",
-      "keywords": ["planning", "MPDO", "zoning", "land use", "development", "locational clearance"],
-      "fee": "Varies",
-      "processingTime": "3-7 days",
-      "office": "Municipal Planning Office",
-      "url": "../service-details/municipal-planning.html"
+      "keywords": [
+        "planning",
+        "MPDO",
+        "zoning",
+        "land use",
+        "development",
+        "locational clearance",
+        "City Planning and Development Office"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "City Planning and Development Office",
+      "url": "../service-details/municipal-planning.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "municipal-agriculture",
-      "title": "Municipal Agriculture Office",
+      "title": "City Agriculture Office",
       "category": "Agriculture & Economic Development",
       "categoryId": "agriculture",
       "description": "Agricultural assistance, farm registration, and livelihood programs",
@@ -689,12 +1099,16 @@
         "livestock",
         "crops",
         "RSBSA",
-        "livelihood"
+        "livelihood",
+        "City Agriculture Office"
       ],
-      "fee": "Free/Varies",
-      "processingTime": "Varies",
-      "office": "Municipal Agriculture Office",
-      "url": "../service-details/municipal-agriculture.html"
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "City Agriculture Office",
+      "url": "../service-details/municipal-agriculture.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "general-services",
@@ -702,11 +1116,22 @@
       "category": "Government Services",
       "categoryId": "government",
       "description": "Property management, vehicle maintenance, and general municipal services",
-      "keywords": ["general services", "MGSO", "property", "vehicle", "maintenance", "supplies"],
-      "fee": "Free",
-      "processingTime": "Varies",
+      "keywords": [
+        "general services",
+        "MGSO",
+        "property",
+        "vehicle",
+        "maintenance",
+        "supplies",
+        "General Services Office"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
       "office": "General Services Office",
-      "url": "../service-details/general-services.html"
+      "url": "../service-details/general-services.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "human-resource",
@@ -721,12 +1146,16 @@
         "job",
         "personnel",
         "hiring",
-        "application"
+        "application",
+        "Human Resource Management Office"
       ],
-      "fee": "Free",
-      "processingTime": "Varies",
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
       "office": "Human Resource Management Office",
-      "url": "../service-details/human-resource-management.html"
+      "url": "../service-details/human-resource-management.html",
+      "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+      "sourceYear": 2025,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "online-business-billing",
@@ -741,12 +1170,16 @@
         "business tax",
         "filipizen",
         "e-payment",
-        "digital"
+        "digital",
+        "Business Online Billing & Payment"
       ],
-      "fee": "Varies",
-      "processingTime": "Instant",
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
       "office": "BPLS Office",
-      "url": "https://www.filipizen.com/partners/negor_bayawan/bpls/billing"
+      "url": "https://www.filipizen.com/partners/negor_bayawan/bpls/billing",
+      "source": "https://bayawancity.gov.ph/business/businesspage.php",
+      "sourceYear": 2026,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "online-new-business",
@@ -754,11 +1187,22 @@
       "category": "Online Services",
       "categoryId": "online",
       "description": "Apply for a new business permit online via Filipizen",
-      "keywords": ["online", "new business", "application", "permit", "filipizen", "e-services"],
-      "fee": "Varies",
-      "processingTime": "3-5 days",
+      "keywords": [
+        "online",
+        "new business",
+        "application",
+        "permit",
+        "filipizen",
+        "e-services",
+        "New Business Application Online"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
       "office": "BPLS Office",
-      "url": "https://www.filipizen.com/partners/negor_bayawan/bpls/newbusiness"
+      "url": "https://www.filipizen.com/partners/negor_bayawan/bpls/newbusiness",
+      "source": "https://bayawancity.gov.ph/business/businesspage.php",
+      "sourceYear": 2026,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "online-business-renewal",
@@ -766,11 +1210,22 @@
       "category": "Online Services",
       "categoryId": "online",
       "description": "Renew your existing business permit online via Filipizen",
-      "keywords": ["online", "renewal", "business permit", "filipizen", "e-services", "renew"],
-      "fee": "Varies",
-      "processingTime": "Same day",
+      "keywords": [
+        "online",
+        "renewal",
+        "business permit",
+        "filipizen",
+        "e-services",
+        "renew",
+        "Business Permit Renewal Online"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
       "office": "BPLS Office",
-      "url": "https://www.filipizen.com/partners/negor_bayawan/bpls/renewbusiness"
+      "url": "https://www.filipizen.com/partners/negor_bayawan/bpls/renewbusiness",
+      "source": "https://bayawancity.gov.ph/business/businesspage.php",
+      "sourceYear": 2026,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "online-rpt-billing",
@@ -778,11 +1233,25 @@
       "category": "Online Services",
       "categoryId": "online",
       "description": "View and pay your real property tax (amilyar) online via Filipizen",
-      "keywords": ["online", "property tax", "amilyar", "billing", "payment", "filipizen", "RPT"],
-      "fee": "Varies",
-      "processingTime": "Instant",
-      "office": "Municipal Treasurer's Office",
-      "url": "https://www.filipizen.com/partners/negor_bayawan/rptis/billing"
+      "keywords": [
+        "online",
+        "property tax",
+        "amilyar",
+        "billing",
+        "payment",
+        "filipizen",
+        "RPT",
+        "Real Property Tax Online Billing & Payment",
+        "buwis",
+        "buhis"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "City Treasurer's Office",
+      "url": "https://www.filipizen.com/partners/negor_bayawan/rptis/billing",
+      "source": "https://bayawancity.gov.ph/business/businesspage.php",
+      "sourceYear": 2026,
+      "lastChecked": "2026-10-21"
     },
     {
       "id": "online-payment-order",
@@ -790,11 +1259,23 @@
       "category": "Online Services",
       "categoryId": "online",
       "description": "Process payment orders for various municipal fees online via Filipizen",
-      "keywords": ["online", "payment order", "fees", "filipizen", "e-payment", "municipal fees"],
-      "fee": "Varies",
-      "processingTime": "Instant",
-      "office": "Municipal Treasurer's Office",
-      "url": "https://www.filipizen.com/partners/negor_bayawan/po/billing"
+      "keywords": [
+        "online",
+        "payment order",
+        "fees",
+        "filipizen",
+        "e-payment",
+        "municipal fees",
+        "Online Payment Order"
+      ],
+      "fee": "Confirm with the responsible office",
+      "processingTime": "See the current Citizen’s Charter",
+      "office": "City Treasurer's Office",
+      "url": "https://www.filipizen.com/partners/negor_bayawan/po/billing",
+      "source": "https://bayawancity.gov.ph/business/businesspage.php",
+      "sourceYear": 2026,
+      "lastChecked": "2026-10-21"
     }
-  ]
+  ],
+  "_note": "Fees and times are only published when linked to a named source. Charter figures are historical published standards, not a guarantee of current release time."
 }

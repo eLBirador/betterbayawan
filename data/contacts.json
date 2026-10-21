@@ -1,0 +1,55 @@
+{
+  "checked": "2026-10-21",
+  "source": "https://bayawancity.gov.ph/info/directory/directory.php",
+  "address": "City Hall, Cabcabon Hills, Banga, Bayawan City, Negros Oriental 6221",
+  "mayor": {
+    "phone": "(035) 531-0020",
+    "email": "mayorbayawan@gmail.com",
+    "tel": "+63355310020"
+  },
+  "viceMayor": {
+    "phone": "(035) 430-0453",
+    "email": "bayawancityvicemayor@gmail.com",
+    "alternate": "(035) 430-0490",
+    "local": "1220",
+    "tel": "+63354300453"
+  },
+  "hotlines": [
+    {
+      "office": "Police / PNP",
+      "phone": "0927 144 1875",
+      "tel": "09271441875"
+    },
+    {
+      "office": "CDRRMO",
+      "phone": "0936 464 1233",
+      "tel": "09364641233"
+    },
+    {
+      "office": "CDRRMO (alternate)",
+      "phone": "0997 186 4404",
+      "tel": "09971864404"
+    },
+    {
+      "office": "Ambulance",
+      "phone": "0945 569 0083",
+      "tel": "09455690083"
+    },
+    {
+      "office": "Fire / BFP",
+      "phone": "0955 817 3397",
+      "tel": "09558173397"
+    },
+    {
+      "office": "NORECO II",
+      "phone": "0908 864 2365",
+      "tel": "09088642365"
+    },
+    {
+      "office": "Coast Guard",
+      "phone": "0995 746 8679",
+      "tel": "09957468679"
+    }
+  ],
+  "emergencySource": "https://cviraa2025.bayawancity.gov.ph/contact/contacthome.php"
+}

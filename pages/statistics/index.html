@@ -1,0 +1,547 @@
+<!-- Breadcrumbs -->
+<div class="container">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span>/</span>
+    <span aria-current="page">Statistics</span>
+  </nav>
+</div>
+
+<!-- Hero Section -->
+<section class="stats-hero">
+  <div class="container">
+    <div class="stats-hero-content">
+      <span class="stats-hero-badge"
+        ><i class="bi bi-bar-chart-fill"></i> <span>City Data</span></span
+      >
+      <h1>City Statistics</h1>
+      <p>Data and statistics about Bayawan City, Negros Oriental</p>
+    </div>
+  </div>
+</section>
+
+<!-- Key Metrics -->
+<section class="stats-metrics">
+  <div class="container">
+    <div class="metrics-grid">
+      <div class="metric-card animate-on-scroll" data-delay="0">
+        <div class="metric-icon"><i class="bi bi-people-fill"></i></div>
+        <div class="metric-value" data-count="126744">0</div>
+        <div class="metric-label">Population</div>
+        <div class="metric-source">2024 Census (PSA)</div>
+      </div>
+      <div class="metric-card animate-on-scroll" data-delay="100">
+        <div class="metric-icon"><i class="bi bi-geo-alt-fill"></i></div>
+        <div class="metric-value">28</div>
+        <div class="metric-label">Barangays</div>
+        <div class="metric-source">Administrative Units</div>
+      </div>
+      <div class="metric-card animate-on-scroll" data-delay="200">
+        <div class="metric-icon"><i class="bi bi-rulers"></i></div>
+        <div class="metric-value">699.08</div>
+        <div class="metric-label">Land Area (km²)</div>
+        <div class="metric-source">Total Land Area</div>
+      </div>
+      <div class="metric-card animate-on-scroll" data-delay="300">
+        <div class="metric-icon"><i class="bi bi-award-fill"></i></div>
+        <div class="metric-value">Component City</div>
+        <div class="metric-label">Classification</div>
+        <div class="metric-source">Via Plebiscite, Dec. 23, 2000</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- City Finance -->
+<section class="stats-section stats-finance animate-on-scroll">
+  <div class="container">
+    <div class="section-header-minimal">
+      <span class="section-tag"><i class="bi bi-cash-stack"></i> <span>Finance</span></span>
+      <h2>City Income</h2>
+      <p>
+        Published SRE income and historical appropriations; these measures describe different
+        periods and purposes.
+      </p>
+    </div>
+
+    <div class="finance-grid">
+      <div class="finance-card finance-card-primary">
+        <div class="finance-card-label">Current Operating Income</div>
+        <div class="finance-card-value">₱1,652.26M</div>
+        <div class="finance-card-detail">January–September 2026 · General Fund + SEF</div>
+      </div>
+      <div class="finance-card">
+        <div class="finance-card-header">
+          <i class="bi bi-bank"></i>
+          <span>General Fund Surplus</span>
+        </div>
+        <div class="finance-card-value">₱105.25M</div>
+        <div class="finance-card-detail">CY 2024 (Res. 232, S. 2025)</div>
+      </div>
+      <div class="finance-card">
+        <div class="finance-card-header">
+          <i class="bi bi-pie-chart-fill"></i>
+          <span>New Public Market Complex</span>
+        </div>
+        <div class="finance-card-value">₱800M</div>
+        <div class="finance-card-detail">Ord. 71, S. 2024</div>
+      </div>
+    </div>
+
+    <p class="data-source">
+      Published SRE income and historical appropriations; these measures describe different periods
+      and purposes.
+    </p>
+  </div>
+</section>
+
+<!-- Population Trends -->
+<section class="stats-section stats-trends animate-on-scroll">
+  <div class="container">
+    <div class="section-header-minimal">
+      <span class="section-tag"><i class="bi bi-graph-up"></i> <span>Growth</span></span>
+      <h2>Population Trends</h2>
+      <p>Population change between the 2020 and 2024 census counts</p>
+    </div>
+
+    <div class="trends-summary">
+      <div class="trend-stat">
+        <span class="trend-stat-label">2020</span>
+        <span class="trend-stat-value">122,747</span>
+      </div>
+      <div class="trend-arrow"><i class="bi bi-arrow-right"></i></div>
+      <div class="trend-stat trend-stat-current">
+        <span class="trend-stat-label">2024</span>
+        <span class="trend-stat-value">126,744</span>
+      </div>
+      <div class="trend-stat trend-stat-growth">
+        <span class="trend-stat-label">Growth</span>
+        <span class="trend-stat-value">+3.3%</span>
+      </div>
+    </div>
+
+    <div class="chart-wrapper">
+      <canvas id="historicalLineChart"></canvas>
+    </div>
+
+    <p class="data-source">
+      <i class="bi bi-info-circle"></i> Source:
+      <a href="https://psa.gov.ph/" target="_blank" rel="noopener noreferrer"
+        >Philippine Statistics Authority (PSA)</a
+      >
+    </p>
+  </div>
+</section>
+
+<!-- Population Distribution -->
+<section class="stats-section stats-distribution animate-on-scroll">
+  <div class="container">
+    <div class="section-header-minimal">
+      <span class="section-tag"
+        ><i class="bi bi-pie-chart-fill"></i> <span>Distribution</span></span
+      >
+      <h2>Population by Barangay</h2>
+      <p>2024 Census of Population</p>
+    </div>
+
+    <div class="distribution-layout">
+      <div class="distribution-chart">
+        <canvas id="distributionPieChart"></canvas>
+      </div>
+      <div class="distribution-list">
+        <div class="barangay-row" data-rank="1">
+          <span class="rank">#1</span><span class="name">Villareal</span>
+          <div class="bar-wrap"><div class="bar" data-width="100.0"></div></div>
+          <span class="pop">11,359</span>
+        </div>
+        <div class="barangay-row" data-rank="2">
+          <span class="rank">#2</span><span class="name">Nangka</span>
+          <div class="bar-wrap"><div class="bar" data-width="94.6"></div></div>
+          <span class="pop">10,749</span>
+        </div>
+        <div class="barangay-row" data-rank="3">
+          <span class="rank">#3</span><span class="name">Banga</span>
+          <div class="bar-wrap"><div class="bar" data-width="68.9"></div></div>
+          <span class="pop">7,822</span>
+        </div>
+        <div class="barangay-row" data-rank="4">
+          <span class="rank">#4</span><span class="name">Maninihon</span>
+          <div class="bar-wrap"><div class="bar" data-width="66.5"></div></div>
+          <span class="pop">7,551</span>
+        </div>
+        <div class="barangay-row" data-rank="5">
+          <span class="rank">#5</span><span class="name">Kalumboyan</span>
+          <div class="bar-wrap"><div class="bar" data-width="61.9"></div></div>
+          <span class="pop">7,035</span>
+        </div>
+        <div class="barangay-row" data-rank="6">
+          <span class="rank">#6</span><span class="name">Narra</span>
+          <div class="bar-wrap"><div class="bar" data-width="61.3"></div></div>
+          <span class="pop">6,968</span>
+        </div>
+        <div class="barangay-row" data-rank="7">
+          <span class="rank">#7</span><span class="name">Tayawan</span>
+          <div class="bar-wrap"><div class="bar" data-width="57.4"></div></div>
+          <span class="pop">6,515</span>
+        </div>
+        <div class="barangay-row" data-rank="8">
+          <span class="rank">#8</span><span class="name">Malabugas</span>
+          <div class="bar-wrap"><div class="bar" data-width="54.0"></div></div>
+          <span class="pop">6,136</span>
+        </div>
+        <div class="barangay-row" data-rank="9">
+          <span class="rank">#9</span><span class="name">Bugay</span>
+          <div class="bar-wrap"><div class="bar" data-width="49.5"></div></div>
+          <span class="pop">5,625</span>
+        </div>
+        <div class="barangay-row" data-rank="10">
+          <span class="rank">#10</span><span class="name">Villasol</span>
+          <div class="bar-wrap"><div class="bar" data-width="43.9"></div></div>
+          <span class="pop">4,988</span>
+        </div>
+      </div>
+    </div>
+
+    <details class="more-barangays">
+      <summary>View all 28 barangays</summary>
+      <div class="distribution-list distribution-list-full">
+        <div class="barangay-row" data-rank="11">
+          <span class="rank">#11</span><span class="name">Banaybanay</span>
+          <div class="bar-wrap"><div class="bar" data-width="42.5"></div></div>
+          <span class="pop">4,825</span>
+        </div>
+        <div class="barangay-row" data-rank="12">
+          <span class="rank">#12</span><span class="name">Mandu-ao</span>
+          <div class="bar-wrap"><div class="bar" data-width="42.1"></div></div>
+          <span class="pop">4,785</span>
+        </div>
+        <div class="barangay-row" data-rank="13">
+          <span class="rank">#13</span><span class="name">Tabuan</span>
+          <div class="bar-wrap"><div class="bar" data-width="40.2"></div></div>
+          <span class="pop">4,563</span>
+        </div>
+        <div class="barangay-row" data-rank="14">
+          <span class="rank">#14</span><span class="name">Dawis</span>
+          <div class="bar-wrap"><div class="bar" data-width="40.1"></div></div>
+          <span class="pop">4,553</span>
+        </div>
+        <div class="barangay-row" data-rank="15">
+          <span class="rank">#15</span><span class="name">Kalamtukan</span>
+          <div class="bar-wrap"><div class="bar" data-width="31.6"></div></div>
+          <span class="pop">3,584</span>
+        </div>
+        <div class="barangay-row" data-rank="16">
+          <span class="rank">#16</span><span class="name">Ali-is</span>
+          <div class="bar-wrap"><div class="bar" data-width="28.9"></div></div>
+          <span class="pop">3,285</span>
+        </div>
+        <div class="barangay-row" data-rank="17">
+          <span class="rank">#17</span><span class="name">Tinago</span>
+          <div class="bar-wrap"><div class="bar" data-width="27.9"></div></div>
+          <span class="pop">3,171</span>
+        </div>
+        <div class="barangay-row" data-rank="18">
+          <span class="rank">#18</span><span class="name">Minaba</span>
+          <div class="bar-wrap"><div class="bar" data-width="27.2"></div></div>
+          <span class="pop">3,095</span>
+        </div>
+        <div class="barangay-row" data-rank="19">
+          <span class="rank">#19</span><span class="name">Poblacion</span>
+          <div class="bar-wrap"><div class="bar" data-width="25.8"></div></div>
+          <span class="pop">2,932</span>
+        </div>
+        <div class="barangay-row" data-rank="20">
+          <span class="rank">#20</span><span class="name">San Jose</span>
+          <div class="bar-wrap"><div class="bar" data-width="24.7"></div></div>
+          <span class="pop">2,807</span>
+        </div>
+        <div class="barangay-row" data-rank="21">
+          <span class="rank">#21</span><span class="name">Pagatban</span>
+          <div class="bar-wrap"><div class="bar" data-width="21.4"></div></div>
+          <span class="pop">2,433</span>
+        </div>
+        <div class="barangay-row" data-rank="22">
+          <span class="rank">#22</span><span class="name">Suba</span>
+          <div class="bar-wrap"><div class="bar" data-width="21.1"></div></div>
+          <span class="pop">2,398</span>
+        </div>
+        <div class="barangay-row" data-rank="23">
+          <span class="rank">#23</span><span class="name">San Miguel</span>
+          <div class="bar-wrap"><div class="bar" data-width="18.4"></div></div>
+          <span class="pop">2,090</span>
+        </div>
+        <div class="barangay-row" data-rank="24">
+          <span class="rank">#24</span><span class="name">San Roque</span>
+          <div class="bar-wrap"><div class="bar" data-width="15.4"></div></div>
+          <span class="pop">1,750</span>
+        </div>
+        <div class="barangay-row" data-rank="25">
+          <span class="rank">#25</span><span class="name">Cansumalig</span>
+          <div class="bar-wrap"><div class="bar" data-width="13.5"></div></div>
+          <span class="pop">1,539</span>
+        </div>
+        <div class="barangay-row" data-rank="26">
+          <span class="rank">#26</span><span class="name">Ubos</span>
+          <div class="bar-wrap"><div class="bar" data-width="12.9"></div></div>
+          <span class="pop">1,468</span>
+        </div>
+        <div class="barangay-row" data-rank="27">
+          <span class="rank">#27</span><span class="name">Boyco</span>
+          <div class="bar-wrap"><div class="bar" data-width="12.9"></div></div>
+          <span class="pop">1,465</span>
+        </div>
+        <div class="barangay-row" data-rank="28">
+          <span class="rank">#28</span><span class="name">San Isidro</span>
+          <div class="bar-wrap"><div class="bar" data-width="11.0"></div></div>
+          <span class="pop">1,253</span>
+        </div>
+      </div>
+    </details>
+
+    <p class="data-source">
+      <i class="bi bi-info-circle"></i> Source:
+      <a href="https://psa.gov.ph/" target="_blank" rel="noopener noreferrer"
+        >Philippine Statistics Authority (PSA)</a
+      >
+      - 2024 Census of Population
+    </p>
+  </div>
+</section>
+
+<!-- Land & Livelihood -->
+<section class="stats-section stats-economy animate-on-scroll">
+  <div class="container">
+    <div class="section-header-minimal">
+      <span class="section-tag"><i class="bi bi-briefcase-fill"></i> <span>Economy</span></span>
+      <h2>Land &amp; Livelihood</h2>
+      <p>
+        Historical land-use and economic profile; the source page does not specify a current
+        reference year.
+      </p>
+    </div>
+
+    <div class="economy-grid">
+      <div class="economy-card">
+        <div class="economy-icon"><i class="bi bi-tree-fill"></i></div>
+        <div class="economy-content">
+          <div class="economy-value">46,707 ha</div>
+          <div class="economy-label">Agricultural Land</div>
+          <div class="economy-trend">66.8% of total land area</div>
+        </div>
+      </div>
+      <div class="economy-card">
+        <div class="economy-icon"><i class="bi bi-water"></i></div>
+        <div class="economy-content">
+          <div class="economy-value">15 km</div>
+          <div class="economy-label">Coastline</div>
+          <div class="economy-trend">7 coastal barangays along the Sulu Sea</div>
+        </div>
+      </div>
+      <div class="economy-card">
+        <div class="economy-icon"><i class="bi bi-droplet-half"></i></div>
+        <div class="economy-content">
+          <div class="economy-value" data-count="3">0</div>
+          <div class="economy-label">Irrigation Systems (historical profile)</div>
+          <div class="economy-trend">Supporting rice production</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sectors-chart animate-on-scroll">
+      <h4>Land Use Distribution</h4>
+      <div class="sc-bars">
+        <div class="sc-row">
+          <div class="sc-meta">
+            <span class="sc-dot sc-color-agri"></span>
+            <span class="sc-name">Agriculture</span>
+          </div>
+          <span class="sc-pct">66.8%</span>
+          <div class="sc-track">
+            <div class="sc-fill sc-color-agri" data-width="66.8"></div>
+          </div>
+        </div>
+        <div class="sc-row">
+          <div class="sc-meta">
+            <span class="sc-dot sc-color-trade"></span>
+            <span class="sc-name">Agro-forestry</span>
+          </div>
+          <span class="sc-pct">13.7%</span>
+          <div class="sc-track">
+            <div class="sc-fill sc-color-trade" data-width="13.7"></div>
+          </div>
+        </div>
+        <div class="sc-row">
+          <div class="sc-meta">
+            <span class="sc-dot sc-color-services"></span>
+            <span class="sc-name">Production Forest</span>
+          </div>
+          <span class="sc-pct">12.7%</span>
+          <div class="sc-track">
+            <div class="sc-fill sc-color-services" data-width="12.7"></div>
+          </div>
+        </div>
+        <div class="sc-row">
+          <div class="sc-meta">
+            <span class="sc-dot sc-color-industry"></span>
+            <span class="sc-name">Built-up Areas</span>
+          </div>
+          <span class="sc-pct">3.1%</span>
+          <div class="sc-track">
+            <div class="sc-fill sc-color-industry" data-width="3.1"></div>
+          </div>
+        </div>
+        <div class="sc-row">
+          <div class="sc-meta">
+            <span class="sc-dot sc-color-industry"></span>
+            <span class="sc-name">Others</span>
+          </div>
+          <span class="sc-pct">3.7%</span>
+          <div class="sc-track">
+            <div class="sc-fill sc-color-industry" data-width="3.7"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="data-source">
+      <i class="bi bi-info-circle"></i> Source:
+      <a
+        href="https://www.bayawancity.gov.ph/info/city-profile.php"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Official City of Bayawan Profile</a
+      >
+      - City Profile &amp; Land Use Data
+    </p>
+  </div>
+</section>
+
+<!-- Poverty Statistics -->
+<section class="stats-section stats-poverty animate-on-scroll">
+  <div class="container">
+    <div class="section-header-minimal">
+      <span class="section-tag"><i class="bi bi-graph-down-arrow"></i> <span>Poverty</span></span>
+      <h2>Poverty Statistics</h2>
+      <p>2021 City and Municipal Level Poverty Estimates</p>
+    </div>
+
+    <div class="poverty-comparison">
+      <div class="poverty-card poverty-card-2021">
+        <span class="poverty-year">2021</span>
+        <div class="poverty-rate">
+          <span class="rate-value">33.73</span>
+          <span class="rate-symbol">%</span>
+          <p>
+            Historical 2021 estimate.
+            <a href="https://psa.gov.ph/statistics/poverty/node/1684082420"
+              >View the newer 2023 city-level estimates released February 6, 2026</a
+            >.
+          </p>
+        </div>
+        <div class="poverty-bar"><div class="poverty-fill" data-width="3.373"></div></div>
+        <span class="poverty-ci">Poverty incidence among the population (2021 estimates)</span>
+        <p>
+          <a href="https://psa.gov.ph/statistics/poverty/node/1684082420"
+            >View the newer 2023 city-level estimates</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <p class="data-source">
+      <i class="bi bi-info-circle"></i> Source:
+      <a href="https://psa.gov.ph/" target="_blank" rel="noopener noreferrer"
+        >Philippine Statistics Authority (PSA)</a
+      >
+      - 2021 Poverty Estimates
+    </p>
+  </div>
+</section>
+
+<!-- Recognition & Awards -->
+<section class="stats-section stats-competitive animate-on-scroll">
+  <div class="container">
+    <div class="section-header-minimal">
+      <span class="section-tag"><i class="bi bi-trophy-fill"></i> <span>Recognition</span></span>
+      <h2>Recognition &amp; Awards</h2>
+      <p>Reported achievements of Bayawan City</p>
+    </div>
+
+    <div class="economy-grid">
+      <div class="economy-card">
+        <div class="economy-icon"><i class="bi bi-award-fill"></i></div>
+        <div class="economy-content">
+          <div class="economy-label">Character City</div>
+          <div class="economy-trend">International Association of Character Cities</div>
+        </div>
+      </div>
+      <div class="economy-card">
+        <div class="economy-icon"><i class="bi bi-heart-pulse-fill"></i></div>
+        <div class="economy-content">
+          <div class="economy-label">Healthy City</div>
+          <div class="economy-trend">Certified by the Department of Health</div>
+        </div>
+      </div>
+      <div class="economy-card">
+        <div class="economy-icon"><i class="bi bi-buildings-fill"></i></div>
+        <div class="economy-content">
+          <div class="economy-label">Top 10 Best Cities to Live In</div>
+          <div class="economy-trend">AIM Competitive Cities Survey, 2007</div>
+        </div>
+      </div>
+      <div class="economy-card">
+        <div class="economy-icon"><i class="bi bi-recycle"></i></div>
+        <div class="economy-content">
+          <div class="economy-label">Waste Management Excellence Center</div>
+          <div class="economy-trend">Environmental Management Bureau, 2022</div>
+        </div>
+      </div>
+      <div class="economy-card">
+        <div class="economy-icon"><i class="bi bi-basket-fill"></i></div>
+        <div class="economy-content">
+          <div class="economy-label">Agricultural Capital</div>
+          <div class="economy-trend">Leading agricultural economy of Negros Oriental</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="data-source">
+      <i class="bi bi-info-circle"></i> Sources:
+      <a
+        href="https://www.bayawancity.gov.ph/experiences/details/history.php"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Official City of Bayawan History</a
+      >
+      &amp;
+      <a
+        href="https://www.bayawancity.gov.ph/info/city-profile.php"
+        target="_blank"
+        rel="noopener noreferrer"
+        >City Profile</a
+      >
+    </p>
+  </div>
+</section>
+<!-- Bar Chart Section -->
+<section class="stats-section stats-barchart animate-on-scroll">
+  <div class="container">
+    <div class="section-header-minimal">
+      <span class="section-tag"><i class="bi bi-bar-chart-fill"></i> <span>Visual</span></span>
+      <h2>Population Bar Chart</h2>
+      <p>Comparative view of all 28 barangays</p>
+    </div>
+
+    <div class="chart-wrapper chart-wrapper-bar">
+      <canvas id="populationBarChart"></canvas>
+    </div>
+
+    <p class="data-source">
+      <i class="bi bi-info-circle"></i> Source:
+      <a href="https://psa.gov.ph/" target="_blank" rel="noopener noreferrer"
+        >Philippine Statistics Authority (PSA)</a
+      >
+      - 2024 Census of Population
+    </p>
+  </div>
+</section>

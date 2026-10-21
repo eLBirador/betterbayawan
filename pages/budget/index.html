@@ -1,0 +1,272 @@
+<div class="container">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span>/</span>
+    <span aria-current="page">Budget &amp; Transparency</span>
+  </nav>
+</div>
+<section class="trans-hero-v2">
+  <div class="container">
+    <div class="trans-hero-content-v2">
+      <span class="trans-hero-badge-v2"
+        ><i class="bi bi-shield-check"></i> <span>Financial Transparency</span></span
+      >
+      <h1>Budget &amp; Financial Transparency</h1>
+      <p>Tracking city finances and projects for accountability</p>
+    </div>
+  </div>
+</section>
+<section class="sre-section-v2 animate-on-scroll">
+  <div class="container">
+    <div class="sre-header-v2">
+      <div class="sre-title-group">
+        <span class="sre-label"
+          ><i class="bi bi-graph-up-arrow"></i> <span>Financial Report</span></span
+        >
+        <h2>Statement of Receipts &amp; Expenditures</h2>
+        <p>Published financial performance: General Fund and SEF; cumulative periods</p>
+      </div>
+      <div class="sre-period-toggle" role="tablist" aria-label="Select fiscal quarter">
+        <button class="sre-period-btn active" data-quarter="q3-2026">2026 · Jan–Sep</button>
+        <button
+          type="button"
+          class="sre-period-btn"
+          role="tab"
+          aria-selected="true"
+          data-quarter="q1"
+        >
+          <span class="sre-period-q">Q1</span>
+          <span class="sre-period-range">Jan - Mar</span>
+        </button>
+        <button
+          type="button"
+          class="sre-period-btn"
+          role="tab"
+          aria-selected="false"
+          data-quarter="q2"
+        >
+          <span class="sre-period-q">Q2</span>
+          <span class="sre-period-range">Jan - Jun</span>
+        </button>
+      </div>
+    </div>
+    <div class="sre-metrics-row">
+      <div class="sre-metric-card sre-metric-income">
+        <div class="sre-metric-icon"><i class="bi bi-arrow-down-circle"></i></div>
+        <div class="sre-metric-data">
+          <span class="sre-metric-value" id="sre-total-income">{{financial:income}}</span>
+          <span class="sre-metric-label">Total Income</span>
+        </div>
+      </div>
+      <div class="sre-metric-card sre-metric-expense">
+        <div class="sre-metric-icon"><i class="bi bi-arrow-up-circle"></i></div>
+        <div class="sre-metric-data">
+          <span class="sre-metric-value" id="sre-total-expense">{{financial:expenditures}}</span>
+          <span class="sre-metric-label">Total Expenditures</span>
+        </div>
+      </div>
+      <div class="sre-metric-card sre-metric-net">
+        <div class="sre-metric-icon"><i class="bi bi-plus-slash-minus"></i></div>
+        <div class="sre-metric-data">
+          <span class="sre-metric-value" id="sre-net-income">{{financial:netIncome}}</span>
+          <span class="sre-metric-label">Net Operating Income</span>
+        </div>
+      </div>
+      <div class="sre-metric-card sre-metric-balance">
+        <div class="sre-metric-icon"><i class="bi bi-wallet2"></i></div>
+        <div class="sre-metric-data">
+          <span class="sre-metric-value" id="sre-fund-balance">{{financial:fundBalance}}</span>
+          <span class="sre-metric-label">Fund Balance (End)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sre-breakdown-v2">
+      <div class="sre-breakdown-panel">
+        <div class="sre-panel-header">
+          <h3>
+            <i class="bi bi-pie-chart"></i>
+            <span>Income Sources</span>
+          </h3>
+        </div>
+        <div class="sre-panel-body">
+          <div class="sre-chart-container">
+            <canvas id="incomeChartV2"></canvas>
+          </div>
+          <div class="sre-breakdown-list">
+            <div class="sre-breakdown-item" data-type="local">
+              <span class="sre-item-indicator sre-indicator-local"></span>
+              <div class="sre-item-info">
+                <span class="sre-item-name">Local Sources</span>
+                <span class="sre-item-detail">Tax &amp; Non-Tax Revenue</span>
+              </div>
+              <div class="sre-item-values">
+                <span class="sre-item-amount" id="sre-income-local">{{financial:local}}</span>
+                <span class="sre-item-pct" id="sre-income-local-pct">56.1%</span>
+              </div>
+            </div>
+            <div class="sre-breakdown-item" data-type="external">
+              <span class="sre-item-indicator sre-indicator-external"></span>
+              <div class="sre-item-info">
+                <span class="sre-item-name">External Sources</span>
+                <span class="sre-item-detail">National Tax Allotment</span>
+              </div>
+              <div class="sre-item-values">
+                <span class="sre-item-amount" id="sre-income-external">{{financial:external}}</span>
+                <span class="sre-item-pct" id="sre-income-external-pct">43.9%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sre-breakdown-panel">
+        <div class="sre-panel-header">
+          <h3>
+            <i class="bi bi-bar-chart"></i>
+            <span>Expenditure Allocation</span>
+          </h3>
+        </div>
+        <div class="sre-panel-body">
+          <div class="sre-chart-container">
+            <canvas id="expenditureChartV2"></canvas>
+          </div>
+          <div class="sre-breakdown-list">
+            <div class="sre-breakdown-item" data-type="gps">
+              <span class="sre-item-indicator sre-indicator-gps"></span>
+              <div class="sre-item-info">
+                <span class="sre-item-name">General Public Services</span>
+                <span class="sre-item-detail">Administration &amp; Operations</span>
+              </div>
+              <div class="sre-item-values">
+                <span class="sre-item-amount" id="sre-exp-gps">{{financial:gps}}</span>
+                <span class="sre-item-pct" id="sre-exp-gps-pct">63.3%</span>
+              </div>
+            </div>
+            <div class="sre-breakdown-item" data-type="social">
+              <span class="sre-item-indicator sre-indicator-social"></span>
+              <div class="sre-item-info">
+                <span class="sre-item-name">Social Services</span>
+                <span class="sre-item-detail">Health, Education, Welfare</span>
+              </div>
+              <div class="sre-item-values">
+                <span class="sre-item-amount" id="sre-exp-social">{{financial:social}}</span>
+                <span class="sre-item-pct" id="sre-exp-social-pct">19.7%</span>
+              </div>
+            </div>
+            <div class="sre-breakdown-item" data-type="economic">
+              <span class="sre-item-indicator sre-indicator-economic"></span>
+              <div class="sre-item-info">
+                <span class="sre-item-name">Economic Services</span>
+                <span class="sre-item-detail">Infrastructure &amp; Development</span>
+              </div>
+              <div class="sre-item-values">
+                <span class="sre-item-amount" id="sre-exp-economic">{{financial:economic}}</span>
+                <span class="sre-item-pct" id="sre-exp-economic-pct">16.4%</span>
+              </div>
+            </div>
+            <div class="sre-breakdown-item" data-type="debt">
+              <span class="sre-item-indicator sre-indicator-debt"></span>
+              <div class="sre-item-info">
+                <span class="sre-item-name">Debt Service</span>
+                <span class="sre-item-detail">Interest &amp; Charges</span>
+              </div>
+              <div class="sre-item-values">
+                <span class="sre-item-amount" id="sre-exp-debt">{{financial:debt}}</span>
+                <span class="sre-item-pct" id="sre-exp-debt-pct">0.5%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="sre-source">
+      <i class="bi bi-info-circle"></i> Source:
+      <a
+        id="financial-source"
+        href="https://www.bayawancity.gov.ph/uploads/fdp/fdp_6ad6db1eae70e.xlsx"
+        >Bayawan City published SRE</a
+      >. Amounts in millions of pesos; periods are cumulative.
+    </p>
+  </div>
+</section>
+
+<section class="infra-section-v5 animate-on-scroll">
+  <div class="container">
+    <div class="infra-header-v5">
+      <span class="infra-label-v5"
+        ><i class="bi bi-building-gear"></i> <span>Public Works</span></span
+      >
+      <h2>Infrastructure Investments</h2>
+      <p>Major development projects serving the community</p>
+    </div>
+    <div class="infra-project-v5">
+      <div class="infra-project-main">
+        <div class="infra-project-tags">
+          <span class="infra-tag-year">Ongoing</span>
+          <span class="infra-tag-category"
+            ><i class="bi bi-water"></i> <span>Flood Control &amp; River Revetment</span></span
+          >
+        </div>
+        <h3>Flood Mitigation Structures</h3>
+        <p class="infra-location">
+          <i class="bi bi-geo-alt"></i>
+          <span>River systems across Bayawan City, Negros Oriental</span>
+        </p>
+      </div>
+      <div class="infra-project-details">
+        <div class="infra-detail-row">
+          <div class="infra-detail-col">
+            <span class="infra-detail-label">Type of Work</span>
+            <span class="infra-detail-value"
+              >Flood mitigation structures and river control works</span
+            >
+          </div>
+          <div class="infra-detail-col">
+            <span class="infra-detail-label">Implementing Agency</span>
+            <span class="infra-detail-value"
+              >DPWH Negros Oriental 3rd District Engineering Office</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="infra-project-footer">
+        <span class="infra-source"
+          ><i class="bi bi-info-circle"></i>
+          <span
+            >For the official list of flood control projects in Bayawan City, visit the live
+            transparency portals below.</span
+          ></span
+        >
+        <a
+          href="https://sumbongsapangulo.ph/flood-control-map/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="infra-link"
+          ><i class="bi bi-arrow-up-right"></i> <span>View on Map</span></a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="infra-section-v5 infra-section-alt animate-on-scroll">
+  <div class="container">
+    <div class="infra-header-v5">
+      <span class="infra-label-v5"
+        ><i class="bi bi-building"></i> <span>National Government Projects</span></span
+      >
+      <h2>DPWH Infrastructure Projects in Bayawan City</h2>
+      <p>Implementing Agency: DPWH Negros Oriental 3rd District Engineering Office</p>
+    </div>
+
+    <div id="dpwh-projects-container"></div>
+
+    <p class="sre-source dpwh-source-margin">
+      <i class="bi bi-info-circle"></i> Source:
+      <a href="https://transparency.dpwh.gov.ph/" target="_blank" rel="noopener noreferrer"
+        >DPWH Transparency Portal</a
+      >
+    </p>
+  </div>
+</section>

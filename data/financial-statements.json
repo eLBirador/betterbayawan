@@ -1,0 +1,61 @@
+{
+  "checked": "2026-10-21",
+  "unit": "PHP",
+  "scope": "General Fund and Special Education Fund combined",
+  "periods": [
+    {
+      "id": "q1",
+      "label": "January–March 2025",
+      "year": 2025,
+      "quarter": 1,
+      "cumulative": true,
+      "source": "https://www.bayawancity.gov.ph/uploads/fdp/1745479835.xlsx",
+      "local": 68010705.91,
+      "external": 446737722,
+      "income": 514748427.91,
+      "expenditures": 208658998.15,
+      "netIncome": 306089429.76,
+      "fundBalance": 967802386.82,
+      "gps": 118851493.65,
+      "social": 34121598.89,
+      "economic": 44331236.24,
+      "debt": 11354669.37
+    },
+    {
+      "id": "q2",
+      "label": "January–June 2025",
+      "year": 2025,
+      "quarter": 2,
+      "cumulative": true,
+      "source": "https://www.bayawancity.gov.ph/uploads/fdp/fdp_68a56d56c36df.xlsx",
+      "local": 89330114.25,
+      "external": 893475444,
+      "income": 982805558.25,
+      "expenditures": 542639805.1,
+      "netIncome": 440165753.15,
+      "fundBalance": 1066586998.19,
+      "gps": 300235573.17,
+      "social": 103690069.28,
+      "economic": 114179698.97,
+      "debt": 24534463.68
+    },
+    {
+      "id": "q3-2026",
+      "label": "January–September 2026",
+      "year": 2026,
+      "quarter": 3,
+      "cumulative": true,
+      "source": "https://www.bayawancity.gov.ph/uploads/fdp/fdp_6ad6db1eae70e.xlsx",
+      "local": 116736917.53,
+      "external": 1535520366,
+      "income": 1652257283.53,
+      "expenditures": 923037205.19,
+      "netIncome": 729220078.34,
+      "fundBalance": 1766258891.2,
+      "gps": 514283103,
+      "social": 158719670.94,
+      "economic": 203450756.71,
+      "debt": 46583674.54
+    }
+  ]
+}

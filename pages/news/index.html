@@ -1,0 +1,81 @@
+<!-- Breadcrumbs -->
+<div class="container">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span>/</span>
+    <span aria-current="page">News</span>
+  </nav>
+</div>
+
+<!-- Page Header -->
+<section class="page-header">
+  <div class="container">
+    <div class="page-header-content">
+      <span class="page-header-badge"><i class="bi bi-newspaper"></i> <span>News</span></span>
+      <h1>News &amp; Updates</h1>
+      <p class="page-header-desc">Stay informed about the latest happenings in Bayawan City</p>
+      <p>
+        Archived and selected announcements. Check the official city portal for current schedules,
+        deadlines, and vacancies.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- News List -->
+<section class="section">
+  <div class="container">
+    <div class="news-card-grid" id="news-grid" role="feed" aria-label="News articles">
+      <!-- Dynamic content loaded by news.js -->
+      <article class="news-card" aria-label="Loading">
+        <div class="news-card-header">
+          <span class="badge badge-info">Loading</span>
+          <span class="news-card-date">...</span>
+        </div>
+        <div class="news-card-body">
+          <h3 class="news-card-title">Loading news...</h3>
+          <p class="news-card-desc">Fetching news and updates from Bayawan City.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!--
+        Live feed from the official LGU Bayawan City Facebook Page (auto-updating,
+        no API token required). REPLACE the page URL in BOTH places below
+        (the iframe `href=` value and the fallback link) with the exact
+        official page URL, e.g. https://www.facebook.com/YourPageName
+      -->
+<section class="section fb-feed-section" aria-label="Facebook updates">
+  <div class="container">
+    <div class="fb-feed-head">
+      <h2>From our Facebook Page</h2>
+      <p>The latest posts published by the Official LGU Bayawan City Facebook Page.</p>
+    </div>
+    <div class="fb-feed-embed">
+      <iframe
+        title="Latest posts from the Official LGU Bayawan City Facebook Page"
+        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FIbayawBayawanCity&amp;tabs=timeline&amp;width=500&amp;height=720&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facecount=true"
+        width="500"
+        height="720"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen="true"
+        loading="lazy"
+        allow="encrypted-media; clipboard-write; web-share"
+      ></iframe>
+    </div>
+    <p class="fb-feed-fallback">
+      Can't see the feed?
+      <a
+        href="https://www.facebook.com/IbayawBayawanCity"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Visit the Official LGU Bayawan City Facebook Page
+        <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+      </a>
+    </p>
+  </div>
+</section>

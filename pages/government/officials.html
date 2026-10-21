@@ -1,0 +1,111 @@
+<div class="container">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a><span>/</span> <a href="/">Government</a><span>/</span>
+    <span aria-current="page">Officials</span>
+  </nav>
+</div>
+<section class="section bg-alt">
+  <div class="container text-center">
+    <h1>Elected Officials</h1>
+    <p class="lead">Meet the leaders serving the City of Bayawan</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <h3 class="text-center">Executive Branch</h3>
+    <div class="grid grid-2">
+      <div class="official-card card">
+        <div class="official-photo">
+          <i class="bi bi-person-circle" style="font-size: 8rem; color: var(--color-primary)"></i>
+        </div>
+        <div class="official-info">
+          <h4>{{official:mayor.name}}</h4>
+          <p class="official-title">City Mayor</p>
+          <p><i class="bi bi-envelope"></i>{{contact:mayor.email}}</p>
+          <p><i class="bi bi-telephone"></i>{{contact:mayor.phone}}</p>
+        </div>
+      </div>
+      <div class="official-card card">
+        <div class="official-photo">
+          <i class="bi bi-person-circle" style="font-size: 8rem; color: var(--color-primary)"></i>
+        </div>
+        <div class="official-info">
+          <h4>{{official:vice_mayor.name}}</h4>
+          <p class="official-title">
+            City Vice Mayor
+            <span class="badge badge-info">Presiding Officer, Sangguniang Panlungsod</span>
+          </p>
+          <p><i class="bi bi-envelope"></i>{{contact:viceMayor.email}}</p>
+          <p><i class="bi bi-telephone"></i>{{contact:mayor.phone}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section bg-alt">
+  <div class="container">
+    <h3 class="text-center">Sangguniang Panlungsod Members</h3>
+    <div class="grid grid-4">
+      <div class="councilor-card card text-center">
+        <i class="bi bi-person-badge" style="font-size: 3rem; color: var(--color-primary)"></i>
+        <h4>{{official:councilors.0.name}}</h4>
+        <p class="badge badge-info">City Councilor</p>
+      </div>
+      <div class="councilor-card card text-center">
+        <i class="bi bi-person-badge" style="font-size: 3rem; color: var(--color-primary)"></i>
+        <h4>{{official:councilors.1.name}}</h4>
+        <p class="badge badge-info">City Councilor</p>
+      </div>
+      <div class="councilor-card card text-center">
+        <i class="bi bi-person-badge" style="font-size: 3rem; color: var(--color-primary)"></i>
+        <h4>{{official:councilors.2.name}}</h4>
+        <p class="badge badge-info">City Councilor</p>
+      </div>
+      <div class="councilor-card card text-center">
+        <i class="bi bi-person-badge" style="font-size: 3rem; color: var(--color-primary)"></i>
+        <h4>{{official:councilors.3.name}}</h4>
+        <p class="badge badge-info">City Councilor</p>
+      </div>
+      <div class="councilor-card card text-center">
+        <i class="bi bi-person-badge" style="font-size: 3rem; color: var(--color-primary)"></i>
+        <h4>{{official:councilors.4.name}}</h4>
+        <p class="badge badge-info">City Councilor</p>
+      </div>
+      <div class="councilor-card card text-center">
+        <i class="bi bi-person-badge" style="font-size: 3rem; color: var(--color-primary)"></i>
+        <h4>{{official:councilors.5.name}}</h4>
+        <p class="badge badge-info">City Councilor</p>
+      </div>
+      <div class="councilor-card card text-center">
+        <i class="bi bi-person-badge" style="font-size: 3rem; color: var(--color-primary)"></i>
+        <h4>{{official:councilors.6.name}}</h4>
+        <p class="badge badge-info">City Councilor</p>
+      </div>
+      <div class="councilor-card card text-center">
+        <i class="bi bi-person-badge" style="font-size: 3rem; color: var(--color-primary)"></i>
+        <h4>{{official:councilors.7.name}}</h4>
+        <p class="badge badge-info">City Councilor</p>
+      </div>
+      <div class="councilor-card card text-center">
+        <i class="bi bi-person-badge" style="font-size: 3rem; color: var(--color-primary)"></i>
+        <h4>{{official:councilors.8.name}}</h4>
+        <p class="badge badge-info">City Councilor</p>
+      </div>
+      <div class="councilor-card card text-center">
+        <i class="bi bi-person-badge" style="font-size: 3rem; color: var(--color-primary)"></i>
+        <h4>{{official:councilors.9.name}}</h4>
+        <p class="badge badge-info">City Councilor</p>
+      </div>
+      <div class="councilor-card card text-center">
+        <i class="bi bi-person-badge" style="font-size: 3rem; color: var(--color-primary)"></i>
+        <h4>{{official:councilors.10.name}}</h4>
+        <p class="badge badge-info">Ex-Officio Member, Liga ng mga Barangay President</p>
+      </div>
+      <div class="councilor-card card text-center">
+        <i class="bi bi-person-badge" style="font-size: 3rem; color: var(--color-primary)"></i>
+        <h4>{{official:councilors.11.name}}</h4>
+        <p class="badge badge-info">Ex-Officio Member, SK Federation President</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -14,42 +14,10 @@ const COLORS = {
 };
 
 // Barangay data (2020 Census, PhilAtlas)
-const barangayData = [
-  { name: 'Villareal', pop: 10730 },
-  { name: 'Nangka', pop: 10637 },
-  { name: 'Banga', pop: 7568 },
-  { name: 'Maninihon', pop: 7502 },
-  { name: 'Kalumboyan', pop: 7004 },
-  { name: 'Narra', pop: 6603 },
-  { name: 'Tayawan', pop: 6419 },
-  { name: 'Malabugas', pop: 6126 },
-  { name: 'Bugay', pop: 5607 },
-  { name: 'Banaybanay', pop: 4896 },
-  { name: 'Mandu-ao', pop: 4780 },
-  { name: 'Dawis', pop: 4683 },
-  { name: 'Tabuan', pop: 4539 },
-  { name: 'Villasol', pop: 3854 },
-  { name: 'Kalamtukan', pop: 3618 },
-  { name: 'Tinago', pop: 3191 },
-  { name: 'Ali-is', pop: 2980 },
-  { name: 'Poblacion', pop: 2921 },
-  { name: 'Minaba', pop: 2890 },
-  { name: 'San Jose', pop: 2450 },
-  { name: 'Suba', pop: 2412 },
-  { name: 'Pagatban', pop: 2152 },
-  { name: 'San Miguel', pop: 1731 },
-  { name: 'Cansumalig', pop: 1715 },
-  { name: 'Ubos', pop: 1600 },
-  { name: 'San Roque', pop: 1452 },
-  { name: 'Boyco', pop: 1407 },
-  { name: 'San Isidro', pop: 1280 },
-];
+const barangayData = window.BayawanData.barangays;
 
 // Historical data (Philippine Census of Population)
-const historicalData = {
-  years: [1903, 1918, 1939, 1948, 1960, 1970, 1975, 1980, 1990, 1995, 2000, 2007, 2010, 2015, 2020, 2024],
-  populations: [6099, 10283, 15954, 10608, 30429, 44615, 62114, 71153, 78280, 90953, 101391, 110250, 114074, 117900, 122747, 126744],
-};
+const historicalData = { years: [2020, 2024], populations: [122747, 126744] };
 
 // Chart instances
 let charts = {};
@@ -241,7 +209,7 @@ function createDistributionChart() {
   const ctx = document.getElementById('distributionPieChart');
   if (!ctx) return;
 
-  const top10 = barangayData.slice(0, 10);
+  const top10 = [...barangayData.slice(0, 10), { name: 'Other barangays', pop: barangayData.slice(10).reduce((sum, item) => sum + item.pop, 0) }];
   const colors = [
     COLORS.primary,
     COLORS.accent,

@@ -13,6 +13,12 @@
   "categories": ["government", "utilities"],
   "icons": [
     {
+      "src": "/assets/images/logo/better-bayawan-favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
       "src": "/assets/images/logo/better-bayawan-icon-white.png",
       "sizes": "1254x1254",
       "type": "image/png",
@@ -30,25 +36,33 @@
       "name": "Services",
       "short_name": "Services",
       "url": "/services/?source=pwa",
-      "icons": [{ "src": "/assets/images/logo/better-bayawan-icon-white.png", "sizes": "1254x1254" }]
+      "icons": [
+        { "src": "/assets/images/logo/better-bayawan-icon-white.png", "sizes": "1254x1254" }
+      ]
     },
     {
       "name": "Contact & Hotlines",
       "short_name": "Contact",
       "url": "/contact/?source=pwa",
-      "icons": [{ "src": "/assets/images/logo/better-bayawan-icon-white.png", "sizes": "1254x1254" }]
+      "icons": [
+        { "src": "/assets/images/logo/better-bayawan-icon-white.png", "sizes": "1254x1254" }
+      ]
     },
     {
       "name": "Government",
       "short_name": "Government",
       "url": "/government/?source=pwa",
-      "icons": [{ "src": "/assets/images/logo/better-bayawan-icon-white.png", "sizes": "1254x1254" }]
+      "icons": [
+        { "src": "/assets/images/logo/better-bayawan-icon-white.png", "sizes": "1254x1254" }
+      ]
     },
     {
       "name": "Transparency",
       "short_name": "Budget",
       "url": "/budget/?source=pwa",
-      "icons": [{ "src": "/assets/images/logo/better-bayawan-icon-white.png", "sizes": "1254x1254" }]
+      "icons": [
+        { "src": "/assets/images/logo/better-bayawan-icon-white.png", "sizes": "1254x1254" }
+      ]
     }
   ],
   "prefer_related_applications": false

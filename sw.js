@@ -3,7 +3,7 @@
  * Enterprise-grade PWA with versioned caching, runtime strategies, and offline resilience.
  */
 
-var CACHE_VERSION = 'v5';
+var CACHE_VERSION = 'v7-install-manifest';
 var STATIC_CACHE = 'BetterBayawan-static-' + CACHE_VERSION;
 var RUNTIME_CACHE = 'BetterBayawan-runtime-' + CACHE_VERSION;
 var OFFLINE_URL = '/offline.html';
@@ -18,8 +18,12 @@ var PRECACHE_URLS = [
   '/assets/css/accessibility.css',
   '/assets/js/main.js',
   '/assets/js/translations.js',
+  '/assets/js/translations-data.js',
+  '/assets/js/content-data.js',
+  '/assets/js/site.js',
   '/assets/js/info-bar.js',
   '/assets/images/logo/better-bayawan-logo.png',
+  '/assets/images/logo/better-bayawan-favicon.svg',
   '/assets/images/logo/better-bayawan-icon-white.png',
   '/assets/images/logo/better-bayawan-icon-white.png',
   '/manifest.webmanifest',

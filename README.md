@@ -1,483 +1,66 @@
 # BetterBayawan.org
 
-A civic-tech initiative providing transparent access to municipal services, programs, and public funds of LGU Bayawan City, Negros Oriental, Philippines.
+An independent, volunteer-maintained civic information portal for **Bayawan City,
+Negros Oriental, Philippines**. It links residents to government services,
+published financial records, and original sources. It is not an official LGU site.
 
-![Version](https://img.shields.io/badge/version-1.1.15-green)
-![License](https://img.shields.io/badge/license-MIT%20%7C%20CC%20BY%204.0-blue)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![Node.js](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+## Run locally
 
-## Version Notice
+Use Node.js 22 or newer.
 
-The React app in `react-app/` is now the primary application. Run `npm ci` and
-`npm ci --prefix react-app`, then `npm run dev` from the repository root
-(`http://localhost:3000`). This starts React with compatibility routing for portal
-pages that have not been migrated yet. The static pages remain required; do not
-delete them until their React replacements are complete.
-
-`npm run build -- --no-bump` produces `dist/` with the React homepage, service
-directory, and health page, plus the remaining existing portal routes.
-`npm run preview` serves that build at `http://localhost:8080` with clean URLs.
-All new page work should target React. Root `assets/` and `data/` are shared sources;
-the React preparation script synchronizes these before development and builds.
-
-React + TypeScript is the default for development. Existing HTML pages provide
-compatibility for routes still awaiting migration; they are not a second app to
-maintain for new features. See [MIGRATION.md](MIGRATION.md) for the current route ownership.
-
-## Open Source for LGUs
-
-This repository is open source under the **MIT License** and **CC BY 4.0** and is freely available for use, modification, redistribution, and publication by any individual or organization that wishes to implement it in their respective local government unit (LGU) across the Philippines.
-
-We encourage adoption by other municipalities in support of:
-
-- **Transparency** - Making government information accessible to citizens
-- **Accessibility** - Ensuring services are available to all, including persons with disabilities
-- **Modernization** - Bringing local government services to digital platforms
-- **Public Service** - Improving the delivery of government services to the community
-
-To adapt this project for your LGU, fork the repository and customize the content, styling, and data sources to match your municipality's requirements.
-
-## About
-
-BetterBayawan.org is a volunteer-driven, open-source project that empowers the people of Bayawan City with easy access to local government information. The platform aggregates public data from official government portals and presents it in a user-friendly, accessible format.
-
-**Cost to the People of Bayawan City = ₱0**
-
-## Live Demo
-
-Visit the live website: [https://BetterBayawan.org](https://BetterBayawan.org)
-
-## Technology Stack
-
-| Category            | Technologies                                                           |
-| ------------------- | ---------------------------------------------------------------------- |
-| **Frontend**        | HTML5, CSS3, JavaScript (ES6+)                                         |
-| **Styling**         | Custom CSS, CSS Variables, Flexbox, CSS Grid, Responsive Design        |
-| **Icons**           | Bootstrap Icons (CDN)                                                  |
-| **Fonts**           | Google Fonts (Inter)                                                   |
-| **Maps**            | Leaflet.js, OpenStreetMap                                              |
-| **Charts**          | Chart.js (Canvas-based)                                                |
-| **Animations**      | Lottie (dotlottie-player web component)                                |
-| **Data Format**     | JSON                                                                   |
-| **APIs**            | Open-Meteo (Weather), ExchangeRate API (Currency)                      |
-| **Build Tools**     | Node.js, npm, Bash, Babel (@babel/preset-env)                          |
-| **Minification**    | html-minifier-terser, clean-css-cli, terser                            |
-| **Code Formatting** | Prettier (auto-format on commit via git pre-commit hook)               |
-| **Version Control** | Git, GitHub                                                            |
-| **Server**          | Apache (.htaccess), mod_rewrite, mod_deflate                           |
-| **Hosting**         | cPanel (Production), Python HTTP Server (Development)                  |
-| **PWA**             | Service Worker (versioned caching, install prompt, seamless updates), Web App Manifest, offline fallback |
-| **SEO**             | Open Graph, Twitter Cards, XML Sitemap, robots.txt                     |
-| **Security**        | HTTPS, CSP Headers, HSTS, X-Frame-Options                              |
-| **Analytics**       | Google Analytics (gtag.js)                                             |
-| **Accessibility**   | WCAG 2.1, ARIA, Semantic HTML                                          |
-| **Performance**     | GZIP Compression, Browser Caching, Asset Minification                  |
-
-## Key Features
-
-| Feature                          | Description                                                                                                                                                                                                       |
-| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Municipal Services Directory** | Comprehensive guide to all LGU services with requirements, fees, and processing times                                                                                                                             |
-| **Government Officials**         | Directory of elected officials and department heads with contact information                                                                                                                                      |
-| **Budget Transparency**          | Financial reports, income/expenditure breakdowns, and infrastructure projects                                                                                                                                     |
-| **Legislative Documents**        | Searchable database of ordinances and resolutions from Sangguniang Panlungsod                                                                                                                                          |
-| **Municipal Statistics**         | Demographics, economic data, and competitive index rankings                                                                                                                                                       |
-| **Real-time Information**        | Live weather updates, currency exchange rates, and Philippine time                                                                                                                                                |
-| **Emergency Hotline Marquee**    | Clickable scrolling marquee for emergency contacts on tablet and mobile viewports, with pause-on-hover/focus accessibility                                                                                        |
-| **Progressive Web App**          | Installable PWA with "Install App" prompt, seamless auto-updates via skipWaiting (no manual refresh), versioned service worker caching (static + runtime), offline fallback page with emergency hotlines, push notification foundation |
-| **Auto Version Management**      | Dynamic version display from `version.json`, auto-bumped on every git commit via pre-commit hook, synced across all 51+ HTML files, `package.json`, and React app                                                 |
-| **Multi-language Support**       | Full i18n coverage in English, Filipino, and Bisaya (5,546 keys per language with perfect parity)                                                                                                                |
-| **Clean URLs**                   | SEO-friendly URLs without `.html` extensions, powered by Apache mod_rewrite                                                                                                                                       |
-| **Brief History of Bayawan City**      | Interactive timeline (1760–1957) with fully translated cards in all three languages                                                                                                                               |
-| **Mobile Navigation**            | Responsive menu with GPU-accelerated open/close transitions, body scroll lock, animation guard against rapid toggles, debounced resize handling, touch-safe hover scoping, click-outside-to-close, and focus trap |
-| **Accessibility**                | WCAG 2.1 compliant with skip links, ARIA labels, keyboard navigation, and semantic HTML                                                                                                                           |
-| **SEO Optimized**                | Meta tags, Open Graph, Twitter Cards, structured data, and XML sitemap                                                                                                                                            |
-| **Performance**                  | 90%+ size reduction through minification, GZIP compression, Babel transpilation, and browser caching                                                                                                              |
-
-## Quick Start
-
-```bash
-# Clone the repository
-git clone https://github.com/BetterBayawan City/betterBayawan City.git
-
-# Navigate to project directory
-cd betterBayawan City
-
-# Install dependencies
-npm install
-
-# Start development server (with clean URL support)
-py serve.py --port 8000 --directory .
-
-# Open in browser
-# http://localhost:8000
-```
-
-## Installation
-
-### Prerequisites
-
-| Requirement | Version | Purpose                            |
-| ----------- | ------- | ---------------------------------- |
-| Node.js     | v16+    | Build tools and package management |
-| npm         | v8+     | Dependency management              |
-| Python 3    | v3.x    | Local development server           |
-| Git         | Latest  | Version control                    |
-
-### Setup Steps
-
-1. **Clone the repository**
-
-```bash
-git clone https://github.com/BetterBayawan City/betterBayawan City.git
-cd betterBayawan City
-```
-
-2. **Install dependencies**
-
-```bash
-npm install
-```
-
-3. **Start the development server**
-
-```bash
+```sh
+git clone https://github.com/rodneydelacruz/betterbayawan.git
+cd betterbayawan
+npm ci
 npm run dev
 ```
 
-4. **Open in browser**
-   - Development: http://localhost:8000
-   - Production preview: http://localhost:8080 (after build)
+Open **http://localhost:3000**. Changes to pages, layouts, data, translations, and
+assets rebuild automatically. There is one application and one package lockfile.
 
-## Usage
-
-### Development Commands
-
-| Command                      | Description                                                           |
-| ---------------------------- | --------------------------------------------------------------------- |
-| `npm run dev`                | Start local development server (port 8000)                            |
-| `npm run build`              | Build minified production files to `dist/` (auto-bumps patch version) |
-| `npm run build -- --no-bump` | Build without incrementing the version number                         |
-| `npm run build:minor`        | Bump minor version and build                                          |
-| `npm run build:major`        | Bump major version and build                                          |
-| `npm run serve:dist`         | Serve production build (port 8080)                                    |
-| `npm run version:check`      | Display current version                                               |
-| `npm run version:patch`      | Bump patch version only                                               |
-| `npm run version:minor`      | Bump minor version only                                               |
-| `npm run version:major`      | Bump major version only                                               |
-| `npm run format`             | Format all files with Prettier                                        |
-| `npm run format:check`       | Check formatting without writing changes                              |
-
-### Production Deployment
-
-1. **Build production files**
-
-```bash
-npm run build
+```sh
+npm run build          # generate dist/ without changing the version
+npm run preview        # http://localhost:8080
+npm run check          # source coverage, links, SEO, and data consistency
+npm test               # browser checks; install Chromium first if needed
 ```
 
-2. **Output location**
-   - Minified files are generated in the `dist/` folder
-   - Original size: ~17MB → Minified: ~3.9MB
+Install the test browser with `npx playwright install chromium`. Windows tests can
+also use an installed Microsoft Edge. No browser installation is needed to build.
 
-3. **Deploy to server**
-   - Upload contents of `dist/` to your web server's `public_html` directory
-   - Ensure `.htaccess` is included for clean URLs, CSP headers, and security
+## Where to contribute
 
-### File Permissions (cPanel)
+- **Page wording:** `pages/`; shared navigation and footer: `layouts/`.
+- **Service guidance:** `data/service-guides.json` and `data/services.json`.
+- **Facts and contacts:** the relevant JSON file in `data/`.
+- **Translations:** `locales/fil.json` and `locales/ceb.json`.
+- **Design and interactions:** `assets/css/` and `assets/js/`.
+- **SEO and routes:** `pages/routes.json`.
 
-| Type        | Permission | Numeric |
-| ----------- | ---------- | ------- |
-| Files       | rw-r--r--  | 644     |
-| Directories | rwxr-xr-x  | 755     |
+Read [CONTRIBUTING.md](CONTRIBUTING.md), the [architecture guide](docs/architecture.md),
+and the [content policy](docs/content-policy.md) before opening a PR. The
+[audit checklist](docs/content-audit.md) records the October 2026 corrections and
+the remaining limits of publicly available evidence.
 
-## Multi-language Support (i18n)
+After changing visible text, run `npm run i18n:extract`, complete the two
+translation dictionaries, and run the checks. Preserve source dates and original
+document links when changing citizen instructions. Do not edit generated `dist/`.
 
-The site supports three languages with full translation coverage:
+## Deploy
 
-| Language | Code  | Status                |
-| -------- | ----- | --------------------- |
-| English  | `en`  | Complete (5,546 keys) |
-| Filipino | `fil` | Complete (5,546 keys) |
-| Bisaya  | `bis` | Complete (5,546 keys) |
+Vercel and Cloudflare build from the repository root with `npm run build` and
+serve `dist/`. Apache/cPanel deployments upload the contents of `dist/`, including
+`.htaccess`. Older municipal office URLs remain compatible through redirects.
 
-The static site uses a `TranslationEngine` in `assets/js/translations.js` with `data-i18n` attributes on HTML elements. The React version uses a `LanguageContext` provider with a `t()` function. Both systems support fallback to English for any missing keys.
+The unfinished React migration was removed. The deployed civic-page markup,
+styles, images, animation, and brand assets were preserved in the static site.
 
-## Three-Version Architecture
+## License and attribution
 
-The project maintains three synchronized versions:
+Software: MIT. Original site content: CC BY 4.0. Third-party source documents and
+assets retain their own terms. See [LICENSE](LICENSE).
 
-| Version                | Location        | Purpose                              |
-| ---------------------- | --------------- | ------------------------------------ |
-| **Static Legacy**      | Root HTML files | Source of truth for all 52 pages     |
-| **React + TypeScript** | `react-app/`    | Modern component-based homepage      |
-| **Production Dist**    | `dist/`         | Minified build for cPanel deployment |
-
-All CSS, images, animations, and translations are kept in sync across all three versions. The build script (`build.sh`) generates the dist from the static legacy source.
-
-## Project Structure
-
-```
-BetterBayawan/
-├── assets/
-│   ├── css/              # Stylesheets (9 files)
-│   ├── js/               # JavaScript modules (18 files)
-│   ├── images/           # Images, icons, banners, partner logos
-│   └── animation/        # Lottie JSON animation files
-├── data/                 # JSON data files
-│   ├── officials.json    # Government officials data
-│   ├── services.json     # Municipal services data
-│   ├── news.json         # News and announcements
-│   ├── ordinances.json   # Legislative ordinances
-│   └── resolutions.json  # Legislative resolutions
-├── react-app/            # React + TypeScript version
-│   ├── src/
-│   │   ├── app/          # Next.js app router (layout, page)
-│   │   ├── components/   # React components (Header, Footer, HotlineBar, InfoBar, SearchAutocomplete, PWAManager)
-│   │   └── contexts/     # LanguageContext (i18n provider)
-│   └── public/           # Static assets, manifest, version.json (synced with root)
-├── services/             # Service category pages (11 pages)
-├── service-details/      # Individual service pages (22 pages)
-├── government/           # Government directory pages
-├── legislative/          # Legislative framework pages
-├── budget/               # Budget transparency page
-├── statistics/           # Municipal statistics page
-├── news/                 # News and announcements page
-├── contact/              # Contact information page
-├── faq/                  # Frequently asked questions
-├── sitemap/              # HTML sitemap page
-├── scripts/              # Build, version, and translation scripts
-│   └── bump-version.js   # Cross-platform Node.js version bump script
-├── dist/                 # Production build output (gitignored)
-├── index.html            # Homepage
-├── sw.js                 # Service worker (versioned caching, offline support)
-├── manifest.webmanifest  # PWA web app manifest
-├── offline.html          # Offline fallback page with emergency hotlines
-├── serve.py              # Local dev server with clean URL rewriting
-├── .htaccess             # Apache configuration (CSP, rewrites, caching)
-├── .prettierrc           # Prettier code formatting configuration
-├── .prettierignore       # Prettier ignore patterns
-├── version.json          # Version tracking (auto-bumped on commit)
-├── build.sh              # Build automation script
-├── babel.config.json     # Babel transpilation configuration
-├── package.json          # Node.js configuration
-└── README.md             # Project documentation
-```
-
-## Recent Changes
-
-### v1.1.15 — Header, PWA, Version Automation & Code Quality
-
-#### PWA Install Prompt & Seamless Updates
-
-- Added "Install App" prompt banner using the `beforeinstallprompt` API with Install/Dismiss buttons, respecting standalone mode and session dismissal
-- Replaced manual-refresh update flow with seamless `skipWaiting` + `controllerchange` auto-reload pattern
-- Service worker now accepts `SKIP_WAITING` message from clients to activate waiting worker on demand
-- Install banner goes full-width (no border-radius, no margins) on mobile viewports (<=575px) with slide-up animation
-- Created `PWAManager.tsx` React component handling both install prompt and SW update lifecycle
-- Added `.pwa-install-banner` CSS styles to both static and React versions
-
-#### Footer Mobile Alignment
-
-- Added `text-align: center` for `.footer-tagline` in the <=575px mobile breakpoint, overriding the tablet `text-align: left` rule
-- Synced footer CSS fix to React version
-
-#### CI/CD Cleanup
-
-- Removed CodeQL Advanced workflow (`.github/workflows/codeql.yml`) as it is no longer required
-
-#### Responsive Header & Hotline Marquee
-
-- Standardized header vertical spacing (padding, min-height, logo size) across desktop (12px/48px), tablet (10px/40px), mobile (8px/36px), and small mobile (6px/32px) breakpoints
-- Raised tablet breakpoint from 991px to 1024px to properly capture iPad Pro portrait (1024px) and iPad Air landscape
-- Converted emergency hotline bar into a clickable scrolling marquee on all tablet and mobile viewports (≤1024px) with pause-on-hover/focus for accessibility
-- Centered hamburger menu icon between logo and language toggle on tablet viewports using flexbox ordering (logo → hamburger → lang toggle)
-- Tablet footer: left-aligned BetterBayawan logo, tagline, and social icons to match the visual hierarchy of the brand column
-
-#### Progressive Web App (PWA)
-
-- Rewrote `sw.js` with dual-cache architecture: `STATIC_CACHE` (precached app shell) and `RUNTIME_CACHE` (dynamic content, 80-item FIFO, 7-day TTL)
-- Navigation uses network-first with offline fallback; static assets use stale-while-revalidate; data/API uses network-first with cache fallback
-- Added push notification and background sync foundations
-- Enhanced SW registration with 30-minute update polling and non-intrusive refresh banner on new version activation
-- Upgraded `manifest.webmanifest` with maskable icons, app shortcuts (Services, Contact, Government, Transparency), and `orientation: any`
-- Added iOS PWA meta tags (`apple-mobile-web-app-capable`, `apple-mobile-web-app-status-bar-style`, `apple-mobile-web-app-title`)
-- Fixed theme-color from old green (#1a5f2a) to brand blue (#0032a0) across all files
-- Updated offline fallback page colors to match brand
-
-#### Automatic Version Management
-
-- Created cross-platform `scripts/bump-version.js` (Node.js) replacing the bash-only `version.sh` for Windows compatibility
-- Version bump updates `version.json`, `package.json`, all 51+ HTML files, and syncs to `react-app/public/version.json`
-- Git pre-commit hook auto-bumps patch version on every commit (skips version-only commits to prevent loops)
-- Footer version displayed dynamically at runtime via `version.js` fetching from `version.json`
-
-#### React App Sync
-
-- Created `HotlineBar.tsx` component with tablet/mobile marquee matching static site behavior
-- Created `InfoBar.tsx` component with live exchange rates, weather, and Philippine time
-- Created `SearchAutocomplete.tsx` component with service search dropdown
-- Created `PWAManager.tsx` component handling install prompt and seamless SW updates
-- Updated `Footer.tsx` to dynamically fetch version from `/version.json` instead of hardcoded value
-- Updated `Header.tsx` breakpoint from 991px to 1024px, fixed ARIA attribute string values
-- Updated `layout.tsx` with corrected theme-color, manifest link, Apple PWA meta tags, and PWAManager integration
-- Synced `manifest.webmanifest`, `version.json`, `sw.js`, and all CSS to react-app
-
-#### Code Quality & Tooling
-
-- Installed Prettier as dev dependency with project-wide configuration (`.prettierrc`, `.prettierignore`)
-- Formatted entire codebase (120+ files) for consistent code style
-- Git pre-commit hook auto-formats staged files with Prettier before each commit
-- Fixed `privacy/index.html` malformed HTML (duplicate `</body></html>` closing tags)
-- Resolved all npm vulnerabilities: upgraded `@lhci/cli` to ^0.15.1, added `tmp` override to 0.2.5 (0 vulnerabilities)
-- Added `npm run format` and `npm run format:check` scripts
-
-### Previous Changes
-
-### Content & Features
-
-- Added Bayawan Quiz CTA section on homepage with branded Lottie animation (brand blue `#0032A0`)
-- Added Bayawan Quiz link to footer Quick Links across all 51 HTML pages and React Footer
-- Added Brief History of Bayawan City interactive timeline section on homepage (1760–1957)
-- Added quiz entry to HTML sitemap page
-- Added Abakada education tools CTA on services/education page with local SVG logo
-
-### Internationalization (i18n)
-
-- Upgraded translation engine to 5,546 keys per language with perfect en/fil/bis parity
-- Fixed Brief History timeline cards — full paragraph translations now applied via `data-i18n` on `<p>` elements (previously only proper nouns inside `<strong>` tags were translated, leaving surrounding English text intact)
-- Corrected Filipino translations: proper religious title "Padre" (not "Ama"), fully translated historical paragraphs (no half-English)
-- Corrected Bisaya translations: proper Bisaya vocabulary, fully translated paragraphs
-- Added 54 translation keys for Bayawan Quiz footer link across all page contexts
-
-### Footer & Copyright
-
-- Standardized copyright across all 51 HTML files and React Footer: three styled spans (`footer-copyright-text`, `footer-copyright-license`, `footer-copyright-disclaimer`)
-- Updated copyright year to 2026, name to "BetterBayawan.org"
-- Footer copyright uses `flex-wrap: wrap; gap: 6px` layout with version badge right-aligned via `margin-left: auto`
-- Removed trailing period after "BetterBayawan.org" from all pages and all 3 translation languages
-
-### Clean URLs
-
-- Removed `.html` extensions from 621 navigation links across 48 HTML files
-- Apache `.htaccess` rewrite rules handle clean URL resolution on cPanel
-
-### Build & Deployment
-
-- Updated `build.sh` rsync excludes to filter out dev artifacts (`.backup`, `.md`, `package*.json`, `scripts/`, `docs/`, etc.)
-- Production dist: 52 HTML pages, 106 total files, 3.9MB, zero dev artifacts
-- Updated CSP headers: added `worker-src 'self' blob:`, `blob:` to `connect-src`, CDN domains to `connect-src` for dotlottie-player and Bootstrap Icons compatibility
-
-### Cross-Version Sync
-
-- All CSS files synced between legacy and React: `footer.css`, `style.css`, `responsive.css`, `accessibility.css`
-- All image and animation assets synced between legacy and React
-- React LanguageContext updated with matching translation keys for homepage sections
-
-## Contributing
-
-We welcome contributions from everyone! Whether you're a developer, designer, data researcher, content writer, translator, or a concerned citizen of Bayawan City, your participation helps shape this project for all.
-
-### How to Contribute
-
-1. **Fork** the repository
-2. **Create** a feature branch
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-3. **Make** your changes
-4. **Test** thoroughly on multiple browsers
-5. **Commit** with a descriptive message
-   ```bash
-   git commit -m "Add: description of your changes"
-   ```
-6. **Push** to your fork
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-7. **Open** a Pull Request with detailed description
-
-### Contribution Areas
-
-| Area                   | Description                                                   |
-| ---------------------- | ------------------------------------------------------------- |
-| **Bug Fixes**          | Report issues or submit fixes for existing bugs               |
-| **Features**           | Propose or implement new functionality                        |
-| **Content**            | Update service information, add missing municipal data        |
-| **Translations**       | Help translate content to Filipino or Bisaya                 |
-| **Design**             | Improve UI/UX, accessibility, and visual consistency          |
-| **Data**               | Verify and update municipal statistics and records            |
-| **Documentation**      | Enhance README, code comments, and guides                     |
-| **API Integration**    | Propose or implement API connections for real-time data feeds |
-| **Data Visualization** | Enhance charts, graphs, and interactive presentations         |
-
-### Code Style Guidelines
-
-| Guideline         | Description                                                              |
-| ----------------- | ------------------------------------------------------------------------ |
-| **Formatting**    | Prettier auto-formats on commit; run `npm run format` to format manually |
-| **HTML**          | Use semantic HTML5 elements; validate before committing                  |
-| **CSS**           | Follow BEM naming conventions; use CSS custom properties                 |
-| **JavaScript**    | Keep vanilla JS unless proposing framework for data visualization        |
-| **Naming**        | Use meaningful, descriptive variable and function names                  |
-| **Comments**      | Add comments for complex logic and non-obvious implementations           |
-| **Accessibility** | Ensure WCAG 2.1 compliance (alt text, ARIA, keyboard navigation)         |
-| **Performance**   | Optimize images; minimize DOM manipulation                               |
-| **Testing**       | Test on Chrome, Firefox, Safari, Edge; test mobile responsiveness        |
-| **Validation**    | Validate HTML/CSS before pull requests                                   |
-
-## Data Sources
-
-All public information is sourced from official government portals:
-
-| Source                             | URL                                                                       | Data Type                 |
-| ---------------------------------- | ------------------------------------------------------------------------- | ------------------------- |
-| LGU Bayawan City Official Website        | [bayawan.gov.ph](https://bayawan.gov.ph/)                                   | Services, Officials       |
-| Sangguniang Panlungsod ng Bayawan        | [sangguniangbayan.bayawan.gov.ph](https://sangguniangbayan.bayawan.gov.ph/) | Ordinances, Resolutions   |
-| Bureau of Local Government Finance | [blgf.gov.ph](https://blgf.gov.ph/)                                       | Budget, Financial Reports |
-| Philippine Statistics Authority    | [psa.gov.ph](https://psa.gov.ph/)                                         | Demographics, Census      |
-| DTI CMCI Portal                    | [cmci.dti.gov.ph](https://cmci.dti.gov.ph/)                               | Competitive Index         |
-
-## License
-
-This project is dual-licensed:
-
-| License     | Applies To  | Details                                |
-| ----------- | ----------- | -------------------------------------- |
-| MIT License | Source Code | Free to use, modify, and distribute    |
-| CC BY 4.0   | Content     | Attribution required for content reuse |
-
-See [LICENSE](LICENSE) for full details.
-
-## Contact
-
-| Channel  | Link                                                                      |
-| -------- | ------------------------------------------------------------------------- |
-| Website  | [BetterBayawan.org](https://BetterBayawan.org)                              |
-| Email    | volunteer@BetterBayawan.org                                                |
-| Facebook | [@BetterBayawan.org](https://www.facebook.com/BetterBayawan.org)            |
-| LinkedIn | [BetterBayawan](https://www.linkedin.com/company/BetterBayawan/)            |
-| Discord  | [Join Community](https://discord.com/invite/qeSu7RJkjQ)                   |
-| GitHub   | [BetterBayawan/betterbayawan](https://github.com/BetterBayawan/betterbayawan) |
-
-## Acknowledgments
-
-- [BetterGov.ph](https://bettergov.ph) for the civic-tech initiative in the Philippines
-- [Abakada.org](https://abakada.org) for supporting civic technology efforts
-- LGU Bayawan City for public data availability and transparency
-- All volunteers and contributors who dedicate their time
-- Open-source community for the tools and libraries used
-- Citizens of Bayawan City for their feedback and support
-
----
-
-Made for the people of Bayawan City, Negros Oriental
-
-## Developer
-
-[Rodney Dela Cruz](https://www.rodneydelacruz.space/) is a local student and full-stack developer from Bayawan City, Negros Oriental. He built BetterBayawan.org as a community-driven initiative to build a digital bridge between the residents of Bayawan City and the local government. Rodney specializes in full-stack development and automation, and has worked on open-source civic-tech projects that help modernize Philippine local governments.
+Developed and maintained by Rodney Dela Cruz. The project builds on the
+BetterGov.ph / BetterLGU initiative and the BetterSolano.org template by Ramon
+Logan. Contributions from researchers, translators, developers, and residents
+are welcome.

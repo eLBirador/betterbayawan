@@ -109,11 +109,20 @@ function renderOrdinanceTable(ordinances) {
     }
 
     const row = document.createElement('tr');
-    row.innerHTML = `
-            <td data-label="Ordinance No.">${formatOrdinanceNo(ordinance.ordinanceNo)}</td>
-            <td data-label="Title">${ordinance.title}</td>
-            <td data-label="Session Date">${formatSessionDate(ordinance.sessionDate)}</td>
-        `;
+    [
+      formatOrdinanceNo(ordinance.ordinanceNo),
+      ordinance.title,
+      formatSessionDate(ordinance.sessionDate),
+    ].forEach((value, index) => {
+      const cell = document.createElement('td');
+      cell.dataset.label = ['Ordinance No.', 'Title', 'Session Date'][index];
+      cell.textContent = value;
+      if (index === 1) {
+        cell.lang = 'en';
+        cell.setAttribute('data-no-translate', '');
+      }
+      row.appendChild(cell);
+    });
     tableBody.appendChild(row);
   });
 }

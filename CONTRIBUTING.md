@@ -1,200 +1,54 @@
-# Contributing to BetterBayawan.org
+# Contributing
 
-Thank you for your interest in contributing to BetterBayawan.org! This civic-tech project thrives on community participation. Whether you're a developer, designer, translator, or a concerned citizen of Bayawan City, your contributions are welcome.
+Work from `main`. There is one static site; no React branch or second installation
+is required. See [README.md](README.md) for setup and [docs/architecture.md](docs/architecture.md)
+for the source map.
 
-## Choosing a Version
+## A useful pull request
 
-BetterBayawan.org has two versions. Choose based on your preference:
+1. Create a branch for one coherent change.
+2. Edit the maintained source, not `dist/`.
+3. For factual changes, include the original source URL, edition/period, and date
+   checked. For fees, processing standards, and legal requirements, identify the
+   exact document page or provision. Follow the [content policy](docs/content-policy.md).
+4. After copy changes, run `npm run i18n:extract`. Complete Filipino and Cebuano
+   translations as full sentences; preserve proper names, numbers, qualifications,
+   and legal meaning. Do not use word-by-word replacements or fill missing values
+   with English to pass coverage checks.
+5. Run `npm run check` and `npm test`. Preview important changes on a narrow screen
+   and navigate controls with a keyboard. For a text-only change, explain if browser
+   checks are not relevant.
+6. Describe the problem, resulting behavior, source evidence, and checks in the PR.
 
-| Version            | Branch             | Best For                                                          |
-| ------------------ | ------------------ | ----------------------------------------------------------------- |
-| Static HTML        | `main`             | Quick fixes, content updates, contributors new to web development |
-| React + TypeScript | `react-typescript` | New features, complex UI, contributors familiar with React        |
+## Source conventions
 
-Both versions are actively maintained and contributions to either are welcome.
+- Keep fees/times in the specific source-linked guide; do not copy a second price
+  list into category pages or FAQs.
+- Preserve official legislative titles verbatim. Add a separate explanation when
+  an official catalogue contains an apparent error.
+- Use `City`, `CSWDO`, `CDRRMO`, `SP`, and the office’s published name for current
+  Bayawan institutions. Historical references to the former municipality remain
+  valid.
+- Add aliases in `data/redirects.json` when changing a public route. Update Vercel
+  configuration too; `npm run check` verifies the two agree.
+- Cite data as historical when its reference year is old. Never represent a loan
+  authorization, budget appropriation, operating income, and cash balance as the
+  same measure.
+- Do not publish estimated staff names, invented response times, guaranteed aid
+  amounts, or unverified emergency numbers.
+- Keep existing brand assets and responsive patterns. Prefer small, accessible
+  improvements over unrelated visual redesigns.
 
-For detailed differences and migration guidance, see [MIGRATION.md](MIGRATION.md).
+## Reports and questions
 
-## Getting Started
+Use [GitHub issues](https://github.com/rodneydelacruz/betterbayawan/issues). Include
+the affected page, observed wording, proposed correction, and supporting evidence.
+Do not post private identity documents, health records, or credentials. Security
+reports should follow [SECURITY.md](SECURITY.md).
 
-### Static HTML Version
+## News
 
-#### Prerequisites
-
-- Node.js v16 or higher
-- npm v8 or higher
-- Python 3 (for local development server)
-- Git
-
-#### Setup
-
-```bash
-git clone https://github.com/BetterBayawan City/betterBayawan City.git
-cd betterBayawan City
-npm install
-npm run dev
-```
-
-Open http://localhost:8000 in your browser.
-
-### React + TypeScript Version
-
-#### Prerequisites
-
-- Node.js v18 or higher
-- npm v9 or higher
-- Git
-
-#### Setup
-
-```bash
-git clone https://github.com/BetterBayawan City/betterBayawan City.git
-cd betterBayawan City
-git checkout react-typescript
-cd react-app
-npm install
-npm run dev
-```
-
-Open http://localhost:3000 in your browser.
-
-## How to Contribute
-
-### Reporting Bugs
-
-1. Check existing [issues](https://github.com/BetterBayawan City/betterBayawan City/issues) to avoid duplicates
-2. Create a new issue with:
-   - Clear, descriptive title
-   - Steps to reproduce
-   - Expected vs actual behavior
-   - Browser and device information
-   - Screenshots if applicable
-
-### Suggesting Features
-
-1. Open an issue with the `enhancement` label
-2. Describe the feature and its benefit to users
-3. Include mockups or examples if possible
-
-### Submitting Code
-
-1. **Fork** the repository
-2. **Create** a feature branch
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-3. **Make** your changes
-4. **Test** on multiple browsers (Chrome, Firefox, Safari, Edge)
-5. **Commit** with a descriptive message
-   ```bash
-   git commit -m "Add: brief description of changes"
-   ```
-6. **Push** to your fork
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-7. **Open** a Pull Request
-
-### Commit Message Format
-
-```
-Type: Brief description
-
-Types:
-- Add: New feature or content
-- Fix: Bug fix
-- Update: Changes to existing feature
-- Remove: Removed feature or content
-- Docs: Documentation changes
-- Style: CSS/formatting changes (no logic change)
-- Refactor: Code restructuring
-```
-
-## Contribution Areas
-
-| Area               | Description                          |
-| ------------------ | ------------------------------------ |
-| Bug Fixes          | Fix reported issues                  |
-| Features           | Implement new functionality          |
-| Content            | Update municipal service information |
-| Translations       | Translate to Filipino or Bisaya     |
-| Design             | Improve UI/UX and accessibility      |
-| Data               | Verify and update statistics         |
-| Documentation      | Improve guides and comments          |
-| API Integration    | Connect real-time data sources       |
-| Data Visualization | Enhance charts and graphs            |
-
-## Code Guidelines
-
-### HTML
-
-- Use semantic HTML5 elements
-- Include proper ARIA labels for accessibility
-- Validate HTML before submitting
-
-### CSS
-
-- Follow existing naming conventions
-- Use CSS custom properties (variables)
-- Ensure responsive design
-- Test on mobile devices
-
-### JavaScript
-
-- Keep vanilla JS (no frameworks unless approved)
-- Use meaningful variable and function names
-- Add comments for complex logic
-- Avoid global variables
-
-### Accessibility
-
-- Maintain WCAG 2.1 compliance
-- Include alt text for images
-- Ensure keyboard navigation works
-- Test with screen readers if possible
-
-### Data Accuracy
-
-- Only use data from official government sources
-- Include source attribution
-- Verify information before submitting
-- Do not include unverified or speculative data
-
-## Pull Request Process
-
-1. Ensure your code follows the style guidelines
-2. Update documentation if needed
-3. Test thoroughly before submitting
-4. Fill out the PR template completely
-5. Link related issues
-6. Wait for review and address feedback
-
-## Review Criteria
-
-Pull requests are reviewed for:
-
-- Code quality and style consistency
-- Functionality and bug-free operation
-- Accessibility compliance
-- Mobile responsiveness
-- Data accuracy (for content changes)
-- Security considerations
-
-## Community
-
-- **Discord:** [Join our community](https://discord.com/invite/qeSu7RJkjQ)
-- **Facebook:** [@BetterBayawan.org](https://www.facebook.com/BetterBayawan.org)
-- **LinkedIn:** [Connect with us](https://www.linkedin.com/company/BetterBayawan)
-- **Email:** volunteer@BetterBayawan.org
-
-## Recognition
-
-All contributors are recognized in our repository. Significant contributions may be highlighted on the website.
-
-## Questions?
-
-Feel free to open an issue or reach out on Discord. We're happy to help!
-
----
-
-Thank you for helping make government information accessible to the people of Bayawan City.
+Edit `data/news.json` with an original source link and accurate publication date.
+Past events and closed opportunities belong in the archive. The optional local
+editor is `tools/news-editor.html`; it exports data for review and does not publish
+to the live website. The manual Facebook workflow produces a review artifact.

@@ -20,12 +20,22 @@ const types = {
 
 export function createStaticServer(directory) {
   const root = path.resolve(directory);
+  const redirectsFile = path.join(root, 'data', 'redirects.json');
+  const redirects = fs.existsSync(redirectsFile)
+    ? JSON.parse(fs.readFileSync(redirectsFile, 'utf8'))
+    : {};
   return http.createServer((req, res) => {
     let pathname;
     try {
       pathname = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
     } catch {
       res.writeHead(400).end();
+      return;
+    }
+    const cleanPath = pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
+    if (redirects[cleanPath]) {
+      const query = new URL(req.url, 'http://localhost').search;
+      res.writeHead(301, { Location: redirects[cleanPath] + query }).end();
       return;
     }
     const base = path.resolve(root, '.' + pathname);

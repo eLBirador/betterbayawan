@@ -1,0 +1,541 @@
+[
+  {
+    "url": "/",
+    "output": "index.html",
+    "source": "pages/index.html",
+    "title": "Bayawan City Services and Community Information",
+    "description": "BetterBayawan.org - Civic portal for Bayawan City services.",
+    "layout": "civic",
+    "styles": [],
+    "scripts": [
+      {
+        "src": "/assets/js/news.js"
+      }
+    ]
+  },
+  {
+    "url": "/accessibility/",
+    "output": "accessibility/index.html",
+    "source": "pages/accessibility/index.html",
+    "title": "Accessibility Statement",
+    "description": "Accessibility statement for BetterBayawan.org. Our commitment to making city services accessible to all citizens of Bayawan City, Negros Oriental with accessibility goals and known limitations.",
+    "layout": "portal",
+    "styles": [],
+    "scripts": []
+  },
+  {
+    "url": "/budget/",
+    "output": "budget/index.html",
+    "source": "pages/budget/index.html",
+    "title": "Budget & Financial Transparency",
+    "description": "View the city budget and financial transparency reports of Bayawan City, Negros Oriental. Access public funds data, budget breakdown, expenditures, and financial statements from LGU Bayawan City.",
+    "layout": "portal",
+    "styles": ["/assets/css/transparency-v2.css"],
+    "scripts": [
+      {
+        "src": "https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"
+      },
+      {
+        "src": "/assets/js/transparency-v2.js"
+      },
+      {
+        "src": "/assets/js/dpwh-projects.js"
+      }
+    ]
+  },
+  {
+    "url": "/contact/",
+    "output": "contact/index.html",
+    "source": "pages/contact/index.html",
+    "title": "Contact Us",
+    "description": "Contact LGU Bayawan City, Negros Oriental. Emergency hotlines for CDRRMO, PNP, BFP, CSWDO. Medical emergency numbers for hospitals and Red Cross. Office hours, email, and City Hall location.",
+    "layout": "portal",
+    "styles": [],
+    "scripts": []
+  },
+  {
+    "url": "/faq/",
+    "output": "faq/index.html",
+    "source": "pages/faq/index.html",
+    "title": "Frequently Asked Questions",
+    "description": "Frequently asked questions about Bayawan City city services, procedures, requirements, and how to access LGU Bayawan City programs. Get answers to common questions.",
+    "layout": "portal",
+    "styles": [],
+    "scripts": []
+  },
+  {
+    "url": "/government/",
+    "output": "government/index.html",
+    "source": "pages/government/index.html",
+    "title": "Government Officials & Structure",
+    "description": "Bayawan City, Negros Oriental government structure. Meet Mayor John T. 'Jack' Raymond Jr., Vice Mayor Rusmar Ian D. Tijing, Sangguniang Panlungsod members, city offices, and 28 barangays. Access office contacts and services.",
+    "layout": "portal",
+    "styles": [],
+    "scripts": []
+  },
+  {
+    "url": "/government/officials",
+    "output": "government/officials.html",
+    "source": "pages/government/officials.html",
+    "title": "Elected Officials",
+    "description": "Meet the elected officials of Bayawan City, Negros Oriental including Mayor Hon. John T. Raymond Jr., Vice Mayor Hon. Rusmar Ian D. Tijing, and Sangguniang Panlungsod members serving LGU Bayawan City.",
+    "layout": "portal",
+    "styles": [],
+    "scripts": [
+      {
+        "src": "/assets/js/officials.js"
+      }
+    ]
+  },
+  {
+    "url": "/legislative/",
+    "output": "legislative/index.html",
+    "source": "pages/legislative/index.html",
+    "title": "Legislative Documents",
+    "description": "Access legislative documents, ordinances, and resolutions of the Sangguniang Panlungsod of Bayawan City, Negros Oriental. Browse city laws and legislative records from LGU Bayawan City.",
+    "layout": "portal",
+    "styles": ["/assets/css/legislative.css"],
+    "scripts": [
+      {
+        "src": "/assets/js/pages/legislative.js"
+      }
+    ]
+  },
+  {
+    "url": "/legislative/ordinance-framework",
+    "output": "legislative/ordinance-framework.html",
+    "source": "pages/legislative/ordinance-framework.html",
+    "title": "Ordinance Framework",
+    "description": "Browse City Ordinances enacted by the Sangguniang Panlungsod of Bayawan City, Negros Oriental. Access local laws, regulations, and legislative documents from LGU Bayawan City.",
+    "layout": "portal",
+    "styles": [],
+    "scripts": [
+      {
+        "src": "/assets/js/ordinances.js"
+      }
+    ]
+  },
+  {
+    "url": "/legislative/resolution-framework",
+    "output": "legislative/resolution-framework.html",
+    "source": "pages/legislative/resolution-framework.html",
+    "title": "Resolution Framework",
+    "description": "Browse resolutions passed by the Sangguniang Panlungsod of Bayawan City, Negros Oriental. Access City Resolutions, council decisions, and legislative records from LGU Bayawan City.",
+    "layout": "portal",
+    "styles": [],
+    "scripts": [
+      {
+        "src": "/assets/js/resolutions.js"
+      }
+    ]
+  },
+  {
+    "url": "/news/",
+    "output": "news/index.html",
+    "source": "pages/news/index.html",
+    "title": "News & Updates",
+    "description": "Latest news, updates, and announcements from LGU Bayawan City, Negros Oriental. Stay informed about city programs, events, and community developments.",
+    "layout": "portal",
+    "styles": [],
+    "scripts": [
+      {
+        "src": "/assets/js/news.js"
+      }
+    ]
+  },
+  {
+    "url": "/privacy/",
+    "output": "privacy/index.html",
+    "source": "pages/privacy/index.html",
+    "title": "Privacy Policy",
+    "description": "Privacy Policy for BetterBayawan.org - Learn how we collect, use, and protect your personal information in compliance with the Philippine Data Privacy Act of 2012 (RA 10173).",
+    "layout": "portal",
+    "styles": ["/assets/css/legal.css"],
+    "scripts": []
+  },
+  {
+    "url": "/service-details/birth-certificate",
+    "output": "service-details/birth-certificate.html",
+    "source": "pages/service-details/birth-certificate.html",
+    "title": "Birth Certificate Service Guide",
+    "description": "How to get a birth certificate copy in Bayawan City, Negros Oriental. Complete step-by-step guide with requirements, fees, processing time, and application procedures from LGU Bayawan City.",
+    "layout": "portal",
+    "styles": ["/assets/css/pages/service-details-birth-certificate.css"],
+    "scripts": []
+  },
+  {
+    "url": "/service-details/business-permits-licensing",
+    "output": "service-details/business-permits-licensing.html",
+    "source": "pages/service-details/business-permits-licensing.html",
+    "title": "Business Permits and Licensing",
+    "description": "Business Permits and Licensing Section - New business permit, renewal, Mayor's clearance, and other business permits in Bayawan City, Negros Oriental.",
+    "layout": "portal",
+    "styles": ["/assets/css/pages/service-details-business-permits-licensing.css"],
+    "scripts": []
+  },
+  {
+    "url": "/service-details/civil-registrar",
+    "output": "service-details/civil-registrar.html",
+    "source": "pages/service-details/civil-registrar.html",
+    "title": "City Civil Registrar's Office",
+    "description": "City Civil Registrar's Office services in Bayawan City, Negros Oriental. Birth certificates, marriage certificates, death certificates, and other vital records services.",
+    "layout": "portal",
+    "styles": ["/assets/css/pages/service-details-civil-registrar.css"],
+    "scripts": []
+  },
+  {
+    "url": "/service-details/death-certificate",
+    "output": "service-details/death-certificate.html",
+    "source": "pages/service-details/death-certificate.html",
+    "title": "Death Certificate Registration Guide",
+    "description": "How to register a death certificate in Bayawan City, Negros Oriental. Complete step-by-step guide with requirements, fees, processing time, and application procedures from LGU Bayawan City.",
+    "layout": "portal",
+    "styles": ["/assets/css/pages/service-details-death-certificate.css"],
+    "scripts": []
+  },
+  {
+    "url": "/service-details/general-services",
+    "output": "service-details/general-services.html",
+    "source": "pages/service-details/general-services.html",
+    "title": "City General Services Office",
+    "description": "City General Services Office in Bayawan City, Negros Oriental. Vehicle and equipment rental, property management, procurement services, and general administrative support.",
+    "layout": "portal",
+    "styles": ["/assets/css/pages/service-details-general-services.css"],
+    "scripts": []
+  },
+  {
+    "url": "/service-details/human-resource-management",
+    "output": "service-details/human-resource-management.html",
+    "source": "pages/service-details/human-resource-management.html",
+    "title": "Human Resource Management",
+    "description": "Human Resource Management Section - Service records, employment certifications, leave management for LGU Bayawan City employees.",
+    "layout": "portal",
+    "styles": ["/assets/css/pages/service-details-human-resource-management.css"],
+    "scripts": []
+  },
+  {
+    "url": "/service-details/marriage-certificate",
+    "output": "service-details/marriage-certificate.html",
+    "source": "pages/service-details/marriage-certificate.html",
+    "title": "Marriage Certificate Service Guide",
+    "description": "How to register and get a marriage certificate in Bayawan City, Negros Oriental. Complete step-by-step guide with requirements, fees, processing time, and application procedures from LGU Bayawan City.",
+    "layout": "portal",
+    "styles": ["/assets/css/pages/service-details-marriage-certificate.css"],
+    "scripts": []
+  },
+  {
+    "url": "/service-details/cswdo-services",
+    "output": "service-details/cswdo-services.html",
+    "source": "pages/service-details/cswdo-services.html",
+    "title": "CSWDO Services",
+    "description": "City Social Welfare and Development Office (CSWDO) Services - Social case studies, indigency certificates, AICS, PWD assistance, senior citizen services, and welfare programs in Bayawan City, Negros Oriental.",
+    "layout": "portal",
+    "styles": ["/assets/css/pages/service-details-mswdo-services.css"],
+    "scripts": []
+  },
+  {
+    "url": "/service-details/mswdo",
+    "output": "service-details/mswdo.html",
+    "title": "City Social Welfare and Development Office",
+    "description": "City Social Welfare and Development Office (CSWDO) services in Bayawan City, Negros Oriental. Protective services, rehabilitation, day care, social pension, livelihood programs, and assistance for vulnerable sectors.",
+    "layout": "portal",
+    "redirect": "/service-details/cswdo-services"
+  },
+  {
+    "url": "/service-details/city-accounting",
+    "output": "service-details/city-accounting.html",
+    "source": "pages/service-details/city-accounting.html",
+    "title": "City Accounting Office",
+    "description": "City Accounting Office - Pre-audit of disbursements, payroll preparation, check issuance, and financial reporting in Bayawan City, Negros Oriental.",
+    "layout": "portal",
+    "styles": ["/assets/css/pages/service-details-municipal-accounting.css"],
+    "scripts": []
+  },
+  {
+    "url": "/service-details/city-agriculture",
+    "output": "service-details/city-agriculture.html",
+    "source": "pages/service-details/city-agriculture.html",
+    "title": "City Agriculture Office",
+    "description": "City Agriculture Office - Farm registration, certifications, rice program, corn program, livestock, fishery, and agricultural services in Bayawan City, Negros Oriental.",
+    "layout": "portal",
+    "styles": ["/assets/css/pages/service-details-municipal-agriculture.css"],
+    "scripts": []
+  },
+  {
+    "url": "/service-details/city-assessor",
+    "output": "service-details/city-assessor.html",
+    "source": "pages/service-details/city-assessor.html",
+    "title": "City Assessor's Office",
+    "description": "City Assessor's Office services in Bayawan City, Negros Oriental. Property assessment, tax declarations, land classification, and real property records management.",
+    "layout": "portal",
+    "styles": ["/assets/css/pages/service-details-municipal-assessor.css"],
+    "scripts": []
+  },
+  {
+    "url": "/service-details/city-budget",
+    "output": "service-details/city-budget.html",
+    "source": "pages/service-details/city-budget.html",
+    "title": "City Budget Office",
+    "description": "City Budget Office - Obligation request processing, barangay budget review, and SEF budget preparation in Bayawan City, Negros Oriental.",
+    "layout": "portal",
+    "styles": ["/assets/css/pages/service-details-municipal-budget.css"],
+    "scripts": []
+  },
+  {
+    "url": "/service-details/municipal-civil-registrar",
+    "output": "service-details/municipal-civil-registrar.html",
+    "title": "City Civil Registrar's Office",
+    "description": "City Civil Registrar's Office - Birth, death, marriage registration, and certified true copies of civil registry documents in Bayawan City, Negros Oriental.",
+    "layout": "portal",
+    "redirect": "/service-details/civil-registrar"
+  },
+  {
+    "url": "/service-details/city-engineering",
+    "output": "service-details/city-engineering.html",
+    "source": "pages/service-details/city-engineering.html",
+    "title": "City Engineering Office",
+    "description": "City Engineering Office - Building permit issuance, construction permits, and engineering services in Bayawan City, Negros Oriental.",
+    "layout": "portal",
+    "styles": ["/assets/css/pages/service-details-municipal-engineering.css"],
+    "scripts": []
+  },
+  {
+    "url": "/service-details/municipal-general-services",
+    "output": "service-details/municipal-general-services.html",
+    "title": "City General Services Office",
+    "description": "City General Services Office - Property custodianship, supplies management, vehicle services, and utility management in Bayawan City, Negros Oriental.",
+    "layout": "portal",
+    "redirect": "/service-details/general-services"
+  },
+  {
+    "url": "/service-details/city-planning",
+    "output": "service-details/city-planning.html",
+    "source": "pages/service-details/city-planning.html",
+    "title": "City Planning & Development Office",
+    "description": "City Planning and Development Office - Zoning clearance, locational clearance, and development planning services in Bayawan City, Negros Oriental.",
+    "layout": "portal",
+    "styles": ["/assets/css/pages/service-details-municipal-planning.css"],
+    "scripts": []
+  },
+  {
+    "url": "/service-details/city-treasurer",
+    "output": "service-details/city-treasurer.html",
+    "source": "pages/service-details/city-treasurer.html",
+    "title": "City Treasurer's Office",
+    "description": "City Treasurer's Office - Complete guide to tax payments, fees collection, and financial services in Bayawan City, Negros Oriental.",
+    "layout": "portal",
+    "styles": ["/assets/css/pages/service-details-municipal-treasurer.css"],
+    "scripts": []
+  },
+  {
+    "url": "/service-details/property-declaration",
+    "output": "service-details/property-declaration.html",
+    "source": "pages/service-details/property-declaration.html",
+    "title": "Property Declaration",
+    "description": "Declaration of Land, Building and Machineries - Complete guide to property tax declaration in Bayawan City, Negros Oriental. Requirements, forms, and procedures from the City Assessor's Office.",
+    "layout": "portal",
+    "styles": ["/assets/css/pages/service-details-property-declaration.css"],
+    "scripts": []
+  },
+  {
+    "url": "/service-details/seedo-public-market",
+    "output": "service-details/seedo-public-market.html",
+    "source": "pages/service-details/seedo-public-market.html",
+    "title": "SEEDO Public Market",
+    "description": "SEEDO Public Market Services - Market clearance, entrance fees, vendor services, and community tax certificates in Bayawan City, Negros Oriental.",
+    "layout": "portal",
+    "styles": ["/assets/css/pages/service-details-seedo-public-market.css"],
+    "scripts": []
+  },
+  {
+    "url": "/service-details/seedo-slaughterhouse",
+    "output": "service-details/seedo-slaughterhouse.html",
+    "source": "pages/service-details/seedo-slaughterhouse.html",
+    "title": "SEEDO Slaughterhouse",
+    "description": "SEEDO Slaughterhouse Services - Hog, cattle, goat, and carabao slaughter services with ante-mortem and post-mortem inspection in Bayawan City, Negros Oriental.",
+    "layout": "portal",
+    "styles": ["/assets/css/pages/service-details-seedo-slaughterhouse.css"],
+    "scripts": []
+  },
+  {
+    "url": "/service-details/tricycle-franchising",
+    "output": "service-details/tricycle-franchising.html",
+    "source": "pages/service-details/tricycle-franchising.html",
+    "title": "Tricycle Franchising & Records",
+    "description": "Tricycle Franchising and Records Sections - Complete guide to tricycle franchise application and records request procedures in Bayawan City, Negros Oriental.",
+    "layout": "portal",
+    "styles": ["/assets/css/pages/service-details-tricycle-franchising.css"],
+    "scripts": []
+  },
+  {
+    "url": "/services/agriculture",
+    "output": "services/agriculture.html",
+    "source": "pages/services/agriculture.html",
+    "title": "Agriculture Services",
+    "description": "Agricultural services in Bayawan City, Negros Oriental including seedling distribution, farm equipment assistance, livelihood programs, and farming support from LGU Bayawan City.",
+    "layout": "portal",
+    "styles": [],
+    "scripts": []
+  },
+  {
+    "url": "/services/business",
+    "output": "services/business.html",
+    "source": "pages/services/business.html",
+    "title": "Business Permits & Licenses",
+    "description": "Business services in Bayawan City, Negros Oriental. Online Filipizen transactions, business permits, BPLS licensing, SEEDO Public Market, Slaughterhouse services, tricycle franchising, and cedula issuance.",
+    "layout": "portal",
+    "styles": [],
+    "scripts": []
+  },
+  {
+    "url": "/services/certificates",
+    "output": "services/certificates.html",
+    "source": "pages/services/certificates.html",
+    "title": "Certificates & Vital Records",
+    "description": "Get birth, death, marriage certificates and vital records in Bayawan City, Negros Oriental. Complete guide to requirements, fees, and processing times for civil registry documents.",
+    "layout": "portal",
+    "styles": [],
+    "scripts": []
+  },
+  {
+    "url": "/services/education",
+    "output": "services/education.html",
+    "source": "pages/services/education.html",
+    "title": "Education & Scholarship Services",
+    "description": "Education services and scholarship programs in Bayawan City, Negros Oriental. Apply for educational assistance, scholarships, and student support from LGU Bayawan City.",
+    "layout": "portal",
+    "styles": [],
+    "scripts": []
+  },
+  {
+    "url": "/services/environment",
+    "output": "services/environment.html",
+    "source": "pages/services/environment.html",
+    "title": "Environmental Services",
+    "description": "Environmental services in Bayawan City, Negros Oriental including waste management, recycling programs, sanitation services, and environmental protection initiatives.",
+    "layout": "portal",
+    "styles": [],
+    "scripts": []
+  },
+  {
+    "url": "/services/health",
+    "output": "services/health.html",
+    "source": "pages/services/health.html",
+    "title": "Health Services and Hospitals in Bayawan City",
+    "description": "BetterBayawan.org - Civic portal for Bayawan City services.",
+    "layout": "civic",
+    "styles": [],
+    "scripts": []
+  },
+  {
+    "url": "/services/",
+    "output": "services/index.html",
+    "source": "pages/services/index.html",
+    "title": "Bayawan City Services Directory",
+    "description": "BetterBayawan.org - Civic portal for Bayawan City services.",
+    "layout": "civic",
+    "styles": [],
+    "scripts": []
+  },
+  {
+    "url": "/services/infrastructure",
+    "output": "services/infrastructure.html",
+    "source": "pages/services/infrastructure.html",
+    "title": "Infrastructure & Building Permits",
+    "description": "Infrastructure and engineering services in Bayawan City, Negros Oriental. Apply for building permits, construction permits, and access engineering services from LGU Bayawan City.",
+    "layout": "portal",
+    "styles": [],
+    "scripts": []
+  },
+  {
+    "url": "/services/public-safety",
+    "output": "services/public-safety.html",
+    "source": "pages/services/public-safety.html",
+    "title": "Public Safety & Emergency Services",
+    "description": "Public safety services in Bayawan City, Negros Oriental including emergency response, disaster preparedness, police services, fire protection, and CDRRMO programs.",
+    "layout": "portal",
+    "styles": [],
+    "scripts": []
+  },
+  {
+    "url": "/services/social-services",
+    "output": "services/social-services.html",
+    "source": "pages/services/social-services.html",
+    "title": "Social Welfare Services",
+    "description": "CSWDO social welfare services in Bayawan City, Negros Oriental. Social case study, certificate of indigency, AICS assistance, PWD services, senior citizen programs, women and children welfare support.",
+    "layout": "portal",
+    "styles": [],
+    "scripts": []
+  },
+  {
+    "url": "/services/tax-payments",
+    "output": "services/tax-payments.html",
+    "source": "pages/services/tax-payments.html",
+    "title": "Tax & Payment Services",
+    "description": "Tax and payment services in Bayawan City, Negros Oriental. Online Filipizen real property tax payment, City Treasurer, Budget Office, Accounting Office, Assessor services, and property declaration.",
+    "layout": "portal",
+    "styles": [],
+    "scripts": []
+  },
+  {
+    "url": "/sitemap/",
+    "output": "sitemap/index.html",
+    "source": "pages/sitemap/index.html",
+    "title": "Sitemap",
+    "description": "Complete sitemap for BetterBayawan.org - Navigate all pages, services, and resources of the City of Bayawan portal. Find all available city services and information.",
+    "layout": "portal",
+    "styles": [],
+    "scripts": []
+  },
+  {
+    "url": "/statistics/",
+    "output": "statistics/index.html",
+    "source": "pages/statistics/index.html",
+    "title": "City Statistics & Data",
+    "description": "Bayawan City, Negros Oriental statistics and data. View population demographics, per-barangay data, land use, city income, and official recognitions of LGU Bayawan City.",
+    "layout": "portal",
+    "styles": ["/assets/css/statistics.css"],
+    "scripts": [
+      {
+        "src": "https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"
+      },
+      {
+        "src": "/assets/js/statistics-new.js"
+      }
+    ]
+  },
+  {
+    "url": "/terms/",
+    "output": "terms/index.html",
+    "source": "pages/terms/index.html",
+    "title": "Terms of Use",
+    "description": "Terms of Use for BetterBayawan.org - A civic platform dedicated to empowering the people of Bayawan City with transparent access to city services and public funds of LGU Bayawan City, Negros Oriental.",
+    "layout": "portal",
+    "styles": ["/assets/css/legal.css"],
+    "scripts": []
+  },
+  {
+    "url": "/403.html",
+    "output": "403.html",
+    "source": "pages/403.html",
+    "standalone": true
+  },
+  {
+    "url": "/404.html",
+    "output": "404.html",
+    "source": "pages/404.html",
+    "standalone": true
+  },
+  {
+    "url": "/500.html",
+    "output": "500.html",
+    "source": "pages/500.html",
+    "standalone": true
+  },
+  {
+    "url": "/offline.html",
+    "output": "offline.html",
+    "source": "pages/offline.html",
+    "standalone": true
+  }
+]

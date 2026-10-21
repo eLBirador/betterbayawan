@@ -1,0 +1,13 @@
+{
+  "/service-details/mswdo-services": "/service-details/cswdo-services",
+  "/service-details/mswdo": "/service-details/cswdo-services",
+  "/service-details/municipal-accounting": "/service-details/city-accounting",
+  "/service-details/municipal-agriculture": "/service-details/city-agriculture",
+  "/service-details/municipal-assessor": "/service-details/city-assessor",
+  "/service-details/municipal-budget": "/service-details/city-budget",
+  "/service-details/municipal-civil-registrar": "/service-details/civil-registrar",
+  "/service-details/municipal-engineering": "/service-details/city-engineering",
+  "/service-details/municipal-general-services": "/service-details/general-services",
+  "/service-details/municipal-planning": "/service-details/city-planning",
+  "/service-details/municipal-treasurer": "/service-details/city-treasurer"
+}

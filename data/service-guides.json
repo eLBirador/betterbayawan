@@ -1,0 +1,257 @@
+{
+  "property-declaration": {
+    "office": "City Assessor’s Office",
+    "services": [["Property assessment and tax declarations", 176]],
+    "notes": [
+      "Ask the assessor for the current form for land, buildings, or machinery. Provide the supporting ownership and property records applicable to your transaction.",
+      "A tax declaration is not a land title and is not conclusive proof of legal ownership."
+    ],
+    "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+    "edition": 2025,
+    "checked": "2026-10-21",
+    "headOffice": "City Assessor’s Office"
+  },
+  "general-services": {
+    "office": "City General Services Office",
+    "services": [
+      ["Coffin assistance", 258],
+      ["Transportation: shuttle bus and light vehicle", 260],
+      ["Garbage collection", 261],
+      ["Building maintenance", 263],
+      ["Supplies and equipment accountability", 265]
+    ],
+    "notes": [
+      "Vehicle availability, approval, and any charges must be confirmed with the office.",
+      "Public procurement follows RA 12009 and applicable transition rules. Supplier instructions must follow the current procurement notice."
+    ],
+    "links": [
+      ["Government procurement guidance", "https://www.gppb.gov.ph/public-advisory-no-09-2026/"]
+    ],
+    "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+    "edition": 2025,
+    "checked": "2026-10-21",
+    "headOffice": "City General Services Office"
+  },
+  "business-permits-licensing": {
+    "office": "Business Permit and Licensing Office",
+    "services": [
+      ["New business application", 304],
+      ["Business permit renewal", 308],
+      ["Business retirement", 311],
+      ["Change of business name, ownership, or location", 313],
+      ["Special permit", 317]
+    ],
+    "checklist": [
+      "New business: the Charter lists the applicable DTI/SEC/CDA registration, lease if rented, occupancy permit, FSIC, and applicable sanitary permit. Barangay clearance and community/corporate tax certificates are integrated into the BPLO system. Additional sector-specific requirements may apply.",
+      "Renewal: provide the sworn gross-sales/receipts declaration, financial statement, or income-tax return, and applicable sector-specific documents. Use the full checklist on printed page 308.",
+      "Retirement: the Charter lists the retirement application, business permit if available, and barangay certification that operations have ceased. Inspection and tax assessment are part of the process."
+    ],
+    "notes": [
+      "January 20 is the ordinary annual renewal reference; extensions are year-specific. The published 2026 resolution extended processing to January 31, 2026. That deadline is past and must not be reused for a later year.",
+      "Ask BPLO to assess the fees and release schedule for the actual transaction."
+    ],
+    "links": [["Official city eBOSS", "https://www.bayawancity.gov.ph/business/businesspage.php"]],
+    "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+    "edition": 2025,
+    "checked": "2026-10-21"
+  },
+  "tricycle-franchising": {
+    "office": "Business Permit and Licensing Office / Sangguniang Panlungsod",
+    "services": [
+      ["Motorized Tricycle Operator’s Permit application", 315],
+      ["Franchise dropping requests", 292],
+      ["Certified legislative records", 288]
+    ],
+    "checklist": [
+      "The MTOP checklist lists a community tax certificate, LTO official receipt and certificate of registration, city treasury parking-fee clearance, CTTMO/CPSO certification, PNP inspection report, and approved Sangguniang Panlungsod franchise."
+    ],
+    "notes": [
+      "MTOP is the term used in Bayawan’s ordinance and Citizen’s Charter. The approved franchise and operating permit are related but distinct requirements.",
+      "Use the official checklist and fee assessment.."
+    ],
+    "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+    "edition": 2025,
+    "checked": "2026-10-21"
+  },
+  "seedo-public-market": {
+    "office": "City Treasury / Public Market and Economic Enterprise offices",
+    "services": [["Market and slaughterhouse fees and charges", 121]],
+    "notes": [
+      "Ask the public-market office for the current stall, vending, clearance, and entrance-fee requirements. Rates depend on the transaction and applicable city schedule.",
+      "For a complaint, report the incident and location to the market administration. Ask the office about the response process and expected timing."
+    ],
+    "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+    "edition": 2025,
+    "checked": "2026-10-21"
+  },
+  "seedo-slaughterhouse": {
+    "office": "City Treasury / Slaughterhouse and City Veterinary offices",
+    "services": [["Market and slaughterhouse fees and charges", 121]],
+    "notes": [
+      "Confirm the animal-specific inspection, ownership, transport, and slaughter requirements with the slaughterhouse and City Veterinary Office before transporting animals.",
+      "Request the current assessed fees and operating schedule."
+    ],
+    "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+    "edition": 2025,
+    "checked": "2026-10-21"
+  },
+  "human-resource-management": {
+    "office": "City Human Resource Management Office",
+    "services": [
+      ["Employment, travel, service-record, and LGU-clearance certifications", 39],
+      ["Recruitment, selection, and placement", 41],
+      ["Travel-order processing", 44]
+    ],
+    "notes": [
+      "These services concern LGU personnel or applicants for government employment. Use the checklist for your specific transaction and consult HRMO about leave entitlements and current forms."
+    ],
+    "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+    "edition": 2025,
+    "checked": "2026-10-21"
+  },
+  "city-accounting": {
+    "office": "City Accounting Office",
+    "services": [
+      ["Pre-audit of disbursement vouchers", 160],
+      ["Financial transaction review", 159]
+    ],
+    "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+    "edition": 2025,
+    "checked": "2026-10-21",
+    "headOffice": "City Accounting Office"
+  },
+  "city-budget": {
+    "office": "City Budget Office",
+    "services": [
+      ["Barangay, annual, and supplemental budgets", 113],
+      ["Allotment and obligation", 114]
+    ],
+    "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+    "edition": 2025,
+    "checked": "2026-10-21",
+    "headOffice": "City Budget Office"
+  },
+  "city-treasurer": {
+    "office": "City Treasurer’s Office",
+    "services": [
+      ["Community Tax Certificate: individual", 131],
+      ["Community Tax Certificate: juridical entity", 133],
+      ["Business permit fees", 146],
+      ["Transfer tax", 151]
+    ],
+    "notes": [
+      "Ask the City Treasurer for the assessment applicable to your property or business. Discounts and penalties follow the current local revenue code and dated notices.",
+      "The 2025 amnesty catalogue contains conflicting end dates. That historical period has passed; ask the City Treasurer whether any later amnesty applies."
+    ],
+    "links": [
+      [
+        "2026 RPT notices",
+        "https://blgf.gov.ph/notices-of-payment-of-real-property-tax-and-special-education-fund-tax-of-lgus-for-cy-2026/"
+      ]
+    ],
+    "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+    "edition": 2025,
+    "checked": "2026-10-21",
+    "headOffice": "City Treasurer’s Office"
+  },
+  "city-engineering": {
+    "office": "City Engineering Office / Office of the Building Official",
+    "services": [
+      ["Building permit", 326],
+      ["Electrical permit", 329],
+      ["Occupancy permit", 333],
+      ["Demolition permit", 335]
+    ],
+    "notes": [
+      "Building and occupancy permits are handled by the Office of the Building Official. The City Engineering Office and OBO have distinct functions."
+    ],
+    "checklist": [
+      "The building-permit checklist includes five completed application copies and five sets of applicable design documents.",
+      "Provide the locational-clearance application, applicable title/land-right documents, detailed estimates, and soil test when required.",
+      "The occupancy-permit checklist includes the application, notarized completion certificate, as-built changes, construction logbooks, and applicable agency certifications."
+    ],
+    "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+    "edition": 2025,
+    "checked": "2026-10-21",
+    "headOffice": "City Engineering Office"
+  },
+  "city-planning": {
+    "office": "City Planning and Development Office",
+    "services": [
+      ["Locational clearance for buildings, electrical works, fencing, and new businesses", 63],
+      ["Issuance of locational clearance", 65]
+    ],
+    "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+    "edition": 2025,
+    "checked": "2026-10-21",
+    "headOffice": "City Planning and Development Office"
+  },
+  "city-agriculture": {
+    "office": "City Agriculture Office",
+    "services": [
+      ["Agricultural records", 68],
+      ["RSBSA registration", 70],
+      ["RSBSA certification", 74],
+      ["Farmers Assistance Application Form", 75],
+      ["Plantation crops", 79],
+      ["Vegetables and organic agriculture", 85],
+      ["Hauling and marketing assistance", 87],
+      ["Fish-farm development", 88],
+      ["Tractor services", 93],
+      ["Combine-harvester rental", 96]
+    ],
+    "notes": [
+      "Program eligibility, available inputs, equipment schedules, and rates depend on the specific service. Ask the office which current program and checklist apply."
+    ],
+    "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+    "edition": 2025,
+    "checked": "2026-10-21",
+    "headOffice": "City Agriculture Office"
+  },
+  "city-assessor": {
+    "office": "City Assessor’s Office",
+    "services": [["Property assessment and tax declarations", 176]],
+    "notes": [
+      "A tax declaration records property for taxation; it is not conclusive proof of ownership.",
+      "Obtain the current assessment and documentary checklist for the specific transaction. Transfer tax and registration of ownership are separate matters."
+    ],
+    "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+    "edition": 2025,
+    "checked": "2026-10-21",
+    "headOffice": "City Assessor’s Office"
+  },
+  "cswdo-services": {
+    "office": "City Social Welfare and Development Office",
+    "services": [
+      ["Social welfare assistance and assessment", 230],
+      ["Scholarship indigency certification", 240],
+      ["PWD ID", 241],
+      ["Senior Citizen ID", 242],
+      ["Solo Parent ID", 243]
+    ],
+    "checklist": [
+      "PWD ID: two 1×1 photographs, one whole-body photograph, valid ID, and medical certificate from the City Health Office, as listed in the 2025 local Charter.",
+      "Senior Citizen ID: two 1×1 photographs and valid ID, birth certificate, or voter’s certification, as listed in the 2025 local Charter.",
+      "For both IDs, the Charter lists no fee, 30 minutes for forms, and seven working days for the required signatures. This separates desk handling from the release process."
+    ],
+    "notes": [
+      "PWD-ID rules: the 2021 NCDA order specifies five-year validity. The September 2026 unified-ID policy introduces lifetime validity for permanent disabilities and a phased rollout. Ask CSWDO/PDAO how existing and new cards are handled locally.",
+      "Senior-citizen and PWD discounts apply to covered goods and services under the relevant law. They are not a blanket discount on every purchase, and no general minimum purchase is stated here.",
+      "Financial assistance depends on assessment, program rules, and available funds; amounts and approval are not guaranteed."
+    ],
+    "links": [
+      [
+        "NCDA unified-ID policy",
+        "https://ncda.gov.ph/2026/09/09/institutionalization-and-implementation-of-a-unified-persons-with-disabilities-identification-system-administrative-order-no-001-series-of-2026/"
+      ],
+      [
+        "Senior-citizen benefits",
+        "https://www.ncsc.gov.ph/post/what-are-the-rights-and-privileges-of-senior-citizens"
+      ]
+    ],
+    "source": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf",
+    "edition": 2025,
+    "checked": "2026-10-21",
+    "headOffice": "City Social Welfare and Development Office"
+  }
+}

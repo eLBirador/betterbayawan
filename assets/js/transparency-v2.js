@@ -4,49 +4,12 @@
  */
 
 // Financial data for FY 2025
-const FINANCIAL_DATA = {
-  q1: {
-    period: 'Q1 2025',
-    periodLabel: 'Jan - Mar',
-    income: {
-      local: 88.85,
-      external: 69.62,
-      total: 158.47,
-    },
-    expenditures: {
-      gps: 42.76,
-      social: 13.33,
-      economic: 11.07,
-      debt: 0.35,
-      total: 67.51,
-    },
-    netIncome: 90.96,
-    fundBalance: 283.29,
-  },
-  q2: {
-    period: 'Q2 2025',
-    periodLabel: 'Apr - Jun',
-    income: {
-      local: 114.15,
-      external: 139.25,
-      total: 253.4,
-    },
-    expenditures: {
-      gps: 88.31,
-      social: 30.56,
-      economic: 20.32,
-      debt: 1.29,
-      total: 140.48,
-    },
-    netIncome: 112.92,
-    fundBalance: 275.2,
-  },
-};
+const FINANCIAL_DATA = window.BayawanData.financial;
 
 // Chart instances
 let incomeChart = null;
 let expenditureChart = null;
-let currentQuarter = 'q1';
+let currentQuarter = 'q3-2026';
 
 /**
  * Format number as Philippine Peso in millions
@@ -78,6 +41,8 @@ function animateValue(element, newValue) {
  */
 function updateDisplay(quarter) {
   const data = FINANCIAL_DATA[quarter];
+  const source = document.getElementById('financial-source');
+  if (source) { source.href = data.source; source.textContent = data.period; }
 
   // Update metrics
   animateValue(document.getElementById('sre-total-income'), formatPeso(data.income.total));

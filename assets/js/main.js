@@ -293,7 +293,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var isAnimating = false;
 
     var closeMobileMenu = function () {
-      if (isAnimating) return;
+      // Escape and outside-click must close the menu even during its entrance.
       isAnimating = true;
       toggleBtn.setAttribute('aria-expanded', 'false');
       nav.classList.remove('active');

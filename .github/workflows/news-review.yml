@@ -1,0 +1,22 @@
+name: Prepare Facebook news for review
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: read
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Prepare candidate news
+        env:
+          FB_PAGE_ID: ${{ vars.FB_PAGE_ID }}
+          FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
+        run: node scripts/sync-facebook.js
+      - uses: actions/upload-artifact@v4
+        with:
+          name: candidate-news-review-before-publishing
+          path: data/news.json

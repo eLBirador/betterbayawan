@@ -1,78 +1,126 @@
 {
   "_schema_version": "1.0",
-  "_status": "verified",
-  "_source": "Official Website of the Bayawan City Council (bayawancitycouncil.com) and the City of Bayawan (bayawancity.gov.ph)",
-  "_updated": "2026-08-29",
+  "_status": "source-linked",
+  "_source": "https://bayawancity.gov.ph/info/directory/directory.php",
+  "_updated": "2026-10-21",
   "mayor": {
     "name": "Hon. John T. \"Jack\" Raymond Jr.",
-    "title": "City Mayor",
-    "image": "assets/images/officials/mayor.jpg"
+    "title": "City Mayor"
   },
   "vice_mayor": {
     "name": "Hon. Rusmar Ian D. Tijing",
-    "title": "City Vice Mayor",
-    "image": "assets/images/officials/vice-mayor.jpg"
+    "title": "City Vice Mayor"
   },
   "councilors": [
     {
       "name": "Hon. Mark Fidencio L. Aurelia",
-      "title": "City Councilor",
-      "image": "assets/images/officials/sb1.jpg"
+      "title": "City Councilor"
     },
     {
       "name": "Hon. Stanley Brian Fortugaleza",
-      "title": "City Councilor",
-      "image": "assets/images/officials/sb2.jpg"
+      "title": "City Councilor"
     },
     {
       "name": "Hon. Severino Salvador M. Capulso",
-      "title": "City Councilor",
-      "image": "assets/images/officials/sb3.jpg"
+      "title": "City Councilor"
     },
     {
       "name": "Hon. Felipe O. Santiago Jr.",
-      "title": "City Councilor",
-      "image": "assets/images/officials/sb4.jpg"
+      "title": "City Councilor"
     },
     {
       "name": "Hon. Rolando B. Abrasaldo",
-      "title": "City Councilor",
-      "image": "assets/images/officials/sb5.jpg"
+      "title": "City Councilor"
     },
     {
       "name": "Hon. Sharlou Jamin",
-      "title": "City Councilor",
-      "image": "assets/images/officials/sb6.jpg"
+      "title": "City Councilor"
     },
     {
       "name": "Hon. Luis J. Sumalpong",
-      "title": "City Councilor",
-      "image": "assets/images/officials/sb7.jpg"
+      "title": "City Councilor"
     },
     {
       "name": "Hon. Efleda Arias Renacia",
-      "title": "City Councilor",
-      "image": "assets/images/officials/sb8.jpg"
+      "title": "City Councilor"
     },
     {
-      "name": "Hon. Karl T. Sara\u00f1a",
-      "title": "City Councilor",
-      "image": "assets/images/officials/sb9.jpg"
+      "name": "Hon. Karl T. Saraña",
+      "title": "City Councilor"
     },
     {
       "name": "Hon. Sanie Tizon",
-      "title": "City Councilor",
-      "image": "assets/images/officials/sb10.jpg"
+      "title": "City Councilor"
     },
     {
       "name": "Hon. Teofilo M. Cagas",
-      "title": "Ex-Officio Member, Liga ng mga Barangay President",
-      "image": "assets/images/officials/sb11.jpg"
+      "title": "Ex-Officio Member, Liga ng mga Barangay President"
     },
     {
       "name": "Hon. Edilbert J. Boltiador",
-      "title": "Ex-Officio Member, SK Federation President",
-      "image": "assets/images/officials/sb12.jpg"
+      "title": "Ex-Officio Member, SK Federation President"
+    }
+  ],
+  "departments": [
+    {
+      "office": "City Accounting Office",
+      "head": "Donald B. Tubio",
+      "source": "https://bayawancity.gov.ph/info/directory/directory.php"
+    },
+    {
+      "office": "City Budget Office",
+      "head": "Ophelia Urika R. Trinidad",
+      "source": "https://bayawancity.gov.ph/info/directory/directory.php"
+    },
+    {
+      "office": "City Engineering Office",
+      "head": "Eric O. Torres",
+      "source": "https://bayawancity.gov.ph/info/directory/directory.php"
+    },
+    {
+      "office": "City General Services Office",
+      "head": "Wilfredo C. Tuale",
+      "source": "https://bayawancity.gov.ph/info/directory/directory.php"
+    },
+    {
+      "office": "City Agriculture Office",
+      "head": "Kenneth S. Artes, EnP",
+      "source": "https://bayawancity.gov.ph/info/directory/directory.php"
+    },
+    {
+      "office": "City Assessor’s Office",
+      "head": "Ray T. Papeleras",
+      "source": "https://bayawancity.gov.ph/info/directory/directory.php"
+    },
+    {
+      "office": "City Civil Registrar",
+      "head": "Virginia D. Sadiasa",
+      "source": "https://bayawancity.gov.ph/info/directory/directory.php"
+    },
+    {
+      "office": "City Social Welfare and Development Office",
+      "head": "Marchita P. Tuale",
+      "source": "https://bayawancity.gov.ph/info/directory/directory.php"
+    },
+    {
+      "office": "City Treasurer’s Office",
+      "head": "Ma. Rayza E. Villarin",
+      "source": "https://bayawancity.gov.ph/info/directory/directory.php"
+    },
+    {
+      "office": "City Planning and Development Office",
+      "head": "Erjien R. Tenefrancia",
+      "source": "https://bayawancity.gov.ph/info/directory/directory.php"
+    },
+    {
+      "office": "City Health Office",
+      "head": "Fiah Leonor Cerrado",
+      "source": "https://bayawancity.gov.ph/info/directory/directory.php"
+    },
+    {
+      "office": "City DRRM Office",
+      "head": "Edward Ryan C. Torreda, ECE",
+      "source": "https://bayawancity.gov.ph/info/directory/directory.php"
     }
   ]
 }

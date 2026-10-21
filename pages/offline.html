@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0032a0" />
+    <title>Offline - BetterBayawan.org</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family:
+          'Inter',
+          -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          Roboto,
+          sans-serif;
+        background: #f5f7f5;
+        color: #1a1a1a;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+      }
+      .skip-link {
+        position: absolute;
+        top: -100%;
+        left: 0;
+        padding: 0.5rem 1rem;
+        background: #0032a0;
+        color: #fff;
+        z-index: 100;
+      }
+      .skip-link:focus {
+        top: 0;
+      }
+      .container {
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+      }
+      .logo {
+        width: 180px;
+        height: auto;
+        margin-bottom: 1.5rem;
+      }
+      .slogan {
+        font-family: 'Great Vibes', 'Segoe Script', cursive;
+        font-size: 2.1rem;
+        line-height: 1.2;
+        color: #b8860b;
+        margin-bottom: 1rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+        color: #0032a0;
+        margin-bottom: 0.5rem;
+      }
+      .subtitle {
+        color: #555;
+        margin-bottom: 2rem;
+        line-height: 1.5;
+      }
+      .hotlines {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        text-align: left;
+      }
+      .hotlines h2 {
+        font-size: 1.1rem;
+        color: #0032a0;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+      .hotline-list {
+        list-style: none;
+      }
+      .hotline-list li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.6rem 0;
+        border-bottom: 1px solid #eee;
+      }
+      .hotline-list li:last-child {
+        border-bottom: none;
+      }
+      .hotline-label {
+        font-weight: 600;
+        color: #333;
+      }
+      .hotline-number {
+        color: #0032a0;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .hotline-number:focus {
+        outline: 2px solid #0032a0;
+        outline-offset: 2px;
+      }
+      .retry-btn {
+        display: inline-block;
+        background: #0032a0;
+        color: #fff;
+        border: none;
+        padding: 0.75rem 2rem;
+        font-size: 1rem;
+        border-radius: 6px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .retry-btn:hover {
+        background: #002170;
+      }
+      .retry-btn:focus {
+        outline: 2px solid #0032a0;
+        outline-offset: 2px;
+      }
+      @media (max-width: 480px) {
+        .hotline-list li {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.25rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <main id="main-content" class="container" role="main">
+      <svg class="logo" viewBox="0 0 200 60" aria-label="BetterBayawan" role="img">
+        <rect width="200" height="60" rx="8" fill="#0032a0"></rect>
+        <text
+          x="100"
+          y="36"
+          text-anchor="middle"
+          fill="#ffffff"
+          font-family="Inter, sans-serif"
+          font-size="18"
+          font-weight="700"
+        >
+          BetterBayawan
+        </text>
+      </svg>
+
+      <p class="slogan">Ibayaw Bayawan, Kita ang Bayawan</p>
+
+      <h1>You are currently offline</h1>
+      <p class="subtitle">
+        Some pages may not be available right now. Emergency hotlines are listed below for your
+        convenience.
+      </p>
+
+      <div class="hotlines">
+        <h2>Emergency Hotlines - Bayawan City, Negros Oriental</h2>
+        <ul class="hotline-list" aria-label="Emergency contact numbers">
+          <li>
+            <span class="hotline-label">Police (PNP)</span>
+            <a href="tel:09271441875" class="hotline-number">{{contact:hotlines.0.phone}}</a>
+          </li>
+          <li>
+            <span class="hotline-label">Ambulance</span>
+            <a href="tel:09455690083" class="hotline-number">{{contact:hotlines.3.phone}}</a>
+          </li>
+          <li>
+            <span class="hotline-label">Fire (BFP)</span>
+            <a href="tel:09558173397" class="hotline-number">{{contact:hotlines.4.phone}}</a>
+          </li>
+          <li>
+            <span class="hotline-label">NORECO</span>
+            <a href="tel:09088642365" class="hotline-number">{{contact:hotlines.5.phone}}</a>
+          </li>
+          <li>
+            <span class="hotline-label">Coast Guard</span>
+            <a href="tel:09957468679" class="hotline-number">{{contact:hotlines.6.phone}}</a>
+          </li>
+          <li>
+            <span class="hotline-label">City Hall</span>
+            <a href="tel:+63355310020" class="hotline-number">{{contact:mayor.phone}}</a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="retry-btn" onclick="window.location.reload()">Try Again</button>
+    </main>
+  </body>
+</html>

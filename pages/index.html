@@ -1,0 +1,461 @@
+<section class="home-hero-v2 civic-hero" aria-labelledby="hero-title">
+  <div class="hero-scene" aria-hidden="true">
+    <div class="hero-banner"></div>
+    <svg class="civic-hero-waves" viewBox="0 0 2066 170" preserveAspectRatio="none">
+      <path
+        fill="#a8c2dd"
+        fill-opacity=".48"
+        d="M0 37C250 77 330 147 665 144S1100 183 1430 122 1820 8 2066 0V170H0Z"
+      ></path>
+      <path
+        fill="#114b91"
+        fill-opacity=".86"
+        d="M0 10C240 62 352 145 680 145S1110 186 1450 126 1840 14 2066 20V170H0Z"
+      ></path>
+      <path
+        fill="#f8f9fa"
+        d="M0 81C250 115 350 156 674 151S1122 184 1452 138 1830 50 2066 48V170H0Z"
+      ></path>
+    </svg>
+  </div>
+  <div class="container hero-content">
+    <div class="home-hero-v2-inner">
+      <div class="home-hero-v2-text">
+        <h1 id="hero-title">
+          <span class="hero-greeting">Welcome to</span
+          ><span class="hero-brand" translate="no" data-no-translate
+            >Better<span>Bayawan</span></span
+          >
+        </h1>
+        <p class="home-hero-slogan"><span>#IbayawBayawan</span> <span>#KitaAngBayawan</span></p>
+        <p class="hero-intro">
+          Access government services, information, and resources for the people of Bayawan City,
+          Negros Oriental.
+        </p>
+        <ul class="hero-highlights">
+          <li>
+            <span class="hero-highlight-icon"
+              ><i class="bi bi-file-earmark-text-fill" aria-hidden="true"></i
+            ></span>
+            <div><strong>Government Services</strong><span>Explore available services</span></div>
+          </li>
+          <li>
+            <span class="hero-highlight-icon"
+              ><i class="bi bi-info-circle-fill" aria-hidden="true"></i
+            ></span>
+            <div><strong>City Information</strong><span>News and updates</span></div>
+          </li>
+          <li>
+            <span class="hero-highlight-icon"
+              ><i class="bi bi-people-fill" aria-hidden="true"></i
+            ></span>
+            <div><strong>Citizen Resources</strong><span>Information for everyone</span></div>
+          </li>
+        </ul>
+        <div class="home-hero-v2-actions">
+          <a class="btn btn-primary" href="/services"
+            >Browse Services<i class="bi bi-arrow-right" aria-hidden="true"></i></a
+          ><a class="btn btn-outline" href="/contact"
+            >Contact Us<i class="bi bi-chat" aria-hidden="true"></i
+          ></a>
+        </div>
+      </div>
+      <div class="home-hero-v2-search">
+        <div class="home-search-box">
+          <h2><i class="bi bi-search" aria-hidden="true"></i>Find a Service</h2>
+          <form class="search-form" role="search" action="/services" method="get">
+            <div class="search-input-wrapper">
+              <div class="search-autocomplete-wrapper">
+                <input
+                  type="search"
+                  class="search-box"
+                  placeholder="e.g., birth certificate, business permit"
+                  aria-label="Search services"
+                  autocomplete="off"
+                  role="combobox"
+                  aria-autocomplete="list"
+                  aria-expanded="false"
+                  name="q"
+                  value=""
+                  id="hero-search"
+                />
+              </div>
+              <button type="submit" class="search-submit-btn" aria-label="Search services">
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </form>
+          <div class="home-search-tags">
+            <span>Popular:</span><a href="/service-details/birth-certificate">Birth Certificate</a
+            ><a href="/service-details/business-permits-licensing">Business Permit</a
+            ><a href="/service-details/municipal-treasurer">Real Property Tax</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="emergency-cta-section" aria-label="Emergency Hotlines">
+  <div class="container">
+    <div class="emergency-cta-inner">
+      <div class="emergency-cta-quickdial">
+        <div class="emergency-chip">
+          <i class="bi bi-shield-fill" aria-hidden="true"></i
+          ><span class="emergency-chip-label">Police</span
+          ><a class="emergency-chip-num" href="tel:09271441875">{{contact:hotlines.0.phone}}</a>
+        </div>
+        <div class="emergency-chip">
+          <i class="bi bi-fire" aria-hidden="true"></i><span class="emergency-chip-label">Fire</span
+          ><a class="emergency-chip-num" href="tel:09558173397">{{contact:hotlines.4.phone}}</a>
+        </div>
+        <div class="emergency-chip">
+          <i class="bi bi-heart-fill" aria-hidden="true"></i
+          ><span class="emergency-chip-label">Ambulance</span
+          ><a class="emergency-chip-num" href="tel:09455690083">{{contact:hotlines.3.phone}}</a>
+        </div>
+        <div class="emergency-chip">
+          <i class="bi bi-exclamation-triangle-fill" aria-hidden="true"></i
+          ><span class="emergency-chip-label">Coast Guard</span
+          ><a class="emergency-chip-num" href="tel:09957468679">{{contact:hotlines.6.phone}}</a>
+        </div>
+        <div class="emergency-chip">
+          <i class="bi bi-building" aria-hidden="true"></i
+          ><span class="emergency-chip-label">NORECO</span
+          ><a class="emergency-chip-num" href="tel:09088642365">{{contact:hotlines.5.phone}}</a>
+        </div>
+        <div class="emergency-chip">
+          <i class="bi bi-truck" aria-hidden="true"></i
+          ><span class="emergency-chip-label">City Hall</span
+          ><a class="emergency-chip-num" href="tel:+63355310020">{{contact:mayor.phone}}</a>
+        </div>
+      </div>
+      <div class="emergency-cta-content">
+        <h2 class="emergency-cta-heading">In an Emergency, We're Ready to Help</h2>
+        <p class="emergency-cta-subtitle">Save these numbers. Reach the right responders fast.</p>
+        <div class="emergency-cta-actions">
+          <a href="tel:09364641233" class="emergency-cta-btn emergency-cta-btn--primary"
+            ><i class="bi bi-telephone-fill" aria-hidden="true"></i>
+            <!-- -->Call CDRRMO: 0936 464 1233</a
+          ><a href="/contact" class="emergency-cta-btn emergency-cta-btn--outline"
+            ><i class="bi bi-bookmark-star" aria-hidden="true"></i>
+            <!-- -->View All Hotlines</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="home-section-header">
+      <h2>Popular Services</h2>
+      <p>Quick access to frequently requested city services</p>
+    </div>
+    <div class="home-services-grid">
+      <a class="home-service-card" href="/services/certificates"
+        ><div class="home-service-icon"><i class="bi bi-file-earmark-text-fill"></i></div>
+        <div class="home-service-content">
+          <h3>Certificates</h3>
+          <p>Birth, marriage, death certificates</p>
+        </div>
+        <i class="bi bi-arrow-right home-service-arrow"></i></a
+      ><a class="home-service-card" href="/services/business"
+        ><div class="home-service-icon"><i class="bi bi-shop"></i></div>
+        <div class="home-service-content">
+          <h3>Business Permits</h3>
+          <p>New permits and renewals</p>
+        </div>
+        <i class="bi bi-arrow-right home-service-arrow"></i></a
+      ><a class="home-service-card" href="/services/tax-payments"
+        ><div class="home-service-icon"><i class="bi bi-cash-coin"></i></div>
+        <div class="home-service-content">
+          <h3>Tax Payments</h3>
+          <p>Property and business taxes</p>
+        </div>
+        <i class="bi bi-arrow-right home-service-arrow"></i></a
+      ><a class="home-service-card" href="/services/social-services"
+        ><div class="home-service-icon"><i class="bi bi-people-fill"></i></div>
+        <div class="home-service-content">
+          <h3>Social Services</h3>
+          <p>Senior citizen &amp; PWD services</p>
+        </div>
+        <i class="bi bi-arrow-right home-service-arrow"></i></a
+      ><a class="home-service-card" href="/services/health"
+        ><div class="home-service-icon"><i class="bi bi-heart-pulse-fill"></i></div>
+        <div class="home-service-content">
+          <h3>Health Services</h3>
+          <p>Medical assistance &amp; programs</p>
+        </div>
+        <i class="bi bi-arrow-right home-service-arrow"></i></a
+      ><a class="home-service-card home-service-card--all" href="/services"
+        ><div class="home-service-icon"><i class="bi bi-grid-fill"></i></div>
+        <div class="home-service-content">
+          <h3>View All Services</h3>
+          <p>Browse complete directory</p>
+        </div>
+        <i class="bi bi-arrow-right home-service-arrow"></i
+      ></a>
+    </div>
+  </div>
+</section>
+<section class="home-stats-v2">
+  <div class="container">
+    <div class="home-stats-v2-header">
+      <h2>Bayawan City at a Glance</h2>
+      <a class="home-section-link" href="/statistics"
+        >View Statistics<!-- -->
+        <i class="bi bi-arrow-right"></i
+      ></a>
+    </div>
+    <div class="home-stats-v2-grid">
+      <a class="home-stat-card" href="/statistics"
+        ><div class="home-stat-card-icon"><i class="bi bi-people-fill"></i></div>
+        <div class="home-stat-card-content">
+          <span class="home-stat-card-value">126,744</span
+          ><span class="home-stat-card-label">Population</span
+          ><span class="home-stat-card-source">2024 Census (PSA)</span>
+        </div></a
+      ><a class="home-stat-card" href="/government"
+        ><div class="home-stat-card-icon"><i class="bi bi-geo-alt-fill"></i></div>
+        <div class="home-stat-card-content">
+          <span class="home-stat-card-value">28</span
+          ><span class="home-stat-card-label">Barangays</span
+          ><span class="home-stat-card-source">Administrative Units</span>
+        </div></a
+      ><a class="home-stat-card" href="/budget"
+        ><div class="home-stat-card-icon"><i class="bi bi-award-fill"></i></div>
+        <div class="home-stat-card-content">
+          <span class="home-stat-card-value">Component City</span
+          ><span class="home-stat-card-label">City</span
+          ><span class="home-stat-card-source">Via Plebiscite, Dec. 23, 2000</span>
+        </div></a
+      ><a class="home-stat-card" href="/statistics"
+        ><div class="home-stat-card-icon"><i class="bi bi-rulers"></i></div>
+        <div class="home-stat-card-content">
+          <span class="home-stat-card-value">699.08 km²</span
+          ><span class="home-stat-card-label">Land Area</span
+          ><span class="home-stat-card-source">Total Land Area</span>
+        </div></a
+      >
+    </div>
+  </div>
+</section>
+<section class="section weather-map-section">
+  <div class="container">
+    <div class="home-stats-v2-header"><h2>Weather and Map of Bayawan City</h2></div>
+    <div class="weather-map-grid">
+      <div class="weather-column">
+        <div id="weather-container" aria-live="polite">
+          <div
+            class="weather-loading"
+            data-loading="true"
+            aria-busy="true"
+            aria-label="Loading weather data"
+          >
+            <div class="weather-current">
+              <div class="skeleton-circle"></div>
+              <div class="weather-current-info">
+                <div class="skeleton-text skeleton-lg"></div>
+                <div class="skeleton-text skeleton-md" style="margin-top: 8px"></div>
+                <div class="skeleton-text skeleton-sm" style="margin-top: 8px"></div>
+              </div>
+            </div>
+            <div class="weather-stats">
+              <div class="skeleton-text skeleton-stat"></div>
+              <div class="skeleton-text skeleton-stat"></div>
+            </div>
+            <div class="weather-hourly">
+              <div class="skeleton-hour"></div>
+              <div class="skeleton-hour"></div>
+              <div class="skeleton-hour"></div>
+              <div class="skeleton-hour"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map-column">
+        <div class="map-card">
+          <div
+            id="map-container"
+            role="application"
+            aria-label="Interactive map of Bayawan City, Negros Oriental"
+            data-map-loaded="iframe"
+          >
+            <iframe
+              src="https://www.openstreetmap.org/export/embed.html?bbox=122.7592%2C9.3539%2C122.8192%2C9.4139&amp;layer=mapnik&amp;marker=9.3839%2C122.7892"
+              class="map-iframe"
+              title="Map of Bayawan City, Negros Oriental"
+              aria-label="OpenStreetMap showing Bayawan City Hall, Negros Oriental"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <p class="map-attribution">
+            <i class="bi bi-geo-alt" aria-hidden="true"></i> Bayawan City Hall, Cabcabon, Banga,
+            Bayawan City 6221
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section history-section">
+  <div class="container">
+    <div class="home-stats-v2-header">
+      <h2 class="">
+        <i aria-hidden="true" class="bi bi-book"></i>
+        <!-- -->Brief History of Bayawan City
+      </h2>
+    </div>
+    <div class="history-content">
+      <div class="history-timeline">
+        <div data-year="1751" class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">1751</span>
+            <p class="">
+              Spanish friars established the first settlement in the area now known as Bayawan City.
+            </p>
+          </div>
+        </div>
+        <div data-year="1872" class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">1872</span>
+            <p class="">
+              The settlement, then known as Tolong Nuevo, was formally organized as a pueblo (town).
+            </p>
+          </div>
+        </div>
+        <div data-year="1952" class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">1952</span>
+            <p class="">
+              The name Tolong Nuevo was changed to Bayawan by virtue of Republic Act 694.
+            </p>
+          </div>
+        </div>
+        <div data-year="2000" class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2000</span>
+            <p class="">
+              Bayawan was converted into a component city, and residents ratified cityhood in a
+              plebiscite held on December 23, 2000.
+            </p>
+          </div>
+        </div>
+      </div>
+      <p class="data-source">
+        Renaming: Republic Act No. 694, approved May 9, 1952.
+        <a href="https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/15254">Read the law</a>
+      </p>
+      <div class="history-summary">
+        <div class="history-card">
+          <div class="history-card-icon"><i class="bi bi-geo-alt-fill"></i></div>
+          <div class="history-card-content">
+            <h4 class="">Vast Land Area</h4>
+            <p class="">
+              Bayawan City spans 699.08 km², one of the largest cities in the Visayas, accounting
+              for about 13% of the province's land area.
+            </p>
+          </div>
+        </div>
+        <div class="history-card">
+          <div class="history-card-icon"><i class="bi bi-tree"></i></div>
+          <div class="history-card-content">
+            <h4 class="">Agricultural Capital of Negros Oriental</h4>
+            <p class="">
+              Farming, fishing, and trading are the city's main economic activities. Bayawan is
+              recognized as the "Agricultural Capital of Negros Oriental" and the "Rice Granary of
+              the South".
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="home-section-header">
+      <h2>Latest Updates</h2>
+      <a class="home-section-link" href="/news"
+        ><span>View All</span> <i class="bi bi-arrow-right"></i
+      ></a>
+    </div>
+    <p class="content-source">
+      Selected announcements from the archive. For current schedules and vacancies,
+      <a href="https://bayawancity.gov.ph/">visit the official city portal</a>.
+    </p>
+    <div class="home-news-grid" id="home-news-grid"><p>Loading sourced city updates…</p></div>
+  </div>
+</section>
+<section class="section home-leadership-section">
+  <div class="container">
+    <div class="home-section-header">
+      <h2>City Leadership</h2>
+      <a class="home-section-link" href="/government"
+        ><span>View All Officials</span> <i class="bi bi-arrow-right"></i
+      ></a>
+    </div>
+    <div class="home-leadership-grid">
+      <div class="home-leader-card">
+        <div class="home-leader-badge">City Mayor</div>
+        <h3>{{official:mayor.name}}</h3>
+        <div class="home-leader-contacts">
+          <a href="mailto:{{contact:mayor.email}}"
+            ><i class="bi bi-envelope"></i>{{contact:mayor.email}}</a
+          ><a href="tel:0355310020"><i class="bi bi-telephone"></i>{{contact:mayor.phone}}</a>
+        </div>
+      </div>
+      <div class="home-leader-card">
+        <div class="home-leader-badge">City Vice Mayor</div>
+        <h3>{{official:vice_mayor.name}}</h3>
+        <div class="home-leader-contacts">
+          <a href="mailto:{{contact:viceMayor.email}}">{{contact:viceMayor.email}}</a
+          ><a href="tel:+63354300453"><i class="bi bi-telephone"></i>{{contact:viceMayor.phone}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="home-section-header">
+      <h2>Contact Information</h2>
+      <a class="home-section-link" href="/contact"
+        >View All<!-- -->
+        <i class="bi bi-arrow-right"></i
+      ></a>
+    </div>
+    <div class="home-contact-v2-grid">
+      <a href="tel:0355310020" class="home-contact-v2-card"
+        ><div class="home-contact-v2-icon"><i class="bi bi-telephone-fill"></i></div>
+        <div class="home-contact-v2-content">
+          <h3>Phone</h3>
+          <p class="home-contact-v2-value">{{contact:mayor.phone}}</p>
+          <span class="home-contact-v2-note">Mon-Fri: 8:00 AM - 5:00 PM</span>
+        </div></a
+      ><a href="mailto:{{contact:mayor.email}}" class="home-contact-v2-card"
+        ><div class="home-contact-v2-icon"><i class="bi bi-envelope-fill"></i></div>
+        <div class="home-contact-v2-content">
+          <h3>Email</h3>
+          <p class="home-contact-v2-value">{{contact:mayor.email}}</p>
+          <span class="home-contact-v2-note"
+            >For official transactions, contact the responsible city office.</span
+          >
+        </div></a
+      >
+      <div class="home-contact-v2-card">
+        <div class="home-contact-v2-icon"><i class="bi bi-geo-alt-fill"></i></div>
+        <div class="home-contact-v2-content">
+          <h3>Address</h3>
+          <p class="home-contact-v2-value">City Hall</p>
+          <span class="home-contact-v2-note">Bayawan City, Negros Oriental 6221</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--$--><!--/$-->
