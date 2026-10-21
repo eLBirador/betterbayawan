@@ -4,6 +4,7 @@ import path from 'node:path';
 import { chromium } from 'playwright';
 import { build, root } from './build-site.mjs';
 import { createStaticServer } from './static-server.mjs';
+import { testQuiz } from './test-quiz.mjs';
 
 build();
 const server = createStaticServer(path.join(root, 'dist'));
@@ -90,7 +91,8 @@ try {
     await page.waitForTimeout(550);
     assert.match(await page.locator('#sre-total-income').innerText(), /514\.75/);
     await page.goto(origin + '/services/health');
-    assert.ok((await page.locator('h3').allTextContents()).includes('Dawis Community Hospital'));
+    const hospitals = await page.locator('h3').allTextContents();
+    assert.ok(hospitals.includes('Dawis Community Hospital'), `Hospital headings at ${width}: ${JSON.stringify(hospitals)}`);
     assert.deepEqual(errors, [], `Browser errors at ${width}`);
     await page.goto(origin + '/');
     await page.screenshot({
@@ -99,6 +101,7 @@ try {
     });
     await context.close();
   }
+  await testQuiz(browser, origin);
   const response = await fetch(origin + '/service-details/municipal-budget', {
     redirect: 'manual',
   });

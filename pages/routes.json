@@ -14,6 +14,20 @@
     ]
   },
   {
+    "url": "/quiz/",
+    "output": "quiz/index.html",
+    "source": "pages/quiz/index.html",
+    "title": "How Well Do You Know Bayawan? — City Quiz",
+    "description": "Explore Bayawan through an interactive quiz in English, Filipino, and Bisaya. Choose history, geography, community, or city services and learn with source-linked answers.",
+    "layout": "civic",
+    "styles": ["/assets/css/pages/quiz.css"],
+    "scripts": [
+      {
+        "src": "/assets/js/pages/quiz.js"
+      }
+    ]
+  },
+  {
     "url": "/accessibility/",
     "output": "accessibility/index.html",
     "source": "pages/accessibility/index.html",

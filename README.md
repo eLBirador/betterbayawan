@@ -32,6 +32,7 @@ also use an installed Microsoft Edge. No browser installation is needed to build
 
 - **Page wording:** `pages/`; shared navigation and footer: `layouts/`.
 - **Service guidance:** `data/service-guides.json` and `data/services.json`.
+- **Quiz questions and translations:** `data/quiz.json`; see [the quiz guide](docs/quiz.md).
 - **Facts and contacts:** the relevant JSON file in `data/`.
 - **Translations:** `locales/fil.json` and `locales/ceb.json`.
 - **Design and interactions:** `assets/css/` and `assets/js/`.

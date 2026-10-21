@@ -58,7 +58,7 @@
       "permanent": true
     },
     {
-      "source": "/:section(government|budget|contact|statistics|news|legislative|faq|sitemap|privacy|terms|accessibility|services)",
+      "source": "/:section(government|budget|contact|statistics|news|legislative|faq|sitemap|privacy|terms|accessibility|services|quiz)",
       "destination": "/:section/",
       "permanent": true
     }

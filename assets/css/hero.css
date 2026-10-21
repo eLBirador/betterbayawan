@@ -162,6 +162,9 @@
 }
 .civic-hero .search-submit-btn {
   flex-shrink: 0;
+  align-self: stretch;
+  height: auto;
+  min-height: 48px;
 }
 .civic-hero-waves {
   position: absolute;

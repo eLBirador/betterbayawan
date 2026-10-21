@@ -19,6 +19,7 @@ const guides = data('data/service-guides.json');
 const statements = data('data/financial-statements.json');
 const contacts = data('data/contacts.json');
 const officials = data('data/officials.json');
+const quiz = data('data/quiz.json');
 const version = data('version.json').version;
 
 function guide(id) {
@@ -41,6 +42,14 @@ export function renderRoute(r) {
   if (r.redirect)
     return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=${r.redirect}"><link rel="canonical" href="https://betterbayawan.org${r.redirect}"><meta name="robots" content="noindex"><title>Page moved</title></head><body><a href="${r.redirect}">Continue to the current city service guide</a></body></html>`;
   const main = read(r.source)
+    .replace('{{quiz-categories}}', () =>
+      quiz.categories
+        .map(
+          (category, index) =>
+            `<a class="home-quiz-topic" href="/quiz/?category=${category.id}"><span class="home-quiz-topic-number" aria-hidden="true">${String(index + 1).padStart(2, '0')}</span><span>${esc(category.name[0])}</span><span class="home-quiz-topic-arrow" aria-hidden="true">↗</span></a>`
+        )
+        .join('')
+    )
     .replace(/\{\{include:([\w-]+)\}\}/g, (_, id) => read(`layouts/${id}.html`))
     .replace(/\{\{guide:([\w-]+)\}\}/g, (_, id) => guide(id))
     .replace(

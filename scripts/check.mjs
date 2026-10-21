@@ -123,6 +123,50 @@ for (const p of json('data/financial-statements.json').periods) {
   check(p.source.startsWith('https://www.bayawancity.gov.ph/'), `${p.id}: source missing`);
 }
 const vercel = json('vercel.json');
+const quiz = json('data/quiz.json');
+const localized = (value) =>
+  Array.isArray(value) &&
+  value.length === 3 &&
+  value.every((s) => typeof s === 'string' && s.trim());
+assert.deepEqual(quiz.languages, ['en', 'fil', 'ceb']);
+assert.equal(
+  new Set(quiz.questions.map((q) => q.id)).size,
+  quiz.questions.length,
+  'Unique quiz question IDs'
+);
+for (const category of quiz.categories) {
+  check(
+    localized(category.name) && localized(category.description),
+    `Quiz category translations: ${category.id}`
+  );
+  check(
+    quiz.questions.filter((q) => q.category === category.id).length >= 5,
+    `Quiz category needs at least five questions: ${category.id}`
+  );
+}
+for (const q of quiz.questions) {
+  check(
+    quiz.categories.some((c) => c.id === q.category),
+    `Unknown quiz category: ${q.id}`
+  );
+  check(localized(q.prompt) && localized(q.explanation), `Quiz question translations: ${q.id}`);
+  check(q.options.length === 4 && q.options.every(localized), `Quiz options: ${q.id}`);
+  for (let language = 0; language < 3; language++)
+    check(
+      new Set(q.options.map((option) => option[language])).size === 4,
+      `Duplicate quiz options: ${q.id}`
+    );
+  check(
+    Number.isInteger(q.correct) && q.correct >= 0 && q.correct < 4,
+    `Quiz correct answer: ${q.id}`
+  );
+  check(
+    Boolean(quiz.sources[q.source]?.url.startsWith('https://') && q.checked),
+    `Quiz source/date: ${q.id}`
+  );
+}
+for (const [key, value] of Object.entries(quiz.ui))
+  check(localized(value), `Quiz UI translations: ${key}`);
 for (const [from, to] of Object.entries(redirects))
   check(
     vercel.redirects.some((r) => r.source === from && r.destination === to),

@@ -1,0 +1,1104 @@
+{
+  "version": 1,
+  "languages": ["en", "fil", "ceb"],
+  "sources": {
+    "law": {
+      "title": "Republic Act No. 694 (1952)",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/15254"
+    },
+    "about": {
+      "title": "City of Bayawan — About",
+      "url": "https://bayawancity.gov.ph/info/about.php"
+    },
+    "profile": {
+      "title": "City of Bayawan — City Profile",
+      "url": "https://bayawancity.gov.ph/info/city-profile.php"
+    },
+    "psa": {
+      "title": "PSA Philippine Standard Geographic Code · 2024 population",
+      "url": "https://psa.gov.ph/classification/psgc/barangays/1804606000"
+    },
+    "directory": {
+      "title": "City of Bayawan — Official Directory",
+      "url": "https://bayawancity.gov.ph/info/directory/directory.php"
+    },
+    "charter": {
+      "title": "Bayawan Citizen’s Charter · 2025 edition",
+      "url": "https://bayawancity.gov.ph/citizencharter/Content/citizencharter/pdf/CitizensCharter-2025-4th-edition.pdf"
+    },
+    "nir": {
+      "title": "Republic Act No. 12000 (2024)",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/97490"
+    },
+    "festival": {
+      "title": "City of Bayawan — Tawo-Tawo Festival",
+      "url": "https://bayawancity.gov.ph/experience-bayawan/tourism-display.php?id=8-tawo-tawo-festival"
+    },
+    "tourism": {
+      "title": "City of Bayawan — Brief about the City",
+      "url": "https://bayawancity.gov.ph/article/articles-display.php?id=417-brief-about-the-city-of-bayawan"
+    },
+    "niludhan": {
+      "title": "City of Bayawan — Niludhan Falls",
+      "url": "https://bayawancity.gov.ph/experience-bayawan/tourism-display.php?id=2-niludhan-falls"
+    }
+  },
+  "categories": [
+    {
+      "id": "history",
+      "icon": "bi-hourglass-split",
+      "name": ["History", "Kasaysayan", "Kasaysayan"],
+      "description": [
+        "Names, milestones, and cityhood",
+        "Mga pangalan at mahahalagang pangyayari",
+        "Mga ngalan ug mahinungdanong panghitabo"
+      ]
+    },
+    {
+      "id": "culture",
+      "icon": "bi-stars",
+      "name": ["Culture & festivals", "Kultura at mga pagdiriwang", "Kultura ug mga pista"],
+      "description": [
+        "Tawo-Tawo, traditions, and celebrations",
+        "Tawo-Tawo, tradisyon, at pagdiriwang",
+        "Tawo-Tawo, tradisyon, ug pagsaulog"
+      ]
+    },
+    {
+      "id": "agriculture",
+      "icon": "bi-flower1",
+      "name": ["Agriculture", "Agrikultura", "Agrikultura"],
+      "description": [
+        "Fields, harvests, and farming life",
+        "Mga bukirin, ani, at pagsasaka",
+        "Mga umahan, ani, ug kinabuhi sa mag-uuma"
+      ]
+    },
+    {
+      "id": "tourism",
+      "icon": "bi-signpost-split",
+      "name": ["Tourism & nature", "Turismo at kalikasan", "Turismo ug kinaiyahan"],
+      "description": [
+        "Waterfalls and places to discover",
+        "Mga talon at lugar na matutuklasan",
+        "Mga busay ug dapit nga masusihon"
+      ]
+    },
+    {
+      "id": "geography",
+      "icon": "bi-compass",
+      "name": ["Geography", "Heograpiya", "Heograpiya"],
+      "description": [
+        "Our island, coast, and countryside",
+        "Ang ating isla, baybayin, at kanayunan",
+        "Atong isla, baybayon, ug kabanikanhan"
+      ]
+    },
+    {
+      "id": "community",
+      "icon": "bi-people",
+      "name": ["General knowledge", "Pangkalahatang kaalaman", "Kinatibuk-ang kahibalo"],
+      "description": [
+        "Barangays and the people of Bayawan",
+        "Mga barangay at mamamayan ng Bayawan",
+        "Mga barangay ug katawhan sa Bayawan"
+      ]
+    },
+    {
+      "id": "services",
+      "icon": "bi-building",
+      "name": ["City services", "Mga serbisyo ng lungsod", "Mga serbisyo sa dakbayan"],
+      "description": [
+        "Know where to go and who can help",
+        "Alamin kung saan pupunta at sino ang tutulong",
+        "Hibaloa asa moadto ug kinsa ang makatabang"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "old-name",
+      "category": "history",
+      "source": "law",
+      "checked": "2026-10-21",
+      "prompt": [
+        "Which name appears in the law that renamed Bayawan?",
+        "Anong dating pangalan ang nakasaad sa batas na nagpangalan sa Bayawan?",
+        "Unsang kanhing ngalan ang naa sa balaod nga nagngalan sa Bayawan?"
+      ],
+      "options": [
+        ["New Tolong", "New Tolong", "New Tolong"],
+        ["Dumaguete", "Dumaguete", "Dumaguete"],
+        ["Bais", "Bais", "Bais"],
+        ["Tanjay", "Tanjay", "Tanjay"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "RA 694 changed the name of New Tolong to Bayawan.",
+        "Pinalitan ng RA 694 ang pangalang New Tolong ng Bayawan.",
+        "Gipulihan sa RA 694 ang ngalang New Tolong ngadto sa Bayawan."
+      ]
+    },
+    {
+      "id": "renaming-year",
+      "category": "history",
+      "source": "law",
+      "checked": "2026-10-21",
+      "prompt": [
+        "In what year was the name Bayawan adopted under RA 694?",
+        "Anong taon pinagtibay ang pangalang Bayawan sa ilalim ng RA 694?",
+        "Unsang tuiga gisagop ang ngalang Bayawan ubos sa RA 694?"
+      ],
+      "options": [
+        ["1952", "1952", "1952"],
+        ["1953", "1953", "1953"],
+        ["1948", "1948", "1948"],
+        ["1960", "1960", "1960"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "RA 694 was approved on May 9, 1952.",
+        "Inaprubahan ang RA 694 noong Mayo 9, 1952.",
+        "Giaprobahan ang RA 694 niadtong Mayo 9, 1952."
+      ]
+    },
+    {
+      "id": "renaming-law",
+      "category": "history",
+      "source": "law",
+      "checked": "2026-10-21",
+      "prompt": [
+        "Which law renamed New Tolong to Bayawan?",
+        "Aling batas ang nagpangalan sa New Tolong bilang Bayawan?",
+        "Unsang balaod ang nag-ilis sa ngalan sa New Tolong ngadto sa Bayawan?"
+      ],
+      "options": [
+        ["RA 694", "RA 694", "RA 694"],
+        ["RA 8983", "RA 8983", "RA 8983"],
+        ["RA 12000", "RA 12000", "RA 12000"],
+        ["RA 7160", "RA 7160", "RA 7160"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "RA 694 is the renaming law; RA 8983 is the city charter.",
+        "RA 694 ang batas sa pagpapalit ng pangalan; RA 8983 naman ang charter ng lungsod.",
+        "RA 694 ang balaod sa pag-ilis sa ngalan; RA 8983 ang charter sa dakbayan."
+      ]
+    },
+    {
+      "id": "cityhood-date",
+      "category": "history",
+      "source": "about",
+      "checked": "2026-10-21",
+      "prompt": [
+        "When did Bayawan become a component city?",
+        "Kailan naging component city ang Bayawan?",
+        "Kanus-a nahimong component city ang Bayawan?"
+      ],
+      "options": [
+        ["December 23, 2000", "Disyembre 23, 2000", "Disyembre 23, 2000"],
+        ["May 9, 1952", "Mayo 9, 1952", "Mayo 9, 1952"],
+        ["June 12, 1998", "Hunyo 12, 1998", "Hunyo 12, 1998"],
+        ["January 1, 2001", "Enero 1, 2001", "Enero 1, 2001"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "Bayawan’s cityhood took effect through the December 23, 2000 plebiscite.",
+        "Naging lungsod ang Bayawan sa pamamagitan ng plebisito noong Disyembre 23, 2000.",
+        "Nahimong dakbayan ang Bayawan pinaagi sa plebisito niadtong Disyembre 23, 2000."
+      ]
+    },
+    {
+      "id": "city-charter",
+      "category": "history",
+      "source": "about",
+      "checked": "2026-10-21",
+      "prompt": [
+        "Which Republic Act is Bayawan’s city charter?",
+        "Aling Republic Act ang charter ng Lungsod ng Bayawan?",
+        "Unsang Republic Act ang charter sa Dakbayan sa Bayawan?"
+      ],
+      "options": [
+        ["RA 8983", "RA 8983", "RA 8983"],
+        ["RA 694", "RA 694", "RA 694"],
+        ["RA 12000", "RA 12000", "RA 12000"],
+        ["RA 11032", "RA 11032", "RA 11032"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "RA 8983 converted Bayawan into a component city.",
+        "Ginawang component city ng RA 8983 ang Bayawan.",
+        "Gihimong component city sa RA 8983 ang Bayawan."
+      ]
+    },
+    {
+      "id": "province",
+      "category": "geography",
+      "source": "about",
+      "checked": "2026-10-21",
+      "prompt": [
+        "In which province is Bayawan City?",
+        "Saang lalawigan matatagpuan ang Bayawan City?",
+        "Sa unsang lalawigan nahimutang ang Bayawan City?"
+      ],
+      "options": [
+        ["Negros Oriental", "Negros Oriental", "Negros Oriental"],
+        ["Negros Occidental", "Negros Occidental", "Negros Occidental"],
+        ["Siquijor", "Siquijor", "Siquijor"],
+        ["Cebu", "Cebu", "Cebu"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "Bayawan is in the southwestern part of Negros Oriental.",
+        "Nasa timog-kanlurang bahagi ng Negros Oriental ang Bayawan.",
+        "Naa sa habagatan-kasadpang bahin sa Negros Oriental ang Bayawan."
+      ]
+    },
+    {
+      "id": "sea",
+      "category": "geography",
+      "source": "about",
+      "checked": "2026-10-21",
+      "prompt": [
+        "Which sea borders Bayawan’s coast?",
+        "Anong dagat ang nasa baybayin ng Bayawan?",
+        "Unsang dagat ang anaa sa baybayon sa Bayawan?"
+      ],
+      "options": [
+        ["Sulu Sea", "Sulu Sea", "Sulu Sea"],
+        ["Philippine Sea", "Philippine Sea", "Philippine Sea"],
+        ["Sibuyan Sea", "Sibuyan Sea", "Sibuyan Sea"],
+        ["Visayan Sea", "Visayan Sea", "Visayan Sea"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "The city’s coastline faces the Sulu Sea.",
+        "Nakaharap sa Sulu Sea ang baybayin ng lungsod.",
+        "Nag-atubang sa Sulu Sea ang baybayon sa dakbayan."
+      ]
+    },
+    {
+      "id": "region",
+      "category": "geography",
+      "source": "nir",
+      "checked": "2026-10-21",
+      "prompt": [
+        "Under RA 12000, which region includes Negros Oriental?",
+        "Sa ilalim ng RA 12000, saang rehiyon kabilang ang Negros Oriental?",
+        "Ubos sa RA 12000, sa unsang rehiyon nahisakop ang Negros Oriental?"
+      ],
+      "options": [
+        ["Negros Island Region", "Negros Island Region", "Negros Island Region"],
+        ["Central Visayas", "Central Visayas", "Central Visayas"],
+        ["Western Visayas", "Western Visayas", "Western Visayas"],
+        ["Eastern Visayas", "Eastern Visayas", "Eastern Visayas"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "RA 12000 established the Negros Island Region in 2024, including Negros Oriental, Negros Occidental, and Siquijor.",
+        "Itinatag ng RA 12000 ang Negros Island Region noong 2024, kasama ang Negros Oriental, Negros Occidental, at Siquijor.",
+        "Gitukod sa RA 12000 ang Negros Island Region niadtong 2024, lakip ang Negros Oriental, Negros Occidental, ug Siquijor."
+      ]
+    },
+    {
+      "id": "land-area",
+      "category": "geography",
+      "source": "profile",
+      "checked": "2026-10-21",
+      "prompt": [
+        "About how large is Bayawan’s land area?",
+        "Humigit-kumulang gaano kalawak ang Bayawan?",
+        "Mga unsa kadako ang luna sa Bayawan?"
+      ],
+      "options": [
+        ["699.08 km²", "699.08 km²", "699.08 km²"],
+        ["69.91 km²", "69.91 km²", "69.91 km²"],
+        ["6,990.80 km²", "6,990.80 km²", "6,990.80 km²"],
+        ["99.08 km²", "99.08 km²", "99.08 km²"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "The city profile lists 69,908 hectares, equivalent to 699.08 square kilometers.",
+        "Nakatala sa city profile ang 69,908 ektarya, katumbas ng 699.08 kilometro kuwadrado.",
+        "Gilista sa city profile ang 69,908 ektarya, katumbas sa 699.08 kilometro kuwadrado."
+      ]
+    },
+    {
+      "id": "livelihood",
+      "category": "geography",
+      "source": "profile",
+      "checked": "2026-10-21",
+      "prompt": [
+        "Which pair of livelihoods is highlighted in Bayawan’s city profile?",
+        "Aling dalawang kabuhayan ang binibigyang-diin sa city profile ng Bayawan?",
+        "Unsang duha ka panginabuhian ang gipasiugda sa city profile sa Bayawan?"
+      ],
+      "options": [
+        ["Farming and fishing", "Pagsasaka at pangingisda", "Pag-uma ug pagpangisda"],
+        ["Snow sports and skiing", "Snow sports at skiing", "Snow sports ug skiing"],
+        [
+          "Oil drilling and shipbreaking",
+          "Pagbabarena ng langis at pagkalas ng barko",
+          "Pagbarena og lana ug pagbungkag sa barko"
+        ],
+        [
+          "Pearl trading and filmmaking",
+          "Kalakalan ng perlas at paggawa ng pelikula",
+          "Pagbaligya og perlas ug paghimo og pelikula"
+        ]
+      ],
+      "correct": 0,
+      "explanation": [
+        "The city profile highlights farming and fishing as major economic activities.",
+        "Itinatampok ng city profile ang pagsasaka at pangingisda bilang pangunahing gawaing pangkabuhayan.",
+        "Gipasiugda sa city profile ang pag-uma ug pagpangisda isip dagkong kalihokan sa panginabuhian."
+      ]
+    },
+    {
+      "id": "barangay-count",
+      "category": "community",
+      "source": "psa",
+      "checked": "2026-10-21",
+      "prompt": [
+        "How many barangays make up Bayawan City?",
+        "Ilang barangay ang bumubuo sa Bayawan City?",
+        "Pila ka barangay ang naglangkob sa Bayawan City?"
+      ],
+      "options": [
+        ["28", "28", "28"],
+        ["18", "18", "18"],
+        ["38", "38", "38"],
+        ["48", "48", "48"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "Bayawan City has 28 barangays in the PSA geographic listing.",
+        "May 28 barangay ang Bayawan City ayon sa talaan ng PSA.",
+        "Adunay 28 ka barangay ang Bayawan City sumala sa talaan sa PSA."
+      ]
+    },
+    {
+      "id": "population",
+      "category": "community",
+      "source": "psa",
+      "checked": "2026-10-21",
+      "prompt": [
+        "What was Bayawan’s population in the 2024 census?",
+        "Ano ang populasyon ng Bayawan sa senso noong 2024?",
+        "Pila ang populasyon sa Bayawan sa senso niadtong 2024?"
+      ],
+      "options": [
+        ["126,744", "126,744", "126,744"],
+        ["122,747", "122,747", "122,747"],
+        ["28,000", "28,000", "28,000"],
+        ["226,744", "226,744", "226,744"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "The 2024 population count is 126,744. The figure 122,747 belongs to the 2020 census.",
+        "126,744 ang bilang noong 2024. Ang 122,747 ay mula sa senso noong 2020.",
+        "126,744 ang ihap niadtong 2024. Ang 122,747 gikan sa senso niadtong 2020."
+      ]
+    },
+    {
+      "id": "city-type",
+      "category": "community",
+      "source": "about",
+      "checked": "2026-10-21",
+      "prompt": [
+        "What type of city is Bayawan?",
+        "Anong uri ng lungsod ang Bayawan?",
+        "Unsang matang sa dakbayan ang Bayawan?"
+      ],
+      "options": [
+        ["Component city", "Component city", "Component city"],
+        ["Highly urbanized city", "Highly urbanized city", "Highly urbanized city"],
+        ["Independent component city", "Independent component city", "Independent component city"],
+        ["Municipality", "Munisipalidad", "Munisipyo"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "Bayawan is a component city of Negros Oriental.",
+        "Ang Bayawan ay isang component city ng Negros Oriental.",
+        "Ang Bayawan usa ka component city sa Negros Oriental."
+      ]
+    },
+    {
+      "id": "barangay-recognition",
+      "category": "community",
+      "source": "psa",
+      "checked": "2026-10-21",
+      "prompt": [
+        "Which of these is a barangay in Bayawan City?",
+        "Alin dito ang barangay sa Bayawan City?",
+        "Asa niini ang barangay sa Bayawan City?"
+      ],
+      "options": [
+        ["Kalumboyan", "Kalumboyan", "Kalumboyan"],
+        ["Dumaguete City", "Dumaguete City", "Dumaguete City"],
+        ["Siquijor", "Siquijor", "Siquijor"],
+        ["Kabankalan City", "Kabankalan City", "Kabankalan City"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "Kalumboyan is one of Bayawan’s 28 barangays.",
+        "Isa ang Kalumboyan sa 28 barangay ng Bayawan.",
+        "Ang Kalumboyan usa sa 28 ka barangay sa Bayawan."
+      ]
+    },
+    {
+      "id": "census-agency",
+      "category": "community",
+      "source": "psa",
+      "checked": "2026-10-21",
+      "prompt": [
+        "Which agency publishes the official census figures used in our Bayawan statistics?",
+        "Aling ahensya ang naglalathala ng opisyal na bilang ng senso sa ating estadistika ng Bayawan?",
+        "Unsang ahensya ang nagpatik sa opisyal nga ihap sa senso sa atong estadistika sa Bayawan?"
+      ],
+      "options": [
+        [
+          "Philippine Statistics Authority",
+          "Philippine Statistics Authority",
+          "Philippine Statistics Authority"
+        ],
+        ["Department of Tourism", "Department of Tourism", "Department of Tourism"],
+        ["Bureau of Fire Protection", "Bureau of Fire Protection", "Bureau of Fire Protection"],
+        ["Department of Agriculture", "Department of Agriculture", "Department of Agriculture"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "The Philippine Statistics Authority (PSA) publishes census counts and the Philippine Standard Geographic Code.",
+        "Ang Philippine Statistics Authority (PSA) ang naglalathala ng bilang ng senso at Philippine Standard Geographic Code.",
+        "Ang Philippine Statistics Authority (PSA) ang nagpatik sa ihap sa senso ug Philippine Standard Geographic Code."
+      ]
+    },
+    {
+      "id": "civil-registry",
+      "category": "services",
+      "source": "charter",
+      "checked": "2026-10-21",
+      "prompt": [
+        "Which city office handles local birth, marriage, and death records?",
+        "Aling tanggapan ng lungsod ang nangangasiwa sa lokal na tala ng kapanganakan, kasal, at pagkamatay?",
+        "Unsang opisina sa dakbayan ang nagdumala sa lokal nga rekord sa pagkatawo, kaminyoon, ug kamatayon?"
+      ],
+      "options": [
+        ["City Civil Registrar", "City Civil Registrar", "City Civil Registrar"],
+        ["City Engineering Office", "City Engineering Office", "City Engineering Office"],
+        ["City Agriculture Office", "City Agriculture Office", "City Agriculture Office"],
+        ["City Budget Office", "City Budget Office", "City Budget Office"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "The City Civil Registrar handles local civil registration. Local certified copies and PSA copies are different services.",
+        "Ang City Civil Registrar ang nangangasiwa sa lokal na civil registration. Magkaibang serbisyo ang lokal na certified copy at kopya mula sa PSA.",
+        "Ang City Civil Registrar ang nagdumala sa lokal nga civil registration. Lahi nga serbisyo ang lokal nga certified copy ug kopya gikan sa PSA."
+      ]
+    },
+    {
+      "id": "disaster-office",
+      "category": "services",
+      "source": "directory",
+      "checked": "2026-10-21",
+      "prompt": [
+        "Which office is responsible for city disaster risk reduction and management?",
+        "Aling tanggapan ang responsable sa disaster risk reduction and management ng lungsod?",
+        "Unsang opisina ang responsable sa disaster risk reduction and management sa dakbayan?"
+      ],
+      "options": [
+        ["CDRRMO", "CDRRMO", "CDRRMO"],
+        ["City Assessor", "City Assessor", "City Assessor"],
+        ["City Accountant", "City Accountant", "City Accountant"],
+        ["Local Civil Registrar", "Local Civil Registrar", "Local Civil Registrar"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "CDRRMO stands for City Disaster Risk Reduction and Management Office.",
+        "Ang CDRRMO ay City Disaster Risk Reduction and Management Office.",
+        "Ang CDRRMO mao ang City Disaster Risk Reduction and Management Office."
+      ]
+    },
+    {
+      "id": "tax-declaration",
+      "category": "services",
+      "source": "charter",
+      "checked": "2026-10-21",
+      "prompt": [
+        "Is a tax declaration the same as a land title?",
+        "Pareho ba ang tax declaration at titulo ng lupa?",
+        "Pareho ba ang tax declaration ug titulo sa yuta?"
+      ],
+      "options": [
+        [
+          "No, they are different documents",
+          "Hindi, magkaibang dokumento ang mga ito",
+          "Dili, lahi kini nga mga dokumento"
+        ],
+        ["Yes, always", "Oo, palagi", "Oo, kanunay"],
+        ["Only for farmland", "Para lamang sa bukirin", "Alang lamang sa umahan"],
+        [
+          "Only for city residents",
+          "Para lamang sa residente ng lungsod",
+          "Alang lamang sa residente sa dakbayan"
+        ]
+      ],
+      "correct": 0,
+      "explanation": [
+        "A tax declaration records property for taxation. It is not a land title or conclusive proof of ownership.",
+        "Itinatala ng tax declaration ang ari-arian para sa buwis. Hindi ito titulo ng lupa o tiyak na patunay ng pagmamay-ari.",
+        "Ang tax declaration nagtala sa kabtangan alang sa buhis. Dili kini titulo sa yuta o hingpit nga pamatuod sa pagpanag-iya."
+      ]
+    },
+    {
+      "id": "business-permit",
+      "category": "services",
+      "source": "charter",
+      "checked": "2026-10-21",
+      "prompt": [
+        "Where should you start when asking about a Bayawan business permit?",
+        "Saan unang magtatanong tungkol sa business permit sa Bayawan?",
+        "Asa una mangutana bahin sa business permit sa Bayawan?"
+      ],
+      "options": [
+        [
+          "Business Permits and Licensing Office",
+          "Business Permits and Licensing Office",
+          "Business Permits and Licensing Office"
+        ],
+        ["City Civil Registrar", "City Civil Registrar", "City Civil Registrar"],
+        ["City Library", "Aklatan ng Lungsod", "Librarya sa Dakbayan"],
+        ["Coast Guard", "Coast Guard", "Coast Guard"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "Ask the business permits and licensing office for the checklist and assessment that apply to your business.",
+        "Humingi sa business permits and licensing office ng checklist at pagtatasa para sa iyong negosyo.",
+        "Pangayo sa business permits and licensing office sa checklist ug pagtasa alang sa imong negosyo."
+      ]
+    },
+    {
+      "id": "noon-break",
+      "category": "services",
+      "source": "charter",
+      "checked": "2026-10-21",
+      "prompt": [
+        "Which policy keeps frontline transactions available at noon?",
+        "Anong patakaran ang nagpapatuloy sa mga transaksyon sa frontline kahit tanghali?",
+        "Unsang polisiya ang nagpadayon sa mga transaksyon sa frontline bisan sa udto?"
+      ],
+      "options": [
+        ["No Noon Break", "No Noon Break", "No Noon Break"],
+        ["No Morning Service", "No Morning Service", "No Morning Service"],
+        ["Weekend Only", "Weekend Only", "Weekend Only"],
+        ["Appointment-Free Sunday", "Appointment-Free Sunday", "Appointment-Free Sunday"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "Frontline services follow the No Noon Break policy. Confirm transaction-specific schedules with the responsible office.",
+        "Sinusunod ng frontline services ang No Noon Break policy. Kumpirmahin sa kinauukulang tanggapan ang iskedyul ng iyong transaksyon.",
+        "Ang frontline services nagsunod sa No Noon Break policy. Kumpirmaha sa hingtungdang opisina ang iskedyul sa imong transaksyon."
+      ]
+    },
+    {
+      "id": "festival-name",
+      "category": "culture",
+      "source": "festival",
+      "checked": "2026-10-21",
+      "prompt": [
+        "Which festival celebrates Bayawan’s farming heritage?",
+        "Aling pagdiriwang ang nagpaparangal sa pamana ng pagsasaka sa Bayawan?",
+        "Unsang pista ang nagsaulog sa kabilin sa pag-uma sa Bayawan?"
+      ],
+      "options": [
+        ["Tawo-Tawo Festival", "Tawo-Tawo Festival", "Tawo-Tawo Festival"],
+        ["MassKara Festival", "MassKara Festival", "MassKara Festival"],
+        ["Sinulog Festival", "Sinulog Festival", "Sinulog Festival"],
+        ["Panagbenga Festival", "Panagbenga Festival", "Panagbenga Festival"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "The Tawo-Tawo Festival celebrates the city’s farming traditions.",
+        "Ipinagdiriwang ng Tawo-Tawo Festival ang mga tradisyon ng pagsasaka sa lungsod.",
+        "Gisaulog sa Tawo-Tawo Festival ang mga tradisyon sa pag-uma sa dakbayan."
+      ]
+    },
+    {
+      "id": "tawo-symbol",
+      "category": "culture",
+      "source": "festival",
+      "checked": "2026-10-21",
+      "prompt": [
+        "What does the “tawo-tawo” represent?",
+        "Ano ang kinakatawan ng “tawo-tawo”?",
+        "Unsa ang girepresentahan sa “tawo-tawo”?"
+      ],
+      "options": [
+        ["A scarecrow", "Panakot-ibon", "Tawotawo sa uma"],
+        ["A fishing boat", "Bangkang pangisda", "Sakayan sa pangisda"],
+        ["A mountain", "Bundok", "Bukid"],
+        ["A seashell", "Kabibe", "Kabhang"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "The festival’s central symbol is the scarecrow used in rice fields.",
+        "Pangunahing simbolo ng pista ang panakot-ibon na ginagamit sa palayan.",
+        "Ang pangunang simbolo sa pista mao ang tawotawo nga gigamit sa humayan."
+      ]
+    },
+    {
+      "id": "maya-birds",
+      "category": "culture",
+      "source": "festival",
+      "checked": "2026-10-21",
+      "prompt": [
+        "Which birds appear in the Tawo-Tawo farming story?",
+        "Anong mga ibon ang nasa kuwento ng pagsasaka sa Tawo-Tawo?",
+        "Unsang mga langgam ang naa sa sugilanon sa pag-uma sa Tawo-Tawo?"
+      ],
+      "options": [
+        ["Maya", "Maya", "Maya"],
+        ["Penguins", "Penguins", "Penguins"],
+        ["Ostriches", "Ostriches", "Ostriches"],
+        ["Flamingos", "Flamingos", "Flamingos"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "The city’s festival account describes maya birds feeding on ripening rice.",
+        "Inilalarawan ng salaysay ng lungsod ang mga mayang kumakain ng nahihinog na palay.",
+        "Gihulagway sa asoy sa dakbayan ang mga mayang mokaon sa nagkahinog nga humay."
+      ]
+    },
+    {
+      "id": "festival-art",
+      "category": "culture",
+      "source": "festival",
+      "checked": "2026-10-21",
+      "prompt": [
+        "Which performance is associated with Tawo-Tawo Festival?",
+        "Anong pagtatanghal ang kaugnay ng Tawo-Tawo Festival?",
+        "Unsang pasundayag ang nalangkit sa Tawo-Tawo Festival?"
+      ],
+      "options": [
+        [
+          "Street dancing and field presentations",
+          "Sayawan sa kalye at pagtatanghal sa field",
+          "Sayaw sa dalan ug mga pasundayag sa field"
+        ],
+        ["Ice dancing", "Pagsayaw sa yelo", "Pagsayaw sa yelo"],
+        ["Camel racing", "Karera ng kamelyo", "Lumba sa kamelyo"],
+        [
+          "Snow sculpture contests",
+          "Paligsahan ng eskultura sa niyebe",
+          "Kompetisyon sa eskultura sa niyebe"
+        ]
+      ],
+      "correct": 0,
+      "explanation": [
+        "The festival brings farming scenes to life through dance and choreographed presentations.",
+        "Isinasabuhay ng pista ang mga tagpo sa pagsasaka sa pamamagitan ng sayaw at pagtatanghal.",
+        "Gipabuhi sa pista ang mga talan-awon sa pag-uma pinaagi sa sayaw ug mga pasundayag."
+      ]
+    },
+    {
+      "id": "harvest-celebration",
+      "category": "culture",
+      "source": "festival",
+      "checked": "2026-10-21",
+      "prompt": [
+        "What is at the heart of the Tawo-Tawo celebration?",
+        "Ano ang diwa ng pagdiriwang ng Tawo-Tawo?",
+        "Unsa ang diwa sa pagsaulog sa Tawo-Tawo?"
+      ],
+      "options": [
+        [
+          "Gratitude for a bountiful harvest",
+          "Pasasalamat sa masaganang ani",
+          "Pagpasalamat sa abunda nga ani"
+        ],
+        ["The arrival of winter", "Pagdating ng taglamig", "Pag-abot sa tingtugnaw"],
+        ["The start of ski season", "Simula ng ski season", "Pagsugod sa ski season"],
+        ["A desert caravan", "Isang karaban sa disyerto", "Usa ka karaban sa disyerto"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "The scarecrow connects the festival with protecting crops and celebrating the harvest.",
+        "Iniuugnay ng panakot-ibon ang pista sa pagprotekta sa pananim at pagdiriwang ng ani.",
+        "Gidugtong sa tawotawo ang pista sa pagpanalipod sa tanom ug pagsaulog sa ani."
+      ]
+    },
+    {
+      "id": "agri-capital",
+      "category": "agriculture",
+      "source": "about",
+      "checked": "2026-10-21",
+      "prompt": [
+        "Which title does the city use to describe its agricultural identity?",
+        "Anong bansag ang ginagamit ng lungsod para sa pagkakakilanlang pang-agrikultura nito?",
+        "Unsang bansag ang gigamit sa dakbayan alang sa iyang agrikultural nga pagkaila?"
+      ],
+      "options": [
+        [
+          "Agricultural Capital of Negros Oriental",
+          "Agricultural Capital of Negros Oriental",
+          "Agricultural Capital of Negros Oriental"
+        ],
+        [
+          "Summer Capital of the Philippines",
+          "Summer Capital of the Philippines",
+          "Summer Capital of the Philippines"
+        ],
+        [
+          "Tuna Capital of the Philippines",
+          "Tuna Capital of the Philippines",
+          "Tuna Capital of the Philippines"
+        ],
+        [
+          "Shoe Capital of the Philippines",
+          "Shoe Capital of the Philippines",
+          "Shoe Capital of the Philippines"
+        ]
+      ],
+      "correct": 0,
+      "explanation": [
+        "The official city introduction calls Bayawan the Agricultural Capital of Negros Oriental.",
+        "Tinatawag ng opisyal na pagpapakilala ng lungsod ang Bayawan na Agricultural Capital of Negros Oriental.",
+        "Gitawag sa opisyal nga pasiuna sa dakbayan ang Bayawan nga Agricultural Capital of Negros Oriental."
+      ]
+    },
+    {
+      "id": "major-crops",
+      "category": "agriculture",
+      "source": "profile",
+      "checked": "2026-10-21",
+      "prompt": [
+        "Which group contains major crops listed in Bayawan’s city profile?",
+        "Aling pangkat ang binubuo ng mga pangunahing pananim sa city profile ng Bayawan?",
+        "Unsang grupo ang naglangkob sa dagkong tanom nga gilista sa city profile sa Bayawan?"
+      ],
+      "options": [
+        [
+          "Sugarcane, rice, corn, and coconut",
+          "Tubo, palay, mais, at niyog",
+          "Tubo, humay, mais, ug lubi"
+        ],
+        [
+          "Wheat, olives, dates, and apples",
+          "Trigo, olibo, datiles, at mansanas",
+          "Trigo, olibo, dates, ug mansanas"
+        ],
+        [
+          "Tulips, lavender, grapes, and rye",
+          "Tulip, lavender, ubas, at rye",
+          "Tulip, lavender, ubas, ug rye"
+        ],
+        [
+          "Saffron, barley, cherries, and pears",
+          "Saffron, barley, seresa, at peras",
+          "Saffron, barley, cherry, ug peras"
+        ]
+      ],
+      "correct": 0,
+      "explanation": [
+        "The profile identifies sugarcane, rice, corn, and coconut among the city’s major agricultural products.",
+        "Kabilang sa pangunahing produktong pang-agrikultura sa profile ang tubo, palay, mais, at niyog.",
+        "Lakip sa dagkong produktong pang-agrikultura sa profile ang tubo, humay, mais, ug lubi."
+      ]
+    },
+    {
+      "id": "irrigation-name",
+      "category": "agriculture",
+      "source": "profile",
+      "checked": "2026-10-21",
+      "prompt": [
+        "Which is an irrigation system named in Bayawan’s city profile?",
+        "Alin ang pangalan ng sistemang patubig sa city profile ng Bayawan?",
+        "Asa ang ngalan sa sistema sa irigasyon sa city profile sa Bayawan?"
+      ],
+      "options": [
+        ["Malabugas CIP", "Malabugas CIP", "Malabugas CIP"],
+        ["Banaue CIP", "Banaue CIP", "Banaue CIP"],
+        ["Agusan CIP", "Agusan CIP", "Agusan CIP"],
+        ["Marikina CIP", "Marikina CIP", "Marikina CIP"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "The profile names Malabugas, Mantapi, and Tabuan communal irrigation systems.",
+        "Pinangalanan sa profile ang mga communal irrigation system ng Malabugas, Mantapi, at Tabuan.",
+        "Gingalanan sa profile ang mga communal irrigation system sa Malabugas, Mantapi, ug Tabuan."
+      ]
+    },
+    {
+      "id": "land-use",
+      "category": "agriculture",
+      "source": "profile",
+      "checked": "2026-10-21",
+      "prompt": [
+        "In the published city profile’s land-use table, which category covers the largest area?",
+        "Sa talahanayan ng paggamit ng lupa sa inilathalang city profile, alin ang may pinakamalaking sakop?",
+        "Sa talaan sa paggamit sa yuta sa gipatik nga city profile, unsang kategoriya ang pinakadako?"
+      ],
+      "options": [
+        ["Agricultural land", "Lupang pang-agrikultura", "Yutang pang-agrikultura"],
+        ["Industrial land", "Lupang pang-industriya", "Yutang pang-industriya"],
+        ["Tourism land", "Lupang panturismo", "Yutang panturismo"],
+        ["Parks and playgrounds", "Mga parke at palaruan", "Mga parke ug dulaanan"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "Agricultural land is the largest category in that profile. Its land-use table is a historical reference, not a new survey.",
+        "Lupang pang-agrikultura ang pinakamalaking kategorya sa profile. Makasaysayang sanggunian ang talahanayan nito, hindi bagong survey.",
+        "Yutang pang-agrikultura ang pinakadakong kategoriya sa profile. Makasaysayanong pakisayran ang maong talaan, dili bag-ong survey."
+      ]
+    },
+    {
+      "id": "farmer-registry",
+      "category": "agriculture",
+      "source": "charter",
+      "checked": "2026-10-21",
+      "prompt": [
+        "Which farmer registry is listed for the 2025 Charter’s plantation-crops program?",
+        "Anong rehistro ng magsasaka ang nakalista para sa plantation-crops program sa Charter ng 2025?",
+        "Unsang rehistro sa mag-uuma ang gilista alang sa plantation-crops program sa Charter sa 2025?"
+      ],
+      "options": [
+        ["RSBSA", "RSBSA", "RSBSA"],
+        ["PSGC", "PSGC", "PSGC"],
+        ["CENOMAR", "CENOMAR", "CENOMAR"],
+        ["MTOP", "MTOP", "MTOP"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "RSBSA means Registry System for Basic Sectors in Agriculture. Check the program’s full requirements with the City Agriculture Office.",
+        "RSBSA ang Registry System for Basic Sectors in Agriculture. Alamin sa City Agriculture Office ang buong mga kinakailangan ng programa.",
+        "Ang RSBSA mao ang Registry System for Basic Sectors in Agriculture. Susiha sa City Agriculture Office ang tibuok kinahanglanon sa programa."
+      ]
+    },
+    {
+      "id": "niludhan-barangay",
+      "category": "tourism",
+      "source": "niludhan",
+      "checked": "2026-10-21",
+      "prompt": [
+        "In which Bayawan barangay is Niludhan Falls?",
+        "Saang barangay ng Bayawan matatagpuan ang Niludhan Falls?",
+        "Sa unsang barangay sa Bayawan nahimutang ang Niludhan Falls?"
+      ],
+      "options": [
+        ["Dawis", "Dawis", "Dawis"],
+        ["Banga", "Banga", "Banga"],
+        ["Tinago", "Tinago", "Tinago"],
+        ["Ubos", "Ubos", "Ubos"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "Niludhan Falls is in Barangay Dawis, Bayawan City, even though it is near Mabinay.",
+        "Nasa Barangay Dawis, Bayawan City ang Niludhan Falls, kahit malapit ito sa Mabinay.",
+        "Naa sa Barangay Dawis, Bayawan City ang Niludhan Falls, bisan duol kini sa Mabinay."
+      ]
+    },
+    {
+      "id": "mantapi-barangay",
+      "category": "tourism",
+      "source": "tourism",
+      "checked": "2026-10-21",
+      "prompt": [
+        "Which barangay is home to Mantapi Falls?",
+        "Saang barangay matatagpuan ang Mantapi Falls?",
+        "Sa unsang barangay nahimutang ang Mantapi Falls?"
+      ],
+      "options": [
+        ["Nangka", "Nangka", "Nangka"],
+        ["Boyco", "Boyco", "Boyco"],
+        ["Poblacion", "Poblacion", "Poblacion"],
+        ["San Roque", "San Roque", "San Roque"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "The city’s tourism overview places Mantapi Falls in Barangay Nangka.",
+        "Nasa Barangay Nangka ang Mantapi Falls ayon sa tourism overview ng lungsod.",
+        "Gibutang sa tourism overview sa dakbayan ang Mantapi Falls sa Barangay Nangka."
+      ]
+    },
+    {
+      "id": "palasanon-barangay",
+      "category": "tourism",
+      "source": "tourism",
+      "checked": "2026-10-21",
+      "prompt": [
+        "Where does the city’s tourism overview place Palasanon Falls?",
+        "Saan matatagpuan ang Palasanon Falls ayon sa tourism overview ng lungsod?",
+        "Asa nahimutang ang Palasanon Falls sumala sa tourism overview sa dakbayan?"
+      ],
+      "options": [
+        ["Cansumalig", "Cansumalig", "Cansumalig"],
+        ["Tinago", "Tinago", "Tinago"],
+        ["Suba", "Suba", "Suba"],
+        ["Banga", "Banga", "Banga"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "Palasanon Falls is listed in Barangay Cansumalig.",
+        "Nakatala ang Palasanon Falls sa Barangay Cansumalig.",
+        "Gilista ang Palasanon Falls sa Barangay Cansumalig."
+      ]
+    },
+    {
+      "id": "mag-aso",
+      "category": "tourism",
+      "source": "tourism",
+      "checked": "2026-10-21",
+      "prompt": [
+        "Which spring is listed as a visitor attraction in Barangay Nangka?",
+        "Anong bukal ang nakalistang atraksyon sa Barangay Nangka?",
+        "Unsang tubod ang gilista nga atraksyon sa Barangay Nangka?"
+      ],
+      "options": [
+        ["Mag-Aso Spring", "Mag-Aso Spring", "Mag-Aso Spring"],
+        ["Mainit Hot Spring, Laguna", "Mainit Hot Spring, Laguna", "Mainit Hot Spring, Laguna"],
+        ["Mambukal, Murcia", "Mambukal, Murcia", "Mambukal, Murcia"],
+        ["Ardent Spring, Camiguin", "Ardent Spring, Camiguin", "Ardent Spring, Camiguin"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "The city’s tourism overview lists Mag-Aso Spring in Nangka.",
+        "Inilista ng tourism overview ng lungsod ang Mag-Aso Spring sa Nangka.",
+        "Gilista sa tourism overview sa dakbayan ang Mag-Aso Spring sa Nangka."
+      ]
+    },
+    {
+      "id": "niludhan-name",
+      "category": "tourism",
+      "source": "niludhan",
+      "checked": "2026-10-21",
+      "prompt": [
+        "In the local story shared by the tourism office, what does “Niludhan” refer to?",
+        "Sa lokal na kuwentong ibinahagi ng tanggapan ng turismo, ano ang tinutukoy ng “Niludhan”?",
+        "Sa lokal nga sugilanon nga gipaambit sa opisina sa turismo, unsay gipasabot sa “Niludhan”?"
+      ],
+      "options": [
+        ["Kneeling", "Pagluhod", "Pagluhod"],
+        ["Flying", "Paglipad", "Paglupad"],
+        ["Sailing", "Paglalayag", "Paglayag"],
+        ["Singing", "Pag-awit", "Pag-awit"]
+      ],
+      "correct": 0,
+      "explanation": [
+        "The tourism account connects the name to a story of farm water buffalo kneeling on a rugged trail. This is a local story, not a proven historical event.",
+        "Iniuugnay ng salaysay sa turismo ang pangalan sa kuwento ng mga kalabaw na lumuluhod sa mabatong daan. Lokal na kuwento ito, hindi napatunayang pangyayaring pangkasaysayan.",
+        "Gilangkit sa asoy sa turismo ang ngalan sa sugilanon sa mga kabaw nga moluhod sa baku-bakong agianan. Lokal kini nga sugilanon, dili napamatud-ang panghitabo sa kasaysayan."
+      ]
+    }
+  ],
+  "ui": {
+    "edition": ["BAYAWAN FIELD NOTES · 01", "MGA TALA NG BAYAWAN · 01", "MGA TALA SA BAYAWAN · 01"],
+    "relaxed": [
+      "Your pace. No timer.",
+      "Sariling bilis. Walang timer.",
+      "Imong dagan. Walay timer."
+    ],
+    "pick": [
+      "What would you like to explore?",
+      "Ano ang gusto mong tuklasin?",
+      "Unsay gusto nimong susihon?"
+    ],
+    "pickHelp": [
+      "Choose one or more categories. Every round is a fresh mix.",
+      "Pumili ng isa o higit pang kategorya. Iba ang halo sa bawat laro.",
+      "Pagpili og usa o daghang kategoriya. Bag-ong sagol sa matag duwa."
+    ],
+    "length": ["Round length", "Haba ng laro", "Gitas-on sa duwa"],
+    "questions": ["questions", "tanong", "pangutana"],
+    "start": ["Let’s play", "Maglaro na", "Magduwa na"],
+    "none": [
+      "Choose at least one category to begin.",
+      "Pumili muna ng kahit isang kategorya.",
+      "Pagpili una og bisan usa ka kategoriya."
+    ],
+    "roundNote": [
+      "Up to {n} questions from your selection. No account needed.",
+      "Hanggang {n} tanong mula sa iyong pinili. Hindi kailangan ng account.",
+      "Hangtod {n} ka pangutana gikan sa imong gipili. Dili kinahanglan og account."
+    ],
+    "question": ["Question {n} of {total}", "Tanong {n} sa {total}", "Pangutana {n} sa {total}"],
+    "leave": ["Leave round", "Umalis sa laro", "Biya sa duwa"],
+    "correct": ["That’s right!", "Tama!", "Sakto!"],
+    "wrong": ["A new thing learned.", "May bago kang natutuhan.", "Aduna kay bag-ong nakat-onan."],
+    "correctAnswer": ["Correct answer", "Tamang sagot", "Saktong tubag"],
+    "yourAnswer": ["Your answer", "Iyong sagot", "Imong tubag"],
+    "source": ["Read the source", "Basahin ang sanggunian", "Basaha ang tinubdan"],
+    "next": ["Next question", "Susunod na tanong", "Sunod nga pangutana"],
+    "finish": ["See my results", "Tingnan ang resulta", "Tan-awa ang resulta"],
+    "score": ["{n} correct", "{n} tama", "{n} sakto"],
+    "done": ["ROUND COMPLETE", "TAPOS NA ANG LARO", "HUMAN NA ANG DUWA"],
+    "outOf": ["out of {n}", "mula sa {n}", "gikan sa {n}"],
+    "excellent": [
+      "You know your Bayawan!",
+      "Kilala mo ang iyong Bayawan!",
+      "Kaila ka sa imong Bayawan!"
+    ],
+    "good": [
+      "A little closer to Bayawan.",
+      "Mas kilala mo na ang Bayawan.",
+      "Mas nakaila ka na sa Bayawan."
+    ],
+    "learning": [
+      "Every discovery counts.",
+      "Mahalaga ang bawat natututuhan.",
+      "Bililhon ang matag nakat-onan."
+    ],
+    "resultHelp": [
+      "Keep exploring. There’s always another story to discover about our city.",
+      "Patuloy na tumuklas. Laging may bagong kuwento tungkol sa ating lungsod.",
+      "Padayon sa pagsusi. Adunay kanunay bag-ong sugilanon bahin sa atong dakbayan."
+    ],
+    "again": ["Play again", "Maglaro muli", "Duwa pag-usab"],
+    "reviewMissed": [
+      "Practice missed questions",
+      "Balikan ang mga maling sagot",
+      "Balika ang mga nasayop"
+    ],
+    "share": ["Share my score", "Ibahagi ang resulta", "Ipaambit ang resulta"],
+    "copied": ["Score copied!", "Nakopya ang resulta!", "Nakopya ang resulta!"],
+    "shareFail": [
+      "Sharing is unavailable in this browser.",
+      "Hindi magagamit ang pagbabahagi sa browser na ito.",
+      "Dili magamit ang pagpaambit niini nga browser."
+    ],
+    "review": [
+      "Your field notes · Review answers",
+      "Iyong mga tala · Balikan ang mga sagot",
+      "Imong mga tala · Balika ang mga tubag"
+    ],
+    "best": [
+      "Personal best: {n}% · saved on this device",
+      "Pinakamataas na iskor: {n}% · sa device na ito",
+      "Pinakataas nga iskor: {n}% · niini nga device"
+    ],
+    "resume": [
+      "You have an unfinished round.",
+      "May hindi ka pa natatapos na laro.",
+      "Aduna kay wala pa mahuman nga duwa."
+    ],
+    "continue": ["Continue round", "Ipagpatuloy ang laro", "Padayona ang duwa"],
+    "new": ["Start a new round", "Magsimula ng bagong laro", "Pagsugod og bag-ong duwa"],
+    "leaveTitle": ["Leave this round?", "Aalis ka ba sa larong ito?", "Mobiya ka niini nga duwa?"],
+    "leaveHelp": [
+      "Your current answers will be cleared. You can start a fresh round anytime.",
+      "Mabubura ang mga kasalukuyang sagot. Maaari kang magsimula muli anumang oras.",
+      "Matangtang ang imong kasamtangang mga tubag. Mahimo kang magsugod pag-usab bisan kanus-a."
+    ],
+    "stay": ["Keep playing", "Magpatuloy sa paglalaro", "Padayon sa pagduwa"],
+    "loadError": [
+      "The quiz could not load. Check your connection and try again.",
+      "Hindi ma-load ang quiz. Suriin ang koneksyon at subukang muli.",
+      "Dili ma-load ang quiz. Susiha ang koneksyon ug sulayi pag-usab."
+    ],
+    "retry": ["Try again", "Subukang muli", "Sulayi pag-usab"],
+    "shareText": [
+      "I scored {score}/{total} on the BetterBayawan quiz. How well do you know Bayawan?",
+      "Naka-{score}/{total} ako sa BetterBayawan quiz. Gaano mo kakilala ang Bayawan?",
+      "Naka-{score}/{total} ko sa BetterBayawan quiz. Unsa ka kaila sa Bayawan?"
+    ]
+  }
+}

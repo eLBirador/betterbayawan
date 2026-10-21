@@ -3,7 +3,7 @@
  * Enterprise-grade PWA with versioned caching, runtime strategies, and offline resilience.
  */
 
-var CACHE_VERSION = 'v7-install-manifest';
+var CACHE_VERSION = 'v8-bayawan-quiz';
 var STATIC_CACHE = 'BetterBayawan-static-' + CACHE_VERSION;
 var RUNTIME_CACHE = 'BetterBayawan-runtime-' + CACHE_VERSION;
 var OFFLINE_URL = '/offline.html';
