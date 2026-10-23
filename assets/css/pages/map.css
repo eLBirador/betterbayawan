@@ -150,6 +150,11 @@
   outline: none;
 }
 
+.map-panel .map-barangay-list button:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+
 .map-panel .map-barangay-list button:focus-visible {
   outline: none;
   box-shadow:

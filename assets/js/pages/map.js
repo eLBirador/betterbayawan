@@ -356,8 +356,11 @@
       button.dataset.code = code;
       button.setAttribute('aria-pressed', 'false');
       button.textContent = featureName(feature) || code;
-      button.addEventListener('click', function () {
+      button.addEventListener('click', function (event) {
         select(code);
+        // A pointer click that clears the selection should not leave the chip
+        // focused. Keyboard activation (detail === 0) keeps focus in place.
+        if (event.detail > 0 && selectedCode === null) button.blur();
       });
       buttonsByCode[code] = button;
       item.appendChild(button);
