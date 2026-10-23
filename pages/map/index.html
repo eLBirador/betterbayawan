@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container map-page-crumbs">
   <nav class="breadcrumbs" aria-label="Breadcrumb">
     <a href="/">Home</a>
     <span>/</span>
@@ -7,7 +7,7 @@
 </div>
 
 <!-- Page Header -->
-<section class="page-header" data-no-translate>
+<section class="page-header map-page-header" data-no-translate>
   <div class="container">
     <div class="page-header-content">
       <span class="page-header-badge"><i class="bi bi-map-fill"></i> Map</span>
@@ -21,11 +21,39 @@
 </section>
 
 <!-- Leaflet CSS and JS load from unpkg via pages/routes.json (no other page uses Leaflet yet). -->
-<section class="section" data-no-translate>
-  <div class="container">
+<section class="section map-page" data-no-translate>
+  <div class="map-page-inner">
     <div class="map-shell">
       <div id="bayawan-map" class="map-canvas" aria-label="Map of Bayawan City barangays"></div>
-      <aside class="map-panel" aria-labelledby="map-panel-title">
+      <button
+        type="button"
+        id="map-panel-toggle"
+        class="map-panel-toggle"
+        aria-controls="map-panel"
+        aria-expanded="true"
+        aria-label="Hide barangays"
+        title="Hide barangays"
+      >
+        <svg
+          class="map-panel-toggle-icon"
+          viewBox="0 0 20 20"
+          width="16"
+          height="16"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <path
+            d="M7.5 4.5 13 10l-5.5 5.5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <span class="map-panel-toggle-text">Hide barangays</span>
+      </button>
+      <aside id="map-panel" class="map-panel" aria-labelledby="map-panel-title">
         <h2 id="map-panel-title">
           Barangays <span id="barangay-count" class="map-count-pill" hidden></span>
         </h2>

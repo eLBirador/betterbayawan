@@ -238,6 +238,49 @@
     else map.setMaxBounds(limits);
   }
 
+  // ---- Collapsible barangay panel ---------------------------------------
+  var shellEl = mapEl.closest('.map-shell');
+  var panelEl = document.getElementById('map-panel');
+  var toggleEl = document.getElementById('map-panel-toggle');
+  var PANEL_KEY = 'betterbayawan:map-panel-collapsed';
+
+  function setCollapsed(collapsed, persist) {
+    if (!shellEl || !panelEl || !toggleEl) return;
+    var label = collapsed ? 'Show barangays' : 'Hide barangays';
+    shellEl.classList.toggle('is-panel-collapsed', collapsed);
+    panelEl.hidden = collapsed;
+    toggleEl.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+    toggleEl.setAttribute('aria-label', label);
+    toggleEl.title = label;
+    var text = toggleEl.querySelector('.map-panel-toggle-text');
+    if (text) text.textContent = label;
+    if (persist) {
+      try {
+        window.sessionStorage.setItem(PANEL_KEY, collapsed ? '1' : '0');
+      } catch (error) {
+        /* storage unavailable */
+      }
+    }
+    // The grid change resizes the map; re-measure and re-clamp once it settles.
+    requestAnimationFrame(function () {
+      appliedFor = '';
+      applyHome();
+    });
+  }
+
+  if (toggleEl) {
+    var startCollapsed = false;
+    try {
+      startCollapsed = window.sessionStorage.getItem(PANEL_KEY) === '1';
+    } catch (error) {
+      startCollapsed = false;
+    }
+    if (startCollapsed) setCollapsed(true, false);
+    toggleEl.addEventListener('click', function () {
+      setCollapsed(toggleEl.getAttribute('aria-expanded') === 'true', true);
+    });
+  }
+
   // ---- Data --------------------------------------------------------------
   function gisFetch(path) {
     return fetch(GIS_PH_API_URL + path, {
