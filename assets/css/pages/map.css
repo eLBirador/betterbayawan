@@ -1,0 +1,90 @@
+/* Bayawan City map page (ported from bettergov LocalityMap) */
+.map-shell {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.map-canvas {
+  min-height: 560px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--color-bg-alt, #e5e7eb);
+  z-index: 0;
+}
+
+.map-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-height: 560px;
+}
+
+.map-panel h2 {
+  margin: 0;
+  font-size: 1.125rem;
+  color: var(--color-text, #0f172a);
+}
+
+.map-barangay-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.map-barangay-list button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--color-text, #0f172a);
+  font: inherit;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.map-barangay-list button:hover,
+.map-barangay-list button:focus-visible,
+.map-barangay-list button.is-selected {
+  background: #e8eef8;
+  color: #003d8f;
+}
+
+.map-barangay-list button.is-selected {
+  font-weight: 600;
+}
+
+.map-status {
+  font-size: 0.875rem;
+  color: var(--color-text-light, #64748b);
+}
+
+@media (max-width: 900px) {
+  .map-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .map-canvas {
+    min-height: 420px;
+  }
+
+  .map-panel {
+    max-height: none;
+  }
+}
+
+/* Keep the GIS.ph credit link readable on the blue page header. */
+.page-header-desc a {
+  color: inherit;
+  text-decoration: underline;
+}

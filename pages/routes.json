@@ -28,6 +28,23 @@
     ]
   },
   {
+    "url": "/map/",
+    "output": "map/index.html",
+    "source": "pages/map/index.html",
+    "title": "Bayawan City Map",
+    "description": "Interactive map of Bayawan City, Negros Oriental and its barangays, with boundaries from GIS.ph.",
+    "layout": "portal",
+    "styles": ["https://unpkg.com/leaflet@1.9.4/dist/leaflet.css", "/assets/css/pages/map.css"],
+    "scripts": [
+      {
+        "src": "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      },
+      {
+        "src": "/assets/js/pages/map.js"
+      }
+    ]
+  },
+  {
     "url": "/accessibility/",
     "output": "accessibility/index.html",
     "source": "pages/accessibility/index.html",

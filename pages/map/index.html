@@ -1,0 +1,36 @@
+<div class="container">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span>/</span>
+    <span aria-current="page" data-no-translate>Map</span>
+  </nav>
+</div>
+
+<!-- Page Header -->
+<section class="page-header" data-no-translate>
+  <div class="container">
+    <div class="page-header-content">
+      <span class="page-header-badge"><i class="bi bi-map-fill"></i> Map</span>
+      <h1>Bayawan City Map</h1>
+      <p class="page-header-desc">
+        Explore the barangays of Bayawan City. Boundaries are served by
+        <a href="https://gis.ph" rel="noopener">GIS.ph</a>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Leaflet CSS and JS load from unpkg via pages/routes.json (no other page uses Leaflet yet). -->
+<section class="section" data-no-translate>
+  <div class="container">
+    <div class="map-shell">
+      <div id="bayawan-map" class="map-canvas" aria-label="Map of Bayawan City barangays"></div>
+      <aside class="map-panel" aria-labelledby="map-panel-title">
+        <h2 id="map-panel-title">Barangays</h2>
+        <ul id="barangay-list" class="map-barangay-list"></ul>
+        <div id="map-status" class="map-status" role="status" aria-live="polite">Loading map…</div>
+      </aside>
+    </div>
+    <noscript><p>Enable JavaScript to view the interactive map.</p></noscript>
+  </div>
+</section>
