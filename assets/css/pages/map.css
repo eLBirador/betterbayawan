@@ -1,7 +1,7 @@
 /* Bayawan City map page (ported from bettergov LocalityMap) */
 .map-shell {
   display: grid;
-  grid-template-columns: 1fr 280px;
+  grid-template-columns: minmax(0, 1fr) 384px; /* bettergov lg:w-96 side column */
   gap: 1.5rem;
   align-items: start;
 }
@@ -15,6 +15,9 @@
 }
 
 .map-panel {
+  width: 100%;
+  max-width: 384px;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -22,46 +25,136 @@
 }
 
 .map-panel h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   margin: 0;
   font-size: 1.125rem;
   color: var(--color-text, #0f172a);
 }
 
-.map-barangay-list {
+/* Count pill (bettergov RefinementList count) */
+.map-panel .map-count-pill {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #6b7280;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 9999px;
+}
+
+.map-panel .map-count-pill[hidden] {
+  display: none;
+}
+
+/* Barangay filter (pill input) */
+.map-panel .map-filter {
+  position: relative;
+}
+
+.map-panel .map-filter .bi-search {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  font-size: 0.875rem;
+  color: #6b7280;
+  pointer-events: none;
+}
+
+.map-panel .map-filter-input {
+  width: 100%;
+  height: 40px;
+  padding: 0 14px 0 36px;
+  border: 1px solid #e5e7eb;
+  border-radius: 9999px;
+  background: #f9fafb;
+  color: #1f2937;
+  font: inherit;
+  font-size: 0.875rem;
+  transition:
+    background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+}
+
+.map-panel .map-filter-input:hover {
+  border-color: #93c5fd;
+}
+
+.map-panel .map-filter-input:focus {
+  outline: none;
+  background: #fff;
+  border-color: #003d8f;
+  box-shadow: 0 0 0 3px rgba(0, 61, 143, 0.18);
+}
+
+.map-panel .map-filter-empty {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.map-panel .map-filter-empty[hidden],
+.map-panel .map-barangay-list li[hidden] {
+  display: none;
+}
+
+/* Barangay chips (bettergov map chips) */
+.map-panel .map-barangay-list {
   list-style: none;
   margin: 0;
   padding: 0;
   overflow-y: auto;
   display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 0.5rem;
 }
 
-.map-barangay-list button {
-  display: block;
-  width: 100%;
-  text-align: left;
-  padding: 0.5rem 0.75rem;
-  border: 0;
-  border-radius: 8px;
-  background: transparent;
-  color: var(--color-text, #0f172a);
+.map-panel .map-barangay-list button {
+  display: inline-block;
+  padding: 4px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 9999px;
+  background: #f9fafb;
+  color: #1f2937;
   font: inherit;
+  font-size: 0.875rem;
+  line-height: 1.5;
   cursor: pointer;
   transition:
-    background-color 0.15s ease,
-    color 0.15s ease;
+    background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out,
+    color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
 }
 
-.map-barangay-list button:hover,
-.map-barangay-list button:focus-visible,
-.map-barangay-list button.is-selected {
-  background: #e8eef8;
+.map-panel .map-barangay-list button:hover {
+  background: #eff6ff;
+  border-color: #93c5fd;
   color: #003d8f;
 }
 
-.map-barangay-list button.is-selected {
+.map-panel .map-barangay-list button.is-selected {
+  background: #003d8f;
+  border-color: #003d8f;
+  color: #fff;
   font-weight: 600;
+}
+
+.map-panel .map-barangay-list button:focus {
+  outline: none;
+}
+
+.map-panel .map-barangay-list button:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 2px #fff,
+    0 0 0 4px #003d8f;
 }
 
 .map-status {
@@ -79,7 +172,8 @@
   }
 
   .map-panel {
-    max-height: none;
+    max-width: 480px;
+    max-height: 40vh; /* bettergov max-h-[40vh] on mobile */
   }
 }
 

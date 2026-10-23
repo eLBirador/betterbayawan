@@ -26,7 +26,24 @@
     <div class="map-shell">
       <div id="bayawan-map" class="map-canvas" aria-label="Map of Bayawan City barangays"></div>
       <aside class="map-panel" aria-labelledby="map-panel-title">
-        <h2 id="map-panel-title">Barangays</h2>
+        <h2 id="map-panel-title">
+          Barangays <span id="barangay-count" class="map-count-pill" hidden></span>
+        </h2>
+        <div class="map-filter">
+          <label for="barangay-filter" class="sr-only">Filter barangays</label>
+          <i class="bi bi-search" aria-hidden="true"></i>
+          <input
+            id="barangay-filter"
+            class="map-filter-input"
+            type="search"
+            placeholder="Filter barangays"
+            aria-label="Filter barangays"
+            aria-controls="barangay-list"
+            autocomplete="off"
+            spellcheck="false"
+          />
+        </div>
+        <p id="barangay-empty" class="map-filter-empty" hidden>No barangays match</p>
         <ul id="barangay-list" class="map-barangay-list"></ul>
         <div id="map-status" class="map-status" role="status" aria-live="polite">Loading map…</div>
       </aside>

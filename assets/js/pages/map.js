@@ -131,6 +131,48 @@
   var layersByCode = {};
   var buttonsByCode = {};
   var loadedStatus = '';
+  var totalCount = 0;
+  var filterEl = document.getElementById('barangay-filter');
+  var emptyEl = document.getElementById('barangay-empty');
+  var countEl = document.getElementById('barangay-count');
+
+  function normalizeName(value) {
+    return String(value || '')
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase()
+      .trim();
+  }
+
+  function applyFilter() {
+    var query = normalizeName(filterEl ? filterEl.value : '');
+    var shown = 0;
+    Object.keys(buttonsByCode).forEach(function (key) {
+      var button = buttonsByCode[key];
+      var match = !query || normalizeName(button.textContent).indexOf(query) !== -1;
+      button.parentNode.hidden = !match;
+      if (match) shown += 1;
+    });
+    if (emptyEl) emptyEl.hidden = !(query && shown === 0);
+    if (countEl && totalCount) {
+      countEl.textContent = query ? shown + '/' + totalCount : String(totalCount);
+      countEl.title = query
+        ? shown + ' of ' + totalCount + ' barangays shown'
+        : totalCount + ' barangays';
+      countEl.hidden = false;
+    }
+  }
+
+  if (filterEl) {
+    filterEl.addEventListener('input', applyFilter);
+    filterEl.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && filterEl.value) {
+        event.preventDefault();
+        filterEl.value = '';
+        applyFilter();
+      }
+    });
+  }
 
   function featureCode(feature) {
     var code = feature && feature.properties && feature.properties.code;
@@ -347,6 +389,8 @@
       if (typeof ResizeObserver === 'function') new ResizeObserver(applyHome).observe(mapEl);
       else window.addEventListener('resize', applyHome);
       loadedStatus = features.length + ' barangays in ' + place.name + '. Select one to zoom in.';
+      totalCount = features.length;
+      applyFilter();
       setStatus(loadedStatus);
     })
     .catch(function (error) {
