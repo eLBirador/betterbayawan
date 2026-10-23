@@ -1,0 +1,81 @@
+<div class="container map-page-crumbs">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span>/</span>
+    <span aria-current="page" data-no-translate>Map</span>
+  </nav>
+</div>
+
+<!-- Page Header -->
+<section class="page-header map-page-header" data-no-translate>
+  <div class="container">
+    <div class="page-header-content">
+      <span class="page-header-badge"><i class="bi bi-map-fill"></i> Map</span>
+      <h1>Bayawan City Map</h1>
+      <p class="page-header-desc">
+        Explore the barangays of Bayawan City. Boundaries are served by
+        <a href="https://gis.ph" rel="noopener">GIS.ph</a>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Leaflet CSS and JS load from unpkg via pages/routes.json (no other page uses Leaflet yet). -->
+<section class="section map-page" data-no-translate>
+  <div class="map-page-inner">
+    <div class="map-shell">
+      <div id="bayawan-map" class="map-canvas" aria-label="Map of Bayawan City barangays"></div>
+      <button
+        type="button"
+        id="map-panel-toggle"
+        class="map-panel-toggle"
+        aria-controls="map-panel"
+        aria-expanded="true"
+        aria-label="Hide barangays"
+        title="Hide barangays"
+      >
+        <svg
+          class="map-panel-toggle-icon"
+          viewBox="0 0 20 20"
+          width="16"
+          height="16"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <path
+            d="M7.5 4.5 13 10l-5.5 5.5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <span class="map-panel-toggle-text">Hide barangays</span>
+      </button>
+      <aside id="map-panel" class="map-panel" aria-labelledby="map-panel-title">
+        <h2 id="map-panel-title">
+          Barangays <span id="barangay-count" class="map-count-pill" hidden></span>
+        </h2>
+        <div class="map-filter">
+          <label for="barangay-filter" class="sr-only">Filter barangays</label>
+          <i class="bi bi-search" aria-hidden="true"></i>
+          <input
+            id="barangay-filter"
+            class="map-filter-input"
+            type="search"
+            placeholder="Filter barangays"
+            aria-label="Filter barangays"
+            aria-controls="barangay-list"
+            autocomplete="off"
+            spellcheck="false"
+          />
+        </div>
+        <p id="barangay-empty" class="map-filter-empty" hidden>No barangays match</p>
+        <ul id="barangay-list" class="map-barangay-list"></ul>
+        <div id="map-status" class="map-status" role="status" aria-live="polite">Loading map…</div>
+      </aside>
+    </div>
+    <noscript><p>Enable JavaScript to view the interactive map.</p></noscript>
+  </div>
+</section>
