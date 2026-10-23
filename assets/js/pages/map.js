@@ -130,6 +130,7 @@
   var areas = null;
   var layersByCode = {};
   var buttonsByCode = {};
+  var loadedStatus = '';
 
   function featureCode(feature) {
     var code = feature && feature.properties && feature.properties.code;
@@ -172,6 +173,7 @@
       setStatus('Selected ' + featureName(layer.feature) + '.');
     } else {
       map.closePopup();
+      if (loadedStatus) setStatus(loadedStatus);
       setMinZoomQuiet(map, Math.max(0, fitZoom(map, homeBounds) - ZOOM_OUT_LEVELS));
       showView(map, homeBounds, limits, flight, true);
     }
@@ -344,7 +346,8 @@
       requestAnimationFrame(applyHome);
       if (typeof ResizeObserver === 'function') new ResizeObserver(applyHome).observe(mapEl);
       else window.addEventListener('resize', applyHome);
-      setStatus(features.length + ' barangays in ' + place.name + '. Select one to zoom in.');
+      loadedStatus = features.length + ' barangays in ' + place.name + '. Select one to zoom in.';
+      setStatus(loadedStatus);
     })
     .catch(function (error) {
       setStatus(
