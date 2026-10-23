@@ -118,6 +118,48 @@ try {
     console.log(ok ? 'PASS' : 'FAIL', label, JSON.stringify(st));
     if (!ok) failures.push(label);
   }
+  // Fit padding: fitted geometry must keep a margin from every map edge.
+  const margins = (name) =>
+    page.evaluate((n) => {
+      const map = window.__testMap;
+      const layers = Object.values(map._layers).filter(
+        (l) => l.feature && (!n || l.feature.properties.name === n)
+      );
+      const bounds = layers.reduce(
+        (acc, l) => acc.extend(l.getBounds()),
+        window.L.latLngBounds([])
+      );
+      const nw = map.latLngToContainerPoint(bounds.getNorthWest());
+      const se = map.latLngToContainerPoint(bounds.getSouthEast());
+      const size = map.getSize();
+      return {
+        left: Math.round(nw.x),
+        top: Math.round(nw.y),
+        right: Math.round(size.x - se.x),
+        bottom: Math.round(size.y - se.y),
+      };
+    }, name);
+  for (const [width, height, pad] of [
+    [1440, 900, 40],
+    [390, 844, 20],
+  ]) {
+    await page.setViewportSize({ width, height });
+    await load();
+    const checks = [['city', null]];
+    for (const n of ['Banga', 'San Jose', 'Poblacion']) checks.push([n, n]);
+    checks.push(['cleared', null]);
+    for (const [label, name] of checks) {
+      if (label === 'cleared') await listClick('Poblacion');
+      else if (name) await listClick(name);
+      if (label !== 'city') await page.waitForTimeout(2500);
+      const m = await margins(name);
+      const min = Math.min(m.left, m.top, m.right, m.bottom);
+      const ok = min >= pad - 3;
+      const tag = `padding ${width} ${label}`;
+      console.log(ok ? 'PASS' : 'FAIL', tag, JSON.stringify(m), 'min', min, 'need', pad - 3);
+      if (!ok) failures.push(tag);
+    }
+  }
   assert.deepEqual(errors, [], 'page errors');
 } finally {
   await browser.close();

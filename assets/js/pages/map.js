@@ -23,6 +23,11 @@
     [85, 180],
   ];
   var PH_CENTER = [9.36, 123.11];
+  /** Padding in px kept between fitted geometry and each map edge [x, y]. */
+  var FIT_PADDING = [40, 40];
+  /** Smaller padding when the map is narrow (phones). */
+  var FIT_PADDING_NARROW = [20, 20];
+  var NARROW_WIDTH = 600;
 
   var mapEl = document.getElementById('bayawan-map');
   var listEl = document.getElementById('barangay-list');
@@ -54,12 +59,18 @@
     return bounds.isValid() ? bounds : null;
   }
 
+  function fitPadding(map) {
+    return map.getSize().x < NARROW_WIDTH ? FIT_PADDING_NARROW : FIT_PADDING;
+  }
+
   function fitZoom(map, bounds) {
     // getBoundsZoom will not return anything below the current minZoom.
     // Write the option directly; setMinZoom() animates and fights the home view.
     var previousMin = map.options.minZoom;
     map.options.minZoom = 0;
-    var zoom = map.getBoundsZoom(bounds, false, L.point(28, 28));
+    // Leaflet's padding argument is the total for both sides, so double it.
+    var pad = fitPadding(map);
+    var zoom = map.getBoundsZoom(bounds, false, L.point(pad[0] * 2, pad[1] * 2));
     map.options.minZoom = previousMin;
     return zoom;
   }
