@@ -88,7 +88,7 @@
     map._animatingZoom = false;
   }
 
-  function showView(map, bounds, limits, flight, animate) {
+  function showView(map, bounds, limits, flight, animate, done) {
     var id = ++flight.current;
     var zoom = fitZoom(map, bounds);
     stopCamera(map);
@@ -97,6 +97,7 @@
     if (!animate) {
       map.setView(bounds.getCenter(), zoom, { animate: false });
       map.setMaxBounds(limits);
+      if (done) done();
       return;
     }
     map.flyTo(bounds.getCenter(), zoom, { duration: 0.7 });
@@ -106,6 +107,7 @@
       stopCamera(map);
       map.setView(map.getCenter(), map.getZoom(), { animate: false });
       map.setMaxBounds(limits);
+      if (done) done();
     });
   }
 
@@ -210,8 +212,14 @@
     var layer = selectedCode && layersByCode[selectedCode];
     if (layer) {
       var target = boundsOf(layer.feature);
-      if (target) showView(map, target, limits, flight, true);
-      if (layer.getPopup()) layer.openPopup(target ? target.getCenter() : undefined);
+      // Open the popup only once the flight has settled: its autoPan calls
+      // map.stop(), which would abort the flight part-way and strand the camera.
+      map.closePopup();
+      var openPopup = function () {
+        if (layer.getPopup()) layer.openPopup(target ? target.getCenter() : undefined);
+      };
+      if (target) showView(map, target, limits, flight, true, openPopup);
+      else openPopup();
       setStatus('Selected ' + featureName(layer.feature) + '.');
     } else {
       map.closePopup();
