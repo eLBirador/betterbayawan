@@ -63,16 +63,16 @@
         const padding = mobile
           ? { top: 40, bottom: 206, left: 16, right: 16 }
           : { top: 40, bottom: 60, left: 380, right: 340 };
-        // Keep the view around the city: up to 2 zoom levels in or out from the
+        // Keep the view around the city: up to 2 zoom levels in and 1.5 out from the
         // fitted view, and no panning beyond the area visible when fully zoomed
-        // out (the fitted extent scaled 4x around its centre).
+        // out (the fitted extent scaled 2^1.5x around its centre).
         const fit = map.cameraForBounds(bounds, { padding });
-        map.setMinZoom(fit.zoom - 2);
+        map.setMinZoom(fit.zoom - 1.5);
         map.setMaxZoom(fit.zoom + 2);
         map.once('moveend', () => {
           const b = map.getBounds();
-          const dx = (b.getEast() - b.getWest()) * 1.5;
-          const dy = (b.getNorth() - b.getSouth()) * 1.5;
+          const dx = (b.getEast() - b.getWest()) * ((2 ** 1.5 - 1) / 2);
+          const dy = (b.getNorth() - b.getSouth()) * ((2 ** 1.5 - 1) / 2);
           map.setMaxBounds([
             [b.getWest() - dx, b.getSouth() - dy],
             [b.getEast() + dx, b.getNorth() + dy],
