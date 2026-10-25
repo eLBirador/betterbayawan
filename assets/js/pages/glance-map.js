@@ -60,21 +60,20 @@
         new maplibregl.Marker({ color: '#f77f00' }).setLngLat(CITY_HALL).addTo(map);
         const bounds = new maplibregl.LngLatBounds();
         rings.flat().forEach((p) => bounds.extend(p));
-        map.fitBounds(bounds, {
-          padding: mobile
-            ? { top: 40, bottom: 206, left: 16, right: 16 }
-            : { top: 40, bottom: 60, left: 380, right: 340 },
-          duration: reduce ? 0 : 1200,
-        });
+        const padding = mobile
+          ? { top: 40, bottom: 206, left: 16, right: 16 }
+          : { top: 40, bottom: 60, left: 380, right: 340 };
         // Lock the view to the city: no zooming out past the fitted view, at most
         // 2 levels in, and no panning beyond the fitted extent (the city's bbox
         // plus the padding that keeps it clear of the cards).
+        const fit = map.cameraForBounds(bounds, { padding });
+        map.setMinZoom(fit.zoom);
+        map.setMaxZoom(fit.zoom + 2);
         map.once('moveend', () => {
-          const z = map.getZoom();
-          map.setMinZoom(z);
-          map.setMaxZoom(z + 2);
+          map.setMinZoom(map.getZoom());
           map.setMaxBounds(map.getBounds());
         });
+        map.fitBounds(bounds, { padding, duration: reduce ? 0 : 1200 });
       })
       .catch((error) => console.error('Glance map:', error));
   }
