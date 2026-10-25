@@ -78,7 +78,7 @@
         // out (the fitted extent scaled 2^1.5x around its centre).
         const fit = map.cameraForBounds(bounds, { padding });
         map.setMinZoom(fit.zoom - 1.5);
-        map.setMaxZoom(fit.zoom + 2);
+        map.setMaxZoom(fit.zoom + 4);
         map.once('moveend', () => {
           const b = map.getBounds();
           const dx = (b.getEast() - b.getWest()) * ((2 ** 1.5 - 1) / 2);
