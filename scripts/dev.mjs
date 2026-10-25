@@ -14,9 +14,8 @@ function rebuild() {
 }
 rebuild();
 const port = Number(process.env.PORT || 3000);
-const host = process.env.HOST || '127.0.0.1';
-createStaticServer(path.join(root, 'dist')).listen(port, host, () =>
-  console.log(`Development: http://${host === '0.0.0.0' ? 'localhost' : host}:${port}`)
+createStaticServer(path.join(root, 'dist')).listen(port, '127.0.0.1', () =>
+  console.log(`Development: http://localhost:${port}`)
 );
 let timer;
 for (const dir of ['pages', 'layouts', 'assets', 'data', 'locales'])
