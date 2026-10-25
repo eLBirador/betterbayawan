@@ -4,8 +4,7 @@
   "description": "Independent, source-linked civic information for Bayawan City, Negros Oriental",
   "scripts": {
     "dev": "node scripts/dev.mjs",
-    "build": "node scripts/fetch-boundary.mjs && node scripts/build.mjs",
-    "geo:fetch": "node scripts/fetch-boundary.mjs",
+    "build": "node scripts/build.mjs",
     "preview": "node scripts/static-server.mjs dist",
     "check": "node scripts/check.mjs",
     "test": "node scripts/test-browser.mjs",
