@@ -73,7 +73,7 @@
               left: stats ? Math.round(stats.right - box.left) + 20 : 380,
               right: wx ? Math.round(box.right - wx.left) + 20 : 340,
             };
-        // Keep the view around the city: up to 2 zoom levels in and 1.5 out from the
+        // Keep the view around the city: up to 4 zoom levels in and 1.5 out from the
         // fitted view, and no panning beyond the area visible when fully zoomed
         // out (the fitted extent scaled 2^1.5x around its centre).
         const fit = map.cameraForBounds(bounds, { padding });
