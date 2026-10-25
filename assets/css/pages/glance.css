@@ -1,6 +1,9 @@
 /* Bayawan City at a Glance: full-bleed map with frosted overlay cards (issue #2). */
 .glance {
-  --glance-edge: max(24px, calc((100vw - 1200px) / 2));
+  /* Match .container (max-width + side padding) so the cards line up with Popular Services. */
+  --glance-max: var(--max-width, 1200px);
+  --glance-pad: var(--spacing-md, 24px);
+  --glance-edge: calc(max(0px, (100% - var(--glance-max)) / 2) + var(--glance-pad));
   position: relative;
   width: 100%;
   height: clamp(600px, 72vh, 680px);
@@ -249,6 +252,21 @@
 .glance .maplibregl-ctrl-attrib {
   font-size: 11px;
 }
+@media (max-width: 1199px) and (min-width: 1025px) {
+  .glance {
+    --glance-max: 960px;
+  }
+}
+@media (max-width: 767px) {
+  .glance {
+    --glance-pad: var(--spacing-sm, 16px);
+  }
+}
+@media (max-width: 480px) {
+  .glance {
+    --glance-pad: var(--spacing-xs, 8px);
+  }
+}
 @media (max-width: 768px) {
   .glance {
     height: 70vh;
@@ -291,10 +309,10 @@
     inset: auto 0 44px 0;
     display: flex;
     gap: 8px;
-    padding: 0 12px 4px;
+    padding: 0 var(--glance-pad) 4px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    scroll-padding-inline: 12px;
+    scroll-padding-inline: var(--glance-pad);
     scrollbar-width: none;
   }
   .glance-stats {

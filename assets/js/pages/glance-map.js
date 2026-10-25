@@ -60,9 +60,19 @@
         new maplibregl.Marker({ color: '#f77f00' }).setLngLat(CITY_HALL).addTo(map);
         const bounds = new maplibregl.LngLatBounds();
         rings.flat().forEach((p) => bounds.extend(p));
+        // Desktop: keep the city clear of the stat cards (left) and weather card (right),
+        // which follow the page container edge.
+        const box = el.getBoundingClientRect();
+        const stats = document.querySelector('.glance-stats')?.getBoundingClientRect();
+        const wx = document.querySelector('.glance-wx')?.getBoundingClientRect();
         const padding = mobile
           ? { top: 40, bottom: 206, left: 16, right: 16 }
-          : { top: 40, bottom: 60, left: 380, right: 340 };
+          : {
+              top: 40,
+              bottom: 60,
+              left: stats ? Math.round(stats.right - box.left) + 20 : 380,
+              right: wx ? Math.round(box.right - wx.left) + 20 : 340,
+            };
         // Keep the view around the city: up to 2 zoom levels in and 1.5 out from the
         // fitted view, and no panning beyond the area visible when fully zoomed
         // out (the fitted extent scaled 2^1.5x around its centre).
