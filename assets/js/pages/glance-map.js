@@ -66,6 +66,15 @@
             : { top: 40, bottom: 60, left: 380, right: 340 },
           duration: reduce ? 0 : 1200,
         });
+        // Lock the view to the city: no zooming out past the fitted view, at most
+        // 2 levels in, and no panning beyond the fitted extent (the city's bbox
+        // plus the padding that keeps it clear of the cards).
+        map.once('moveend', () => {
+          const z = map.getZoom();
+          map.setMinZoom(z);
+          map.setMaxZoom(z + 2);
+          map.setMaxBounds(map.getBounds());
+        });
       })
       .catch((error) => console.error('Glance map:', error));
   }
