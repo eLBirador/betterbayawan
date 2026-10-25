@@ -43,13 +43,6 @@
   outline: 3px solid var(--color-accent, #f77f00);
   outline-offset: 2px;
 }
-.glance-swatch--city {
-  background: rgba(0, 50, 160, 0.25);
-  outline: 2px solid #0032a0;
-}
-.glance-swatch--rest {
-  background: rgba(15, 23, 42, 0.35);
-}
 .glance-legend {
   position: absolute;
   bottom: 34px;
@@ -77,21 +70,6 @@
   height: 16px;
   font-size: 15px;
   color: var(--color-accent, #f77f00);
-}
-.glance-swatch {
-  display: block;
-  width: 15px;
-  height: 15px;
-  margin: 0 0.5px;
-  border-radius: 3px;
-}
-.glance-swatch--city {
-  background: rgba(0, 50, 160, 0.25);
-  outline: 2px solid #0032a0;
-  outline-offset: -2px;
-}
-.glance-swatch--rest {
-  background: rgba(15, 23, 42, 0.35);
 }
 .glance-rail {
   position: absolute;
@@ -275,11 +253,6 @@
     width: 11px;
     height: 11px;
     font-size: 11px;
-  }
-  .glance-swatch {
-    width: 10px;
-    height: 10px;
-    border-radius: 2px;
   }
   .glance-header h2 {
     font-size: 1.125rem;

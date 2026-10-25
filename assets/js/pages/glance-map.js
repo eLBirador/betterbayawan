@@ -18,7 +18,8 @@
     map.addControl(
       new maplibregl.AttributionControl({
         compact: false,
-        customAttribution: 'Boundaries © OpenStreetMap contributors (ODbL)',
+        customAttribution:
+          'Boundary © <a href="https://gis.ph" target="_blank" rel="noopener">GIS.ph</a>',
       }),
       'bottom-right'
     );
@@ -26,42 +27,12 @@
     const load = (u) => fetch(u).then((r) => r.json());
     Promise.all([
       load('/assets/geo/bayawan.geojson'),
-      load('/assets/geo/negros-oriental.geojson'),
       new Promise((ok) => (map.loaded() ? ok() : map.on('load', ok))),
     ])
-      .then(([city, prov]) => {
+      .then(([city]) => {
         const g = city.geometry;
         const rings = g.type === 'Polygon' ? [g.coordinates[0]] : g.coordinates.map((p) => p[0]);
-        const world = [
-          [-180, -85],
-          [180, -85],
-          [180, 85],
-          [-180, 85],
-          [-180, -85],
-        ];
-        map.addSource('mask', {
-          type: 'geojson',
-          data: { type: 'Feature', geometry: { type: 'Polygon', coordinates: [world, ...rings] } },
-        });
         map.addSource('city', { type: 'geojson', data: city });
-        map.addSource('prov', { type: 'geojson', data: prov });
-        map.addLayer({
-          id: 'outside-mask',
-          type: 'fill',
-          source: 'mask',
-          paint: { 'fill-color': '#0f172a', 'fill-opacity': 0.35 },
-        });
-        map.addLayer({
-          id: 'province-line',
-          type: 'line',
-          source: 'prov',
-          paint: {
-            'line-color': '#334155',
-            'line-width': 1.25,
-            'line-dasharray': [3, 2],
-            'line-opacity': 0.8,
-          },
-        });
         map.addLayer({
           id: 'city-fill',
           type: 'fill',
@@ -85,7 +56,7 @@
         rings.flat().forEach((p) => bounds.extend(p));
         map.fitBounds(bounds, {
           padding: mobile
-            ? { top: 44, bottom: 206, left: 16, right: 16 }
+            ? { top: 40, bottom: 206, left: 16, right: 16 }
             : { top: 40, bottom: 60, left: 380, right: 340 },
           duration: reduce ? 0 : 1200,
         });
