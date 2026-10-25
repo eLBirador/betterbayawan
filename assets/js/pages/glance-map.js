@@ -17,11 +17,17 @@
     });
     map.addControl(
       new maplibregl.AttributionControl({
-        compact: false,
+        compact: true,
         customAttribution:
           'Boundary © <a href="https://gis.ph" target="_blank" rel="noopener">GIS.ph</a>',
       }),
       'bottom-right'
+    );
+    // Start collapsed to the (i) button; MapLibre auto-expands compact attribution on wide maps.
+    map.once('load', () =>
+      el
+        .querySelectorAll('.maplibregl-compact-show')
+        .forEach((n) => n.classList.remove('maplibregl-compact-show'))
     );
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
     const load = (u) => fetch(u).then((r) => r.json());

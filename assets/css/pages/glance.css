@@ -95,8 +95,31 @@
   color: inherit;
   text-decoration: none;
 }
-.glance-stat:hover {
+.glance-stat {
+  transition: all 0.2s ease;
+}
+/* Same hover as the home page Popular Services cards (.home-service-card:hover). */
+.glance-stat:hover,
+.glance-stat:focus-visible {
+  border-color: var(--color-primary, #0032a0);
   background: rgba(255, 255, 255, 0.95);
+  box-shadow:
+    0 4px 12px rgba(0, 50, 160, 0.1),
+    0 8px 24px rgba(15, 23, 42, 0.16);
+}
+.glance a,
+.glance a:hover,
+.glance a:focus,
+.glance a:focus-visible,
+.glance-legend li:hover {
+  text-decoration: none;
+}
+.glance-stat:focus-visible {
+  outline: 2px solid var(--color-primary, #0032a0);
+  outline-offset: 2px;
+}
+.glance .maplibregl-ctrl-attrib.maplibregl-compact {
+  margin: 0 6px 6px 0;
 }
 .glance-stat i {
   font-size: 15px;
