@@ -9,7 +9,7 @@
     const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
     const map = new maplibregl.Map({
       container: el,
-      style: 'https://tiles.openfreemap.org/styles/positron',
+      style: 'https://tiles.openfreemap.org/styles/liberty',
       center: [122.82, 9.45],
       zoom: 9.5,
       attributionControl: false,
