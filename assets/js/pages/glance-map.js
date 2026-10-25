@@ -85,8 +85,8 @@
         rings.flat().forEach((p) => bounds.extend(p));
         map.fitBounds(bounds, {
           padding: mobile
-            ? { top: 110, bottom: 170, left: 24, right: 24 }
-            : { top: 60, bottom: 60, left: 380, right: 340 },
+            ? { top: 24, bottom: 290, left: 24, right: 24 }
+            : { top: 40, bottom: 60, left: 380, right: 340 },
           duration: reduce ? 0 : 1200,
         });
       })
